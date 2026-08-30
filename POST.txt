@@ -1,0 +1,16 @@
+Qwen3.8-27B uncensored now runs at 29.11 tok/s on a 48GB M4 Pro MacBook Pro.
+
+Two pieces:
+- target: orcarouter's uncensored MLX build, 4-bit (affine, group size 64)
+- draft: stock incoai DFlash2, quantized 4-bit at runtime
+
+Paired HumanEval benchmark, 3 prompts, greedy, reasoning off, block size 5:
+13.76 -> 29.11 tok/s, 2.12x. Mean acceptance length 4.95/5, 98.3% of draft
+blocks accepted in full.
+
+Model and caches sat on an external HDD; warm decode ran from unified memory.
+
+Recipe, not redistributed weights. Numbers are one config on one machine.
+
+GitHub: <link>
+Hugging Face: <link>
