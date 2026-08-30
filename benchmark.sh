@@ -4,7 +4,7 @@
 #
 # Reproduces the measured configuration:
 #   baseline (target-only) vs DFlash speculative decoding (draft: incoai/Qwen3.8-27B-DFlash2, 4-bit runtime quant)
-#   HumanEval, 3 samples, max_new_tokens=256, temperature=0 (greedy), reasoning off, block_size=5
+#   HumanEval, 20 samples, max_new_tokens=256, temperature=0 (greedy), reasoning off, block_size=5
 set -euo pipefail
 
 TARGET_PATH="${TARGET_PATH:?Set TARGET_PATH to the local path of orcarouter/Qwen3.8-27B-Uncensored-MLX subdir 4-bit}"
@@ -41,4 +41,4 @@ dflash benchmark mlx \
   --temperature 0 \
   --reasoning off \
   --dataset humaneval \
-  --max-samples 3
+  --max-samples 20

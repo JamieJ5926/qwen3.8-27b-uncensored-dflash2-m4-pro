@@ -25,28 +25,40 @@
   },
   "benchmark": {
     "name": "HumanEval",
-    "samples": 3,
+    "samples": 20,
     "max_new_tokens": 256,
     "temperature": 0,
     "reasoning": false,
     "block_size": 5,
     "paired": true,
-    "setup": "other model servers stopped; target model and caches on external APFS HDD"
+    "memory_free_before_launch": "91%",
+    "setup": "other model services stopped; target model and caches on external APFS HDD"
   },
   "results": {
     "baseline": {
-      "tokens_per_second": 13.76
+      "tokens_per_second": 12.35
     },
     "dflash": {
-      "tokens_per_second": 29.11,
-      "speedup_vs_baseline": 2.12,
-      "mean_acceptance_length": 4.95,
-      "acceptance_histogram": [0.0, 0.0, 1.7, 0.0, 0.0, 98.3]
+      "tokens_per_second": 25.48,
+      "speedup_vs_baseline": 2.06,
+      "mean_acceptance_length": 4.87,
+      "acceptance_histogram": [0.0, 1.2, 1.5, 0.6, 1.7, 94.9]
     },
-    "warm_one_shot_wall_time_seconds": 218.13,
+    "paired_progress_time": "9m54s",
+    "full_process_wall_time_seconds": 825.84,
     "notes": [
-      "Warm one-shot wall time is end-to-end timing, not generation throughput.",
+      "Full process wall time includes model loading and is end-to-end timing, not generation throughput.",
       "Model compatibility warning about unrecognized mrope_section/mrope_interleaved keys occurred; no fallback behavior implied."
     ]
+  },
+  "initial_smoke_test": {
+    "samples": 3,
+    "baseline_tokens_per_second": 13.76,
+    "dflash_tokens_per_second": 29.11,
+    "speedup_vs_baseline": 2.12,
+    "mean_acceptance_length": 4.95,
+    "fraction_blocks_fully_accepted": 0.983,
+    "warm_one_shot_wall_time_seconds": 218.13,
+    "note": "Initial smoke-test record only; the 20-sample run above is the primary result."
   }
 }

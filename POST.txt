@@ -1,16 +1,15 @@
-Qwen3.8-27B uncensored now runs at 29.11 tok/s on a 48GB M4 Pro MacBook Pro.
+I got Qwen3.8-27B uncensored running about twice as fast on my 48GB M4 Pro
+MacBook Pro — 12.35 -> 25.48 tok/s — just by pairing incoai's stock DFlash2
+draft model with orcarouter's separately abliterated MLX build. No retraining,
+no custom draft: the stock draft slots straight onto the modified target and
+mean acceptance length is 4.87 out of a 5-token block.
 
-Two pieces:
-- target: orcarouter's uncensored MLX build, 4-bit (affine, group size 64)
-- draft: stock incoai DFlash2, quantized 4-bit at runtime
+Setup: 4-bit MLX, greedy decoding, 20 HumanEval prompts, block size 5, paired
+baseline vs DFlash under identical settings. Model and caches on an external
+HDD, everything else stopped.
 
-Paired HumanEval benchmark, 3 prompts, greedy, reasoning off, block size 5:
-13.76 -> 29.11 tok/s, 2.12x. Mean acceptance length 4.95/5, 98.3% of draft
-blocks accepted in full.
+It's a benchmark dataset and recipe, not a model or redistributed weights —
+numbers are one config on one machine.
 
-Model and caches sat on an external HDD; warm decode ran from unified memory.
-
-Recipe, not redistributed weights. Numbers are one config on one machine.
-
-GitHub: <link>
-Hugging Face: <link>
+GitHub: https://github.com/JamieJ5926/qwen3.8-27b-uncensored-dflash2-m4-pro
+Hugging Face: https://huggingface.co/datasets/hamiejuice/qwen3.8-27b-uncensored-dflash2-m4-pro-benchmark
