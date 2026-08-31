@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.router/rules.schema.json",
+  "title": "RouteTable",
+  "type": "object",
+  "required": ["version", "rules"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "type": "string", "minLength": 1 },
+    "rules": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/routeRule" }
+    }
+  },
+  "$defs": {
+    "lane": {
+      "type": "string",
+      "enum": ["lfm_direct", "qwen_coordinator", "fixed_worker", "fail_visible"]
+    },
+    "intent": {
+      "type": "string",
+      "enum": [
+        "chat",
+        "retrieval",
+        "extraction",
+        "classification",
+        "log_interpret",
+        "tool_op",
+        "coding"
+      ]
+    },
+    "riskClass": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "matchSpec": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "intent": { "$ref": "#/$defs/intent" },
+        "risk_class": { "$ref": "#/$defs/riskClass" },
+        "max_context_tokens": { "type": "integer", "minimum": 0 },
+        "min_context_tokens": { "type": "integer", "minimum": 0 },
+        "needs_qwen_judgment": { "type": "boolean" }
+      }
+    },
+    "routeRule": {
+      "type": "object",
+      "required": [
+        "id",
+        "match",
+        "lane",
+        "lane_input_budget",
+        "lane_output_budget",
+        "timeout_s",
+        "fallback_lane"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "match": { "$ref": "#/$defs/matchSpec" },
+        "lane": { "$ref": "#/$defs/lane" },
+        "lane_input_budget": { "type": "integer", "minimum": 1 },
+        "lane_output_budget": { "type": "integer", "minimum": 1 },
+        "timeout_s": { "type": "number", "exclusiveMinimum": 0 },
+        "fallback_lane": { "$ref": "#/$defs/lane" },
+        "enabled": { "type": "boolean" },
+        "follow_up_budget": { "type": "integer", "minimum": 0, "maximum": 1 },
+        "version": { "type": "string" }
+      }
+    }
+  }
+}

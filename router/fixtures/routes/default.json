@@ -1,0 +1,102 @@
+{
+  "version": "1",
+  "rules": [
+    {
+      "id": "coding-qwen",
+      "match": {
+        "intent": "coding",
+        "needs_qwen_judgment": true
+      },
+      "lane": "qwen_coordinator",
+      "lane_input_budget": 4096,
+      "lane_output_budget": 1024,
+      "timeout_s": 60,
+      "fallback_lane": "fail_visible",
+      "follow_up_budget": 1,
+      "version": "1"
+    },
+    {
+      "id": "tool-qwen",
+      "match": {
+        "intent": "tool_op",
+        "needs_qwen_judgment": true
+      },
+      "lane": "qwen_coordinator",
+      "lane_input_budget": 2048,
+      "lane_output_budget": 512,
+      "timeout_s": 45,
+      "fallback_lane": "fail_visible",
+      "follow_up_budget": 1
+    },
+    {
+      "id": "log-worker",
+      "match": {
+        "intent": "log_interpret",
+        "max_context_tokens": 8000
+      },
+      "lane": "fixed_worker",
+      "lane_input_budget": 8000,
+      "lane_output_budget": 512,
+      "timeout_s": 30,
+      "fallback_lane": "qwen_coordinator",
+      "follow_up_budget": 0
+    },
+    {
+      "id": "tiny-chat-lfm",
+      "match": {
+        "intent": "chat",
+        "risk_class": "low",
+        "max_context_tokens": 1024,
+        "needs_qwen_judgment": false
+      },
+      "lane": "lfm_direct",
+      "lane_input_budget": 1024,
+      "lane_output_budget": 256,
+      "timeout_s": 20,
+      "fallback_lane": "fail_visible"
+    },
+    {
+      "id": "extraction-lfm",
+      "match": {
+        "intent": "extraction",
+        "risk_class": "low"
+      },
+      "lane": "lfm_direct",
+      "lane_input_budget": 2048,
+      "lane_output_budget": 256,
+      "timeout_s": 20,
+      "fallback_lane": "fail_visible"
+    },
+    {
+      "id": "classification-lfm",
+      "match": {
+        "intent": "classification"
+      },
+      "lane": "lfm_direct",
+      "lane_input_budget": 1024,
+      "lane_output_budget": 64,
+      "timeout_s": 15,
+      "fallback_lane": "fail_visible"
+    },
+    {
+      "id": "retrieval-worker",
+      "match": {
+        "intent": "retrieval"
+      },
+      "lane": "fixed_worker",
+      "lane_input_budget": 4096,
+      "lane_output_budget": 512,
+      "timeout_s": 30,
+      "fallback_lane": "fail_visible"
+    },
+    {
+      "id": "fail-closed",
+      "match": {},
+      "lane": "fail_visible",
+      "lane_input_budget": 1,
+      "lane_output_budget": 1,
+      "timeout_s": 1,
+      "fallback_lane": "fail_visible"
+    }
+  ]
+}

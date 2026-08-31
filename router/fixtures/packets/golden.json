@@ -1,0 +1,35 @@
+{
+  "envelope": {
+    "request_id": "req-packet-1",
+    "task_id": "task-packet-1",
+    "messages": [
+      {"role": "system", "content": "Be brief."},
+      {"role": "user", "content": "Summarize the log line."}
+    ],
+    "profile": "slim",
+    "budgets": {
+      "input_tokens": 256,
+      "output_tokens": 64,
+      "timeout_s": 5.0,
+      "follow_up_budget": 1
+    },
+    "available_tools": ["lookup_log", "direct_answer"],
+    "intent": "log_interpret",
+    "risk_class": "low",
+    "context_token_count": 12,
+    "needs_qwen_judgment": true
+  },
+  "lane_decision": {
+    "rule_id": "qwen-logs",
+    "lane": "qwen_coordinator",
+    "reason_codes": ["intent=log_interpret"],
+    "rule_version": "1",
+    "lane_budget": {
+      "input_tokens": 256,
+      "output_tokens": 64,
+      "timeout_s": 5.0,
+      "follow_up_budget": 1
+    },
+    "fallback_lane": "fail_visible"
+  }
+}

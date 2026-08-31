@@ -1,0 +1,34 @@
+{
+  "envelope": {
+    "request_id": "req-packet-budget",
+    "task_id": "task-packet-budget",
+    "messages": [
+      {"role": "user", "content": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}
+    ],
+    "profile": "slim",
+    "budgets": {
+      "input_tokens": 8,
+      "output_tokens": 8,
+      "timeout_s": 1.0,
+      "follow_up_budget": 0
+    },
+    "available_tools": ["direct_answer"],
+    "intent": "chat",
+    "risk_class": "low",
+    "context_token_count": 80,
+    "needs_qwen_judgment": true
+  },
+  "lane_decision": {
+    "rule_id": "tiny",
+    "lane": "qwen_coordinator",
+    "reason_codes": ["tiny"],
+    "rule_version": "1",
+    "lane_budget": {
+      "input_tokens": 8,
+      "output_tokens": 8,
+      "timeout_s": 1.0,
+      "follow_up_budget": 0
+    },
+    "fallback_lane": "fail_visible"
+  }
+}

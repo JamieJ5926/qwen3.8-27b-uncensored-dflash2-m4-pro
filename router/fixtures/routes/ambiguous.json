@@ -1,0 +1,23 @@
+{
+  "version": "1",
+  "rules": [
+    {
+      "id": "dup-a",
+      "match": { "intent": "chat", "risk_class": "low" },
+      "lane": "lfm_direct",
+      "lane_input_budget": 128,
+      "lane_output_budget": 32,
+      "timeout_s": 5,
+      "fallback_lane": "fail_visible"
+    },
+    {
+      "id": "dup-b",
+      "match": { "intent": "chat", "risk_class": "low" },
+      "lane": "qwen_coordinator",
+      "lane_input_budget": 128,
+      "lane_output_budget": 32,
+      "timeout_s": 5,
+      "fallback_lane": "fail_visible"
+    }
+  ]
+}
