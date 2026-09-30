@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "/Users/jamie/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py", line 375, in run
+    await self._prepare()
+  File "/Users/jamie/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py", line 409, in _prepare
+    await self._setup_agent_environment()
+  File "/Users/jamie/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py", line 1210, in _setup_agent_environment
+    await self._start_agent_environment()
+  File "/Users/jamie/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py", line 1216, in _start_agent_environment
+    await asyncio.wait_for(
+    ...<4 lines>...
+    )
+  File "/Users/jamie/.local/share/uv/python/cpython-3.13.14-macos-aarch64-none/lib/python3.13/asyncio/tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/Users/jamie/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker.py", line 904, in start
+    await self._run_docker_compose_command(["down", "--remove-orphans"])
+  File "/Users/jamie/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker.py", line 627, in _run_docker_compose_command
+    env = self._compose_env_vars(include_os_env=True)
+  File "/Users/jamie/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker.py", line 586, in _compose_env_vars
+    infra = self._compose_infra_env_vars()
+  File "/Users/jamie/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker.py", line 560, in _compose_infra_env_vars
+    env_vars.update(legacy_log_mount_env_vars(self._mounts, host_value="source"))
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jamie/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/compose_env.py", line 70, in legacy_log_mount_env_vars
+    target = mount.get("target")
+             ^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'

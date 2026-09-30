@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "http_status": 200,
+  "timed_out": false,
+  "latency_s": 0.9207254170032684,
+  "tokens": {
+    "prompt_tokens": 66,
+    "completion_tokens": 55
+  },
+  "detail": {
+    "returncode": 0,
+    "stdout": "C3_OK\n",
+    "stderr": "",
+    "timed_out": false,
+    "elapsed_s": 0.019535416009603068,
+    "cmd": [
+      "python3",
+      "-I",
+      "-B",
+      "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/capability/C3/_check_c3.py"
+    ]
+  }
+}

@@ -8,8 +8,16 @@
 set -euo pipefail
 
 TARGET_PATH="${TARGET_PATH:?Set TARGET_PATH to the local path of orcarouter/Qwen3.8-27B-Uncensored-MLX subdir 4-bit}"
-CACHE_ROOT="${CACHE_ROOT:-$HOME/.cache/huggingface}"
+VENV_ROOT="${VENV_ROOT:-/Users/jamie/models/mlx-venv}"
+CACHE_ROOT="${CACHE_ROOT:-/Volumes/BBALL_GM_DATA/models/huggingface-cache}"
+BLOCK_SIZE="${BLOCK_SIZE:-5}"
+DRAFT_BITS="${DRAFT_BITS:-4}"
+MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-256}"
+MAX_SAMPLES="${MAX_SAMPLES:-20}"
 
+[ -x "$VENV_ROOT/bin/python3" ] || { echo "missing venv python: $VENV_ROOT/bin/python3" >&2; exit 1; }
+[ -x "$VENV_ROOT/bin/dflash" ] || { echo "missing venv dflash: $VENV_ROOT/bin/dflash" >&2; exit 1; }
+export PATH="$VENV_ROOT/bin:$PATH"
 for cmd in python3 dflash; do
   command -v "$cmd" >/dev/null 2>&1 || { echo "missing required command: $cmd" >&2; exit 1; }
 done
@@ -35,10 +43,10 @@ PY
 dflash benchmark mlx \
   --model "$TARGET_PATH" \
   --draft incoai/Qwen3.8-27B-DFlash2 \
-  --draft-bits 4 \
-  --block-size 5 \
-  --max-new-tokens 256 \
+  --draft-bits "$DRAFT_BITS" \
+  --block-size "$BLOCK_SIZE" \
+  --max-new-tokens "$MAX_NEW_TOKENS" \
   --temperature 0 \
   --reasoning off \
   --dataset humaneval \
-  --max-samples 20
+  --max-samples "$MAX_SAMPLES"

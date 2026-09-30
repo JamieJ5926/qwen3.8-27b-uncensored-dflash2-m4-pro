@@ -1,0 +1,86 @@
+{
+  "exact": {
+    "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+    "temperature": 0,
+    "max_tokens": 32,
+    "messages": [
+      {
+        "role": "user",
+        "content": "Reply with the exact text ORNITH_SPEED_OK and nothing else."
+      }
+    ]
+  },
+  "summary": {
+    "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+    "temperature": 0,
+    "max_tokens": 180,
+    "messages": [
+      {
+        "role": "user",
+        "content": "Summarize the following passage in exactly five bullet points. Do not add a title.\n\nA native inference service on Apple silicon must treat the memory hierarchy as the first-order constraint. Cycle 0 records that the workload remains synthetic and locally generated. Weights live in unified memory; every extra copy between host buffers and the Metal command stream is paid twice. Cycle 1 records that the workload remains synthetic and locally generated. Prefill cost grows with prompt tokens while decode cost grows with generated tokens, so mixed workloads hide the slower path. Cycle 2 records that the workload remains synthetic and locally generated. A frozen request set is the only way to compare two nights of work without confounding the prompt distribution. Cycle 3 records that the workload remains synthetic and locally generated. Serial execution avoids queueing artifacts that look like model slowdowns. Cycle 4 records that the workload remains synthetic and locally generated. Temperature zero removes sampling noise so finish reasons and token counts stay comparable. Cycle 5 records that the workload remains synthetic and locally generated. Tool-calling validity is orthogonal to HTTP success and must be scored separately. Cycle 6 records that the workload remains synthetic and locally generated. Exact-output cases are cheap probes for first-byte latency and tokenizer round-trips. Cycle 7 records that the workload remains synthetic and locally generated. Longer summaries exercise prefill more than decode and should not be averaged blindly with short replies. Cycle 8 records that the workload remains synthetic and locally generated. Coding prompts tend to emit denser tokens and hit max_tokens more often than chat summaries. Cycle 9 records that the workload remains synthetic and locally generated. JSON-only prompts test whether the server honors structured constraints without a grammar backend. Cycle 10 records that the workload remains synthetic and locally generated. Host RSS and swap snapshots catch silent paging that wall clocks miss. Cycle 11 records that the workload remains synthetic and locally generated. A 120-second timeout is a safety rail, not a performance target. Cycle 12 records that the workload remains synthetic and locally generated. Identity of the listener process must be re-checked after the run because leases can rotate. Cycle 13 records that the workload remains synthetic and locally generated. This passage exists only to pin a stable prefill payload for the summary case. Cycle 14 records that the workload remains synthetic and locally generated. A native inference service on Apple silicon must treat the memory hierarchy as the first-order constraint. Cycle 15 records that the workload remains synthetic and locally generated. Weights live in unified memory; every extra copy between host buffers and the Metal command stream is paid twice. Cycle 16 records that the workload remains synthetic and locally generated. Prefill cost grows with prompt tokens while decode cost grows with generated tokens, so mixed workloads hide the slower path. Cycle 17 records that the workload remains synthetic and locally generated. A frozen request set is the only way to compare two nights of work without confounding the prompt distribution. Cycle 18 records that the workload remains synthetic and locally generated. Serial execution avoids queueing artifacts that look like model slowdowns. Cycle 19 records that the workload remains synthetic and locally generated. Temperature zero removes sampling noise so finish reasons and token counts stay comparable. Cycle 20 records that the workload remains synthetic and locally generated. Tool-calling validity is orthogonal to HTTP success and must be scored separately. Cycle 21 records that the workload remains synthetic and locally generated. Exact-output cases are cheap probes for first-byte latency and tokenizer round-trips. Cycle 22 records that the workload remains synthetic and locally generated. Longer summaries exercise prefill more than decode and should not be averaged blindly with short replies. Cycle 23 records that the workload remains synthetic and locally generated. Coding prompts tend to emit denser tokens and hit max_tokens more often than chat summaries. Cycle 24 records that the workload remains synthetic and locally generated. JSON-only prompts test whether the server honors structured constraints without a grammar backend. Cycle 25 records that the workload remains synthetic and locally generated. Host RSS and swap snapshots catch silent paging that wall clocks miss. Cycle 26 records that the workload remains synthetic and locally generated. A 120-second timeout is a safety rail, not a performance target. Cycle 27 records that the workload remains synthetic and locally generated. Identity of the listener process must be re-checked after the run because leases can rotate. Cycle 28 records that the workload remains synthetic and locally generated. This passage exists only to pin a stable prefill payload for the summary case. Cycle 29 records that the workload remains synthetic and locally generated. A native inference service on Apple silicon must treat the memory hierarchy as the first-order constraint. Cycle 30 records that the workload remains synthetic and locally generated. Weights live in unified memory; every extra copy between host buffers and the Metal command stream is paid twice. Cycle 31 records that the workload remains synthetic and locally generated. Prefill cost grows with prompt tokens while decode cost grows with generated tokens, so mixed workloads hide the slower path. Cycle 32 records that the workload remains synthetic and locally generated. A frozen request set is the only way to compare two nights of work without confounding the prompt distribution. Cycle 33 records that the workload remains synthetic and locally generated. Serial execution avoids queueing artifacts that look like model slowdowns. Cycle 34 records that the workload remains synthetic and locally"
+      }
+    ]
+  },
+  "coding": {
+    "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+    "temperature": 0,
+    "max_tokens": 256,
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a Python function merge(defaults, file_values, env) that returns a new dict. Do not mutate any input. Later mappings override earlier ones with env taking precedence over file_values over defaults. Output code only, no markdown fences, no explanation."
+      }
+    ]
+  },
+  "json": {
+    "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+    "temperature": 0,
+    "max_tokens": 128,
+    "messages": [
+      {
+        "role": "user",
+        "content": "Return one JSON object and nothing else with these exact keys and values: {\"ok\": true, \"suite\": \"private-speed\", \"n\": 15}."
+      }
+    ]
+  },
+  "tool": {
+    "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+    "temperature": 0,
+    "max_tokens": 128,
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "get_weather",
+          "description": "Get current weather for a city.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "city": {
+                "type": "string",
+                "description": "City name"
+              },
+              "units": {
+                "type": "string",
+                "enum": [
+                  "celsius",
+                  "fahrenheit"
+                ]
+              }
+            },
+            "required": [
+              "city"
+            ]
+          }
+        }
+      }
+    ],
+    "tool_choice": "auto",
+    "messages": [
+      {
+        "role": "user",
+        "content": "What is the weather in Paris? Use the get_weather tool."
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "verdict": "PARTIAL",
+  "coding_passed": 3,
+  "coding_of": 3,
+  "tool_passed": 2,
+  "tool_of": 3,
+  "per_task_latency_s": {
+    "C1": 1.2623160840012133,
+    "C2": 3.183948750011041,
+    "C3": 0.9207254170032684,
+    "C4": 1.946187583002029,
+    "C5": 3.0748832500103163,
+    "C6": 2.3010547920130193
+  },
+  "per_task_tokens": {
+    "C1": {
+      "prompt_tokens": 69,
+      "completion_tokens": 43
+    },
+    "C2": {
+      "prompt_tokens": 88,
+      "completion_tokens": 232
+    },
+    "C3": {
+      "prompt_tokens": 66,
+      "completion_tokens": 55
+    },
+    "C4": {
+      "prompt_tokens": 668,
+      "completion_tokens": 45
+    },
+    "C5": {
+      "prompt_tokens": 844,
+      "completion_tokens": 116
+    },
+    "C6": {
+      "prompt_tokens": 646,
+      "completion_tokens": 77
+    }
+  },
+  "malformed_call_count": 0,
+  "retry_evidence": {
+    "C5_serial": false,
+    "C6": false
+  },
+  "total_wall_s": 13.81786137499148,
+  "workload_hash": "22e535b62088ad0ca8607c01c65205c62a950d05b3c035bb64497976f9257e8e",
+  "results": {
+    "C1": {
+      "passed": true,
+      "latency_s": 1.2623160840012133
+    },
+    "C2": {
+      "passed": true,
+      "latency_s": 3.183948750011041
+    },
+    "C3": {
+      "passed": true,
+      "latency_s": 0.9207254170032684
+    },
+    "C4": {
+      "passed": true,
+      "latency_s": 1.946187583002029
+    },
+    "C5": {
+      "passed": true,
+      "latency_s": 3.0748832500103163
+    },
+    "C6": {
+      "passed": false,
+      "latency_s": 2.3010547920130193
+    }
+  },
+  "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+  "endpoint": "http://127.0.0.1:8083/v1/chat/completions",
+  "resolved_model": "cli-proxy/dddai.grok-4.6.implementer",
+  "fallback_state": "none",
+  "ownership_before": {
+    "listener_pid": 23052,
+    "lane_pid": 23047
+  },
+  "ownership_after": {
+    "listener_pid": 23052,
+    "lane_pid": 23047,
+    "status": null
+  },
+  "stopped_on_ownership_change": false,
+  "utc": "2026-09-01T00:57:03.871339+00:00"
+}

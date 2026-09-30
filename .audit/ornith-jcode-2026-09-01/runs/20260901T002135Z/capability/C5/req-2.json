@@ -1,0 +1,98 @@
+{
+  "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+  "temperature": 0,
+  "max_tokens": 1024,
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "add",
+        "description": "Add two numbers.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "a": {
+              "type": "number"
+            },
+            "b": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "a",
+            "b"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "multiply",
+        "description": "Multiply two numbers.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "a": {
+              "type": "number"
+            },
+            "b": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "a",
+            "b"
+          ]
+        }
+      }
+    }
+  ],
+  "tool_choice": "auto",
+  "messages": [
+    {
+      "role": "user",
+      "content": "What is the sum of 4 and 7, and the product of 3 and 5? Use the tools."
+    },
+    {
+      "role": "assistant",
+      "content": "I'll calculate both for you using the tools.",
+      "reasoning_content": null,
+      "reasoning": null,
+      "tool_calls": [
+        {
+          "type": "function",
+          "index": 0,
+          "id": "f1e85747-3bcd-414c-85d9-638c26059c4d",
+          "function": {
+            "name": "add",
+            "arguments": "{\"a\": 4, \"b\": 7}"
+          }
+        },
+        {
+          "type": "function",
+          "index": 1,
+          "id": "16cbf881-468c-4259-8c15-74d1085af742",
+          "function": {
+            "name": "multiply",
+            "arguments": "{\"a\": 3, \"b\": 5}"
+          }
+        }
+      ],
+      "tool_call_id": null,
+      "name": null
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "f1e85747-3bcd-414c-85d9-638c26059c4d",
+      "name": "add",
+      "content": "11"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "16cbf881-468c-4259-8c15-74d1085af742",
+      "name": "multiply",
+      "content": "15"
+    }
+  ]
+}

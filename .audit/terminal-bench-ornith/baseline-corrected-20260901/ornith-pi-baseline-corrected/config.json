@@ -1,0 +1,33 @@
+{
+    "job_name": "ornith-pi-baseline-corrected",
+    "jobs_dir": "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/terminal-bench-ornith/baseline-corrected-20260901",
+    "n_concurrent_trials": 1,
+    "environment": {
+        "type": "docker",
+        "mounts": [
+            {
+                "type": "bind",
+                "source": "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/terminal-bench-ornith/pi-config",
+                "target": "/pi-config",
+                "read_only": true
+            }
+        ]
+    },
+    "agents": [
+        {
+            "name": "pi",
+            "model_name": "ornith-local//Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+            "extra_allowed_hosts": [
+                "host.docker.internal"
+            ],
+            "env": {
+                "PI_CODING_AGENT_DIR": "/pi-config"
+            }
+        }
+    ],
+    "tasks": [
+        {
+            "path": "/Users/jamie/.cache/harbor/tasks/JQfDtvG4qqL3QfwErWynWU/break-filter-js-from-html"
+        }
+    ]
+}

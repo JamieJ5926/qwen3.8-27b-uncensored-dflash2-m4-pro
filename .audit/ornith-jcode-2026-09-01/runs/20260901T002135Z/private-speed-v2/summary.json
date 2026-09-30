@@ -1,0 +1,48 @@
+{
+  "verdict": "PASS",
+  "completed_count": 10,
+  "completed_of": 10,
+  "errors": [],
+  "per_case_median_completion_tps": {
+    "exact": 24.745644191425363,
+    "summary": 38.32866259205317,
+    "coding": 53.24690082401587,
+    "json": 42.35348170525742,
+    "tool": 22.140266056826952
+  },
+  "overall_median_completion_tps": 38.32866259205317,
+  "p50_latency_s": 0.751517895500001,
+  "p95_latency_s": 4.780709325144561,
+  "validity_counts": {
+    "exact": 2,
+    "json": 2,
+    "tool": 2
+  },
+  "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+  "endpoint": "http://127.0.0.1:8083/v1/chat/completions",
+  "workload_hash": "308c315ee96310a7845958652ede8d89dd0409b21fa877d5c370be25ebcd1fad",
+  "comparison_scope": "new_private_ornith_baseline",
+  "ownership_before": {
+    "ok": true,
+    "run_id": "ornith-mlx-pi-20260901",
+    "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+    "listener_pid": 23052,
+    "lane_pid": 23047,
+    "rss_kb": 12960,
+    "lsof": "COMMAND   PID  USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME\nPython  23052 jamie    7u  IPv4 0x3335bb7404da7821      0t0  TCP 127.0.0.1:8083 (LISTEN)\n",
+    "utc": "2026-09-01T00:51:21.108347+00:00"
+  },
+  "ownership_after": {
+    "ok": true,
+    "run_id": "ornith-mlx-pi-20260901",
+    "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+    "listener_pid": 23052,
+    "lane_pid": 23047,
+    "rss_kb": 13216,
+    "lsof": "COMMAND   PID  USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME\nPython  23052 jamie    7u  IPv4 0x3335bb7404da7821      0t0  TCP 127.0.0.1:8083 (LISTEN)\n",
+    "utc": "2026-09-01T00:51:38.149227+00:00"
+  },
+  "utc": "2026-09-01T00:51:38.150193+00:00",
+  "resolved_model": "cli-proxy/dddai.grok-4.6.implementer",
+  "fallback_state": "none"
+}

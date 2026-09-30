@@ -1,0 +1,22 @@
+{
+    "task": {
+        "path": "."
+    },
+    "trial_name": "break-filter-js-from-html__Lcf5SBD",
+    "trials_dir": "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/terminal-bench-ornith/baseline-break-filter-20260901/ornith-pi-baseline",
+    "agent": {
+        "name": "pi",
+        "model_name": "openai//Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+        "extra_allowed_hosts": [
+            "host.docker.internal"
+        ],
+        "env": {
+            "OPENAI_BASE_URL": "http://host.docker.internal:8083/v1",
+            "OPENAI_API_KEY": "****"
+        }
+    },
+    "verifier": {
+        "disable": true
+    },
+    "job_id": "1b7533e4-6780-4184-b1f4-bc7e703ab9ea"
+}

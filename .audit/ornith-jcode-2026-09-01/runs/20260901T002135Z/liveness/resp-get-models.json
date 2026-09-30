@@ -1,0 +1,20 @@
+{
+  "utc": "2026-09-01T00:47:35.264977+00:00",
+  "method": "GET",
+  "url": "http://127.0.0.1:8083/v1/models",
+  "timeout_s": 5,
+  "http_status": 200,
+  "timed_out": false,
+  "error": null,
+  "ttfb_s": 0.0559099999954924,
+  "total_s": 0.05594662499788683,
+  "headers": {
+    "date": "Tue, 01 Sep 2026 00:47:35 GMT",
+    "content-length": "143",
+    "content-type": "application/json",
+    "server": "mlx_vlm/0.6.8",
+    "Connection": "close"
+  },
+  "raw_body": "{\"object\":\"list\",\"data\":[{\"id\":\"/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit\",\"object\":\"model\",\"created\":1788223655}]}",
+  "raw_bytes": 143
+}

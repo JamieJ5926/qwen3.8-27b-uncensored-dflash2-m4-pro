@@ -1,0 +1,197 @@
+{
+  "benchloop": {
+    "binary": "/Users/jamie/.local/bin/benchloop",
+    "version": "bench-loop, version 0.2.3"
+  },
+  "endpoint": "http://127.0.0.1:8083",
+  "frozen_at": "2026-08-31T04:23:44+00:00",
+  "launch_invocation": "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python ./dflash_server.py --model /Volumes/BBALL_GM_DATA/models/Qwen3.8-27B-Uncensored-MLX/4-bit --host 127.0.0.1 --port 8083",
+  "matrix": {
+    "definition": {
+      "cases": [
+        {
+          "kind": "generation",
+          "max_tokens": 16,
+          "name": "short",
+          "primary": false,
+          "prompt": "Reply with exactly one word. What is the capital of France?",
+          "role": "sensitivity_only"
+        },
+        {
+          "kind": "generation",
+          "max_tokens": 256,
+          "name": "medium",
+          "prompt": "Explain in three short paragraphs how speculative decoding speeds up language model inference."
+        },
+        {
+          "kind": "generation",
+          "max_tokens": 128,
+          "name": "longctx",
+          "prompt": "1. Atlas component ingress gateway belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The ingress gateway never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n2. Atlas component event bus belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The event bus never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n3. Atlas component schema registry belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The schema registry never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n4. Atlas component retry policy belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The retry policy never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n5. Atlas component dead-letter queue belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The dead-letter queue never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n6. Atlas component saga coordinator belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The saga coordinator never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n7. Atlas component outbox publisher belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The outbox publisher never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n8. Atlas component idempotency store belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The idempotency store never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n9. Atlas component clock service belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The clock service never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n10. Atlas component tenant isolator belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The tenant isolator never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n11. Atlas component rate limiter belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The rate limiter never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n12. Atlas component authn broker belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The authn broker never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n13. Atlas component authz evaluator belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The authz evaluator never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n14. Atlas component audit ledger belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The audit ledger never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n15. Atlas component metrics scraper belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The metrics scraper never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n16. Atlas component trace collector belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The trace collector never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n17. Atlas component config watcher belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The config watcher never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n18. Atlas component feature flag pole belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The feature flag pole never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n19. Atlas component cache front belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The cache front never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n20. Atlas component materializer belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The materializer never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n21. Atlas component projection rebuild belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The projection rebuild never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n22. Atlas component compaction worker belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The compaction worker never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n23. Atlas component snapshotter belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The snapshotter never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n24. Atlas component watermark tracker belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The watermark tracker never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n25. Atlas component backpressure valve belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The backpressure valve never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n26. Atlas component shard assigner belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The shard assigner never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n27. Atlas component lease manager belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The lease manager never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n28. Atlas component health prober belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The health prober never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n29. Atlas component alert router belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The alert router never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n30. Atlas component runbook index belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The runbook index never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\nBased only on the document above, which component owns retry policy, and how many numbered paragraphs are there?"
+        },
+        {
+          "kind": "generation",
+          "max_tokens": 256,
+          "name": "json",
+          "prompt": "Return only a JSON object with keys \"name\" and \"steps\" describing how to reverse a Python list. No prose, no markdown fences."
+        },
+        {
+          "kind": "generation",
+          "max_tokens": 64,
+          "name": "tool",
+          "prompt": "What is the weather in Paris? Call the get_weather function.",
+          "tools": [
+            {
+              "function": {
+                "name": "get_weather",
+                "parameters": {
+                  "properties": {
+                    "city": {
+                      "type": "string"
+                    },
+                    "unit": {
+                      "enum": [
+                        "celsius",
+                        "fahrenheit"
+                      ],
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "city"
+                  ],
+                  "type": "object"
+                }
+              },
+              "type": "function"
+            }
+          ]
+        },
+        {
+          "extra": {
+            "logprobs": 1
+          },
+          "kind": "stability",
+          "max_tokens": 16,
+          "name": "stability",
+          "prompt": "Say stable."
+        }
+      ],
+      "primary_cases": [
+        "medium",
+        "longctx",
+        "json",
+        "tool"
+      ],
+      "primary_label": "median_of_four_sustained_cases",
+      "reps_default": 5,
+      "temperature": 0,
+      "warmup": true
+    },
+    "sha256": "12d3a8cdd2d116f653a828b6313f8c289a54e6580780c9443127e362c992ff46"
+  },
+  "model": "qwen3.8-27b",
+  "policy": {
+    "keep_threshold_pct": 7,
+    "material_swap_rise_mb": 200,
+    "min_hypotheses": 10,
+    "stop_target_pct": 20
+  },
+  "process_config": {
+    "block_size": 5,
+    "draft": "incoai/Qwen3.8-27B-DFlash2",
+    "draft_bits": 4,
+    "model": "/Volumes/BBALL_GM_DATA/models/Qwen3.8-27B-Uncensored-MLX/4-bit"
+  },
+  "ruler": {
+    "gate_quality": "one Pi representative coding prompt",
+    "gate_wall": "BenchLoop speed suite (smallest coding-agent-speed)",
+    "hypothesis_settings": "server restart env/args (no admin API)",
+    "primary": "median over the four sustained generation cases (medium, longctx, json, tool) of each case's median server dflash.generation_tps; short is latency-only and excluded from the primary; qualified waves only (matrix sha256=12d3a8cdd2d116f653a828b6313f8c289a54e6580780c9443127e362c992ff46)"
+  },
+  "server_pids": [
+    "7124"
+  ],
+  "sha256": "598e7ec2ed32a55ce9d0b85988587d54d97d5148b18b815b4dbf014b40c780b5",
+  "workload": {
+    "cases": [
+      {
+        "kind": "generation",
+        "max_tokens": 16,
+        "name": "short",
+        "primary": false,
+        "prompt": "Reply with exactly one word. What is the capital of France?",
+        "role": "sensitivity_only"
+      },
+      {
+        "kind": "generation",
+        "max_tokens": 256,
+        "name": "medium",
+        "prompt": "Explain in three short paragraphs how speculative decoding speeds up language model inference."
+      },
+      {
+        "kind": "generation",
+        "max_tokens": 128,
+        "name": "longctx",
+        "prompt": "1. Atlas component ingress gateway belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The ingress gateway never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n2. Atlas component event bus belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The event bus never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n3. Atlas component schema registry belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The schema registry never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n4. Atlas component retry policy belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The retry policy never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n5. Atlas component dead-letter queue belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The dead-letter queue never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n6. Atlas component saga coordinator belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The saga coordinator never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n7. Atlas component outbox publisher belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The outbox publisher never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n8. Atlas component idempotency store belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The idempotency store never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n9. Atlas component clock service belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The clock service never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n10. Atlas component tenant isolator belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The tenant isolator never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n11. Atlas component rate limiter belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The rate limiter never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n12. Atlas component authn broker belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The authn broker never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n13. Atlas component authz evaluator belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The authz evaluator never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n14. Atlas component audit ledger belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The audit ledger never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n15. Atlas component metrics scraper belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The metrics scraper never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n16. Atlas component trace collector belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The trace collector never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n17. Atlas component config watcher belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The config watcher never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n18. Atlas component feature flag pole belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The feature flag pole never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n19. Atlas component cache front belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The cache front never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n20. Atlas component materializer belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The materializer never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n21. Atlas component projection rebuild belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The projection rebuild never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n22. Atlas component compaction worker belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The compaction worker never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n23. Atlas component snapshotter belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The snapshotter never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n24. Atlas component watermark tracker belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The watermark tracker never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n25. Atlas component backpressure valve belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The backpressure valve never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n26. Atlas component shard assigner belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The shard assigner never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n27. Atlas component lease manager belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The lease manager never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n28. Atlas component health prober belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The health prober never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n29. Atlas component alert router belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The alert router never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\n30. Atlas component runbook index belongs to the event-driven control plane. It consumes typed envelopes, stamps correlation ids, and publishes outcomes without blocking the caller. Operators set its batch window, concurrency, and circuit thresholds together. The runbook index never owns retry policy unless this is the retry policy component; recovery stays centralized. Side effects are idempotent and ordered by watermark. This numbered paragraph describes exactly one component of Atlas.\n\nBased only on the document above, which component owns retry policy, and how many numbered paragraphs are there?"
+      },
+      {
+        "kind": "generation",
+        "max_tokens": 256,
+        "name": "json",
+        "prompt": "Return only a JSON object with keys \"name\" and \"steps\" describing how to reverse a Python list. No prose, no markdown fences."
+      },
+      {
+        "kind": "generation",
+        "max_tokens": 64,
+        "name": "tool",
+        "prompt": "What is the weather in Paris? Call the get_weather function.",
+        "tools": [
+          {
+            "function": {
+              "name": "get_weather",
+              "parameters": {
+                "properties": {
+                  "city": {
+                    "type": "string"
+                  },
+                  "unit": {
+                    "enum": [
+                      "celsius",
+                      "fahrenheit"
+                    ],
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "city"
+                ],
+                "type": "object"
+              }
+            },
+            "type": "function"
+          }
+        ]
+      },
+      {
+        "extra": {
+          "logprobs": 1
+        },
+        "kind": "stability",
+        "max_tokens": 16,
+        "name": "stability",
+        "prompt": "Say stable."
+      }
+    ],
+    "primary_cases": [
+      "medium",
+      "longctx",
+      "json",
+      "tool"
+    ],
+    "primary_label": "median_of_four_sustained_cases",
+    "reps_default": 5,
+    "temperature": 0,
+    "warmup": true
+  }
+}

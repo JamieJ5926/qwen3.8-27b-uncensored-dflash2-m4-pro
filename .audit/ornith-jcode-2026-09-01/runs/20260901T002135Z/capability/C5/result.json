@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "latency_s": 3.0748832500103163,
+  "tokens": {
+    "prompt_tokens": 844,
+    "completion_tokens": 116
+  },
+  "meta": {
+    "malformed": 0,
+    "serial": false,
+    "final": "Here are the results:\n\n- **Sum of 4 and 7:** 11\n- **Product of 3 and 5:** 15",
+    "seen_add": true,
+    "seen_mul": true
+  }
+}

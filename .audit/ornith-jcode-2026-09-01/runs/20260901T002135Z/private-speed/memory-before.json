@@ -1,0 +1,8 @@
+{
+  "pid": null,
+  "utc": "2026-09-01T00:40:59.242774+00:00",
+  "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     6304.\nPages active:                                 735157.\nPages inactive:                               733884.\nPages speculative:                              5349.\nPages throttled:                                   0.\nPages wired down:                             212321.\nPages purgeable:                                7604.\n\"Translation faults\":                     2045569842.\nPages copy-on-write:                       132204153.\nPages zero filled:                        2016067591.\nPages reactivated:                          27780624.\nPages purged:                               11569374.\nFile-backed pages:                            620233.\nAnonymous pages:                              854157.\nPages stored in compressor:                  2091996.\nPages occupied by compressor:                1409918.\nDecompressions:                             25161437.\nCompressions:                               34905747.\nPageins:                                   119551118.\nPageouts:                                     545717.\nSwapins:                                      607881.\nSwapouts:                                     924734.\n",
+  "swapusage": "total = 2048.00M  used = 1056.94M  free = 991.06M  (encrypted)",
+  "memory_pressure_level": "1",
+  "swapins_pages": 607881
+}

@@ -1,0 +1,120 @@
+{
+  "http_status": 200,
+  "timed_out": false,
+  "total_s": 1.7545513750083046,
+  "error": null,
+  "raw_body": "{\"id\":\"chatcmpl-a5ec911b-0b81-4139-9a46-dacecd646a65\",\"object\":\"chat.completion\",\"created\":1788224219,\"model\":\"/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit\",\"choices\":[{\"index\":0,\"finish_reason\":\"tool_calls\",\"message\":{\"role\":\"assistant\",\"content\":\"I'll calculate both for you using the tools.\",\"reasoning_content\":null,\"reasoning\":null,\"tool_calls\":[{\"type\":\"function\",\"index\":0,\"id\":\"f1e85747-3bcd-414c-85d9-638c26059c4d\",\"function\":{\"name\":\"add\",\"arguments\":\"{\\\"a\\\": 4, \\\"b\\\": 7}\"}},{\"type\":\"function\",\"index\":1,\"id\":\"16cbf881-468c-4259-8c15-74d1085af742\",\"function\":{\"name\":\"multiply\",\"arguments\":\"{\\\"a\\\": 3, \\\"b\\\": 5}\"}}],\"tool_call_id\":null,\"name\":null},\"logprobs\":null}],\"usage\":{\"prompt_tokens\":368,\"completion_tokens\":82,\"total_tokens\":450,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"timings\":{\"prompt_n\":368,\"cache_n\":0,\"predicted_n\":82,\"prompt_ms\":702.4283750070026,\"prompt_per_token_ms\":1.9087727581712028,\"prompt_per_second\":523.8968314688759,\"predicted_ms\":1010.759333334001,\"predicted_per_token_ms\":12.326333333341475,\"predicted_per_second\":81.12712620671242,\"peak_memory\":22.651002068}}",
+  "parsed": {
+    "id": "chatcmpl-a5ec911b-0b81-4139-9a46-dacecd646a65",
+    "object": "chat.completion",
+    "created": 1788224219,
+    "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "tool_calls",
+        "message": {
+          "role": "assistant",
+          "content": "I'll calculate both for you using the tools.",
+          "reasoning_content": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "f1e85747-3bcd-414c-85d9-638c26059c4d",
+              "function": {
+                "name": "add",
+                "arguments": "{\"a\": 4, \"b\": 7}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 1,
+              "id": "16cbf881-468c-4259-8c15-74d1085af742",
+              "function": {
+                "name": "multiply",
+                "arguments": "{\"a\": 3, \"b\": 5}"
+              }
+            }
+          ],
+          "tool_call_id": null,
+          "name": null
+        },
+        "logprobs": null
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 368,
+      "completion_tokens": 82,
+      "total_tokens": 450,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "prompt_n": 368,
+      "cache_n": 0,
+      "predicted_n": 82,
+      "prompt_ms": 702.4283750070026,
+      "prompt_per_token_ms": 1.9087727581712028,
+      "prompt_per_second": 523.8968314688759,
+      "predicted_ms": 1010.759333334001,
+      "predicted_per_token_ms": 12.326333333341475,
+      "predicted_per_second": 81.12712620671242,
+      "peak_memory": 22.651002068
+    }
+  },
+  "prompt_tokens": 368,
+  "completion_tokens": 82,
+  "finish_reason": "tool_calls",
+  "content": "I'll calculate both for you using the tools.",
+  "tool_calls": [
+    {
+      "type": "function",
+      "index": 0,
+      "id": "f1e85747-3bcd-414c-85d9-638c26059c4d",
+      "function": {
+        "name": "add",
+        "arguments": "{\"a\": 4, \"b\": 7}"
+      }
+    },
+    {
+      "type": "function",
+      "index": 1,
+      "id": "16cbf881-468c-4259-8c15-74d1085af742",
+      "function": {
+        "name": "multiply",
+        "arguments": "{\"a\": 3, \"b\": 5}"
+      }
+    }
+  ],
+  "message": {
+    "role": "assistant",
+    "content": "I'll calculate both for you using the tools.",
+    "reasoning_content": null,
+    "reasoning": null,
+    "tool_calls": [
+      {
+        "type": "function",
+        "index": 0,
+        "id": "f1e85747-3bcd-414c-85d9-638c26059c4d",
+        "function": {
+          "name": "add",
+          "arguments": "{\"a\": 4, \"b\": 7}"
+        }
+      },
+      {
+        "type": "function",
+        "index": 1,
+        "id": "16cbf881-468c-4259-8c15-74d1085af742",
+        "function": {
+          "name": "multiply",
+          "arguments": "{\"a\": 3, \"b\": 5}"
+        }
+      }
+    ],
+    "tool_call_id": null,
+    "name": null
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "run_id": "ornith-mlx-pi-20260901",
+  "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+  "listener_pid": null,
+  "lane_pid": 23047,
+  "lsof": "COMMAND   PID  USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME\nPython  23052 jamie    7u  IPv4 0x3335bb7404da7821      0t0  TCP 127.0.0.1:8083 (LISTEN)\n",
+  "utc": "2026-09-01T00:40:59.242527+00:00"
+}

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# BenchLoop wrapper — NOT installed, NOT run yet.
+# Usage: ./benchloop status|check|snapshot|bench|apply-settings [args...]
+# Forwards to the hillclimb controller in this directory.
+# Default endpoint is http://127.0.0.1:8083 with no /v1 suffix
+# (override with --endpoint or DFLASH_ENDPOINT). Never starts or stops the server.
+set -euo pipefail
+DIR="$(cd "$(dirname "$0")" && pwd)"
+exec python3 "$DIR/hillclimb.py" "$@"

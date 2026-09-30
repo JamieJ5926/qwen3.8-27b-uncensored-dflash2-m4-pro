@@ -103,7 +103,7 @@ def observe_processes(
     runner = run or subprocess.run
     try:
         completed = runner(
-            ["ps", "-ax", "-o", "pid=,command="],
+            ["ps", "-ax", "-o", "pid=,ppid=,command="],
             capture_output=True,
             text=True,
             check=False,
@@ -119,20 +119,31 @@ def observe_processes(
     stdout = completed.stdout or ""
     if not stdout.strip():
         raise HardwareLaneError("discovery_failed", "ps produced no usable output")
-    observed: list[ProcessObservation] = []
+    rows: list[tuple[int, int, str]] = []
     for line in stdout.splitlines():
-        stripped = line.strip()
-        if not stripped:
+        parts = line.strip().split(maxsplit=2)
+        if len(parts) != 3:
             continue
-        pid_s, _, command = stripped.partition(" ")
+        pid_s, parent_pid_s, command = parts
         try:
             pid = int(pid_s)
+            parent_pid = int(parent_pid_s)
         except ValueError:
             continue
-        observed.append(ProcessObservation(pid=pid, command=command.strip()))
-    if not observed:
+        rows.append((pid, parent_pid, command))
+    if not rows:
         raise HardwareLaneError("discovery_failed", "ps produced no usable process rows")
-    return tuple(observed)
+    parents = {pid: parent_pid for pid, parent_pid, _ in rows}
+    excluded: set[int] = set()
+    cursor = os.getpid()
+    while cursor > 0 and cursor not in excluded:
+        excluded.add(cursor)
+        cursor = parents.get(cursor, 0)
+    return tuple(
+        ProcessObservation(pid=pid, command=command)
+        for pid, _, command in rows
+        if pid not in excluded
+    )
 
 
 def observe_listeners(

@@ -1,0 +1,20 @@
+{
+  "utc": "2026-09-01T00:47:46.665076+00:00",
+  "method": "POST",
+  "url": "http://127.0.0.1:8083/v1/chat/completions",
+  "timeout_s": 15,
+  "http_status": 200,
+  "timed_out": false,
+  "error": null,
+  "ttfb_s": 0.5748228750017006,
+  "total_s": 0.574865000002319,
+  "headers": {
+    "date": "Tue, 01 Sep 2026 00:47:45 GMT",
+    "content-length": "817",
+    "content-type": "application/json",
+    "server": "mlx_vlm/0.6.8",
+    "Connection": "close"
+  },
+  "raw_body": "{\"id\":\"chatcmpl-930c2d65-ed57-41fc-8e5f-47453e4a3ac9\",\"object\":\"chat.completion\",\"created\":1788223666,\"model\":\"/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit\",\"choices\":[{\"index\":0,\"finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"ORNITH_SPEED_OK\",\"reasoning_content\":null,\"reasoning\":null,\"tool_calls\":null,\"tool_call_id\":null,\"name\":null},\"logprobs\":null}],\"usage\":{\"prompt_tokens\":26,\"completion_tokens\":5,\"total_tokens\":31,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"timings\":{\"prompt_n\":26,\"cache_n\":0,\"predicted_n\":5,\"prompt_ms\":462.5789999990957,\"prompt_per_token_ms\":17.791499999965218,\"prompt_per_second\":56.20661551875642,\"predicted_ms\":65.02239626570372,\"predicted_per_token_ms\":13.004479253140744,\"predicted_per_second\":76.89658159579804,\"peak_memory\":21.146956138}}",
+  "raw_bytes": 817
+}

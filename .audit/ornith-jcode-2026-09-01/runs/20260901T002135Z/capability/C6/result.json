@@ -1,0 +1,14 @@
+{
+  "passed": false,
+  "latency_s": 2.3010547920130193,
+  "tokens": {
+    "prompt_tokens": 646,
+    "completion_tokens": 77
+  },
+  "meta": {
+    "malformed": 0,
+    "retry": false,
+    "lookup_n": 1,
+    "final": "I attempted to look up ticket T-42, but encountered a transient error - the service was temporarily unavailable.\n\nWould you like me to try again?"
+  }
+}

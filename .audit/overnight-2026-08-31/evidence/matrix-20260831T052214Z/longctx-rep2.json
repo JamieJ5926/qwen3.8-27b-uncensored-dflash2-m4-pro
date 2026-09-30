@@ -1,0 +1,86 @@
+{
+  "case": "longctx",
+  "rep": 2,
+  "queue_wait_seconds": 0.0,
+  "generation_tps": 17.48,
+  "prefill_tps": 71.18,
+  "wall_seconds": 45.38478066699827,
+  "peak_memory_gb": 19.49,
+  "mean_acceptance": 3.848,
+  "usage": {
+    "prompt_tokens": 2632,
+    "completion_tokens": 128,
+    "total_tokens": 2760
+  },
+  "derived_ttft_s": 36.97667884237145,
+  "completion_tokens": 128,
+  "response": {
+    "id": "chatcmpl-a0056967-6e40-4da4-b5da-33b145738e4f",
+    "system_fingerprint": "0.31.3-0.32.0-macOS-26.5-arm64-arm-64bit-Mach-O-applegpu_g16s",
+    "object": "chat.completion",
+    "model": "qwen3.8-27b",
+    "created": 1788153945,
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Based on the document provided, here is the analysis:\n\n1.  **Which component owns retry policy?**\n    The document states in every paragraph that a component \"never owns retry policy **unless this is the retry policy component**.\"\n    *   Paragraph 4 explicitly identifies the component as: **Atlas component retry policy**.\n    *   Therefore, the **retry policy** component is the one that owns retry policy.\n\n2.  **How many numbered paragraphs are there?**\n    The document lists numbered paragraphs from 1 to 30.\n    *   Therefore, there are **30** numbered paragraphs"
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2632,
+      "completion_tokens": 128,
+      "total_tokens": 2760
+    },
+    "dflash": {
+      "queue_wait_seconds": 0.0,
+      "block_size": 5,
+      "prompt_tokens": 2632,
+      "completion_tokens": 128,
+      "acceptance_lengths": [
+        1,
+        5,
+        5,
+        1,
+        5,
+        5,
+        3,
+        2,
+        3,
+        1,
+        1,
+        4,
+        2,
+        5,
+        5,
+        5,
+        5,
+        2,
+        1,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        1,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "mean_acceptance": 3.848,
+      "generation_tps": 17.48,
+      "prefill_tps": 71.18,
+      "peak_memory_gb": 19.49,
+      "wall_seconds": 45.347,
+      "finish_reason": "length"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "http_status": 200,
+  "timed_out": false,
+  "total_s": 0.47007433298858814,
+  "error": null,
+  "raw_body": "{\"id\":\"chatcmpl-c663f675-5919-411c-a900-8b537c456bbe\",\"object\":\"chat.completion\",\"created\":1788223889,\"model\":\"/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit\",\"choices\":[{\"index\":0,\"finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"ok\\\": true, \\\"suite\\\": \\\"private-speed\\\", \\\"n\\\": 15}\",\"reasoning_content\":null,\"reasoning\":null,\"tool_calls\":null,\"tool_call_id\":null,\"name\":null},\"logprobs\":null}],\"usage\":{\"prompt_tokens\":45,\"completion_tokens\":20,\"total_tokens\":65,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"timings\":{\"prompt_n\":45,\"cache_n\":0,\"predicted_n\":20,\"prompt_ms\":148.35866600333247,\"prompt_per_token_ms\":3.296859244518499,\"prompt_per_second\":303.3189850803134,\"predicted_ms\":270.9101757959855,\"predicted_per_token_ms\":13.545508789799275,\"predicted_per_second\":73.82520771409271,\"peak_memory\":22.651002068}}",
+  "parsed": {
+    "id": "chatcmpl-c663f675-5919-411c-a900-8b537c456bbe",
+    "object": "chat.completion",
+    "created": 1788223889,
+    "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"ok\": true, \"suite\": \"private-speed\", \"n\": 15}",
+          "reasoning_content": null,
+          "reasoning": null,
+          "tool_calls": null,
+          "tool_call_id": null,
+          "name": null
+        },
+        "logprobs": null
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 45,
+      "completion_tokens": 20,
+      "total_tokens": 65,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "prompt_n": 45,
+      "cache_n": 0,
+      "predicted_n": 20,
+      "prompt_ms": 148.35866600333247,
+      "prompt_per_token_ms": 3.296859244518499,
+      "prompt_per_second": 303.3189850803134,
+      "predicted_ms": 270.9101757959855,
+      "predicted_per_token_ms": 13.545508789799275,
+      "predicted_per_second": 73.82520771409271,
+      "peak_memory": 22.651002068
+    }
+  },
+  "prompt_tokens": 45,
+  "completion_tokens": 20,
+  "completion_tps": 42.546462541032916,
+  "finish_reason": "stop",
+  "content": "{\"ok\": true, \"suite\": \"private-speed\", \"n\": 15}",
+  "case": "json",
+  "rep": 1,
+  "excluded": false,
+  "rss_before_kb": 13152,
+  "validity": true,
+  "ownership": {
+    "listener_pid": 23052,
+    "lane_pid": 23047,
+    "rss_kb": 13152
+  }
+}

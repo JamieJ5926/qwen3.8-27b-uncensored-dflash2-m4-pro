@@ -1,0 +1,36 @@
+{
+    "job_name": "ornith-pi-assisted-v1",
+    "jobs_dir": ".audit/terminal-bench-ornith/assisted-v1-20260901",
+    "n_concurrent_trials": 1,
+    "environment": {
+        "type": "docker",
+        "mounts": [
+            {
+                "type": "bind",
+                "source": "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/terminal-bench-ornith/pi-config-assisted-v1",
+                "target": "/pi-config",
+                "read_only": false
+            }
+        ]
+    },
+    "agents": [
+        {
+            "name": "pi",
+            "model_name": "ornith-local//Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+            "extra_allowed_hosts": [
+                "host.docker.internal"
+            ],
+            "env": {
+                "PI_CODING_AGENT_DIR": "/pi-config"
+            }
+        }
+    ],
+    "tasks": [
+        {
+            "path": "/Users/jamie/.cache/harbor/tasks/JQfDtvG4qqL3QfwErWynWU/break-filter-js-from-html"
+        }
+    ],
+    "extra_instruction_paths": [
+        ".audit/terminal-bench-ornith/assisted-workflow.txt"
+    ]
+}

@@ -1,0 +1,89 @@
+{
+  "case": "json",
+  "rep": 2,
+  "queue_wait_seconds": 0.0,
+  "generation_tps": 23.42,
+  "prefill_tps": 54.31,
+  "wall_seconds": 5.38206929199805,
+  "peak_memory_gb": 19.49,
+  "mean_acceptance": 2.794,
+  "usage": {
+    "prompt_tokens": 41,
+    "completion_tokens": 96,
+    "total_tokens": 137
+  },
+  "derived_ttft_s": 0.7549254280979562,
+  "completion_tokens": 96,
+  "json_gate": true,
+  "json_fence_stripped": false,
+  "response": {
+    "id": "chatcmpl-994993f7-268f-4a5b-99e3-e0bba7de2550",
+    "system_fingerprint": "0.31.3-0.32.0-macOS-26.5-arm64-arm-64bit-Mach-O-applegpu_g16s",
+    "object": "chat.completion",
+    "model": "qwen3.8-27b",
+    "created": 1788152185,
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"name\": \"Reverse Python List\",\n  \"steps\": [\n    \"Use the built-in reverse() method to modify the list in place: my_list.reverse()\",\n    \"Alternatively, use slicing to create a new reversed list: reversed_list = my_list[::-1]\",\n    \"Alternatively, use the reversed() function with list() to create a new reversed list: reversed_list = list(reversed(my_list))\"\n  ]\n}"
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 41,
+      "completion_tokens": 96,
+      "total_tokens": 137
+    },
+    "dflash": {
+      "queue_wait_seconds": 0.0,
+      "block_size": 3,
+      "prompt_tokens": 41,
+      "completion_tokens": 96,
+      "acceptance_lengths": [
+        3,
+        3,
+        1,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        1,
+        1,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "mean_acceptance": 2.794,
+      "generation_tps": 23.42,
+      "prefill_tps": 54.31,
+      "peak_memory_gb": 19.49,
+      "wall_seconds": 5.369,
+      "finish_reason": "stop"
+    }
+  }
+}

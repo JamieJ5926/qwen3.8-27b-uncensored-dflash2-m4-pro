@@ -1,0 +1,63 @@
+{
+  "http_status": 200,
+  "timed_out": false,
+  "total_s": 1.1351499170123134,
+  "error": null,
+  "raw_body": "{\"id\":\"chatcmpl-829bf6c9-0bbe-4f49-99d8-ff3dc6b37beb\",\"object\":\"chat.completion\",\"created\":1788224223,\"model\":\"/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit\",\"choices\":[{\"index\":0,\"finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"I attempted to look up ticket T-42, but encountered a transient error - the service was temporarily unavailable.\\n\\nWould you like me to try again?\",\"reasoning_content\":null,\"reasoning\":null,\"tool_calls\":null,\"tool_call_id\":null,\"name\":null},\"logprobs\":null}],\"usage\":{\"prompt_tokens\":356,\"completion_tokens\":33,\"total_tokens\":389,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"timings\":{\"prompt_n\":356,\"cache_n\":0,\"predicted_n\":33,\"prompt_ms\":688.1527910009027,\"prompt_per_token_ms\":1.933013457867704,\"prompt_per_second\":517.3269725204574,\"predicted_ms\":406.42769888563635,\"predicted_per_token_ms\":12.315990875322314,\"predicted_per_second\":81.19525340049667,\"peak_memory\":22.651002068}}",
+  "parsed": {
+    "id": "chatcmpl-829bf6c9-0bbe-4f49-99d8-ff3dc6b37beb",
+    "object": "chat.completion",
+    "created": 1788224223,
+    "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I attempted to look up ticket T-42, but encountered a transient error - the service was temporarily unavailable.\n\nWould you like me to try again?",
+          "reasoning_content": null,
+          "reasoning": null,
+          "tool_calls": null,
+          "tool_call_id": null,
+          "name": null
+        },
+        "logprobs": null
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 356,
+      "completion_tokens": 33,
+      "total_tokens": 389,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "prompt_n": 356,
+      "cache_n": 0,
+      "predicted_n": 33,
+      "prompt_ms": 688.1527910009027,
+      "prompt_per_token_ms": 1.933013457867704,
+      "prompt_per_second": 517.3269725204574,
+      "predicted_ms": 406.42769888563635,
+      "predicted_per_token_ms": 12.315990875322314,
+      "predicted_per_second": 81.19525340049667,
+      "peak_memory": 22.651002068
+    }
+  },
+  "prompt_tokens": 356,
+  "completion_tokens": 33,
+  "finish_reason": "stop",
+  "content": "I attempted to look up ticket T-42, but encountered a transient error - the service was temporarily unavailable.\n\nWould you like me to try again?",
+  "tool_calls": [],
+  "message": {
+    "role": "assistant",
+    "content": "I attempted to look up ticket T-42, but encountered a transient error - the service was temporarily unavailable.\n\nWould you like me to try again?",
+    "reasoning_content": null,
+    "reasoning": null,
+    "tool_calls": null,
+    "tool_call_id": null,
+    "name": null
+  }
+}

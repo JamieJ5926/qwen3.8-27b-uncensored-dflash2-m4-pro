@@ -1,0 +1,5 @@
+Trial break-filter-js-from-html__WRBVZa6 failed: 'str' object has no attribute 'get'
+Failed to chown logs directory: 'str' object has no attribute 'get'
+Collecting main service artifacts
+Failed to chown logs directory: 'str' object has no attribute 'get'
+Docker compose down failed: 'str' object has no attribute 'get'

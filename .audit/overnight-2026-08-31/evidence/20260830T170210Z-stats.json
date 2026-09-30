@@ -1,0 +1,17 @@
+{
+  "before": {
+    "requests": 20,
+    "mean_acceptance": 4.275
+  },
+  "after": {
+    "requests": 26,
+    "mean_acceptance": 4.236,
+    "acceptance_histogram": {
+      "1": 51,
+      "2": 61,
+      "3": 76,
+      "4": 31,
+      "5": 527
+    }
+  }
+}

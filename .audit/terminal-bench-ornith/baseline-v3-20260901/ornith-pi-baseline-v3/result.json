@@ -1,0 +1,43 @@
+{
+    "id": "d7f16cea-4cc3-4f50-892e-70172ec60802",
+    "started_at": "2026-09-01T16:02:44.285765",
+    "updated_at": "2026-09-01T16:23:45.818445",
+    "finished_at": "2026-09-01T16:23:45.818445",
+    "n_total_trials": 1,
+    "stats": {
+        "n_completed_trials": 1,
+        "n_errored_trials": 1,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "pi__/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit__adhoc": {
+                "n_trials": 1,
+                "n_errors": 1,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "break-filter-js-from-html__twEmhf3"
+                        ]
+                    }
+                },
+                "exception_stats": {
+                    "AgentTimeoutError": [
+                        "break-filter-js-from-html__twEmhf3"
+                    ]
+                }
+            }
+        },
+        "n_input_tokens": 484780,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 12381,
+        "cost_usd": null
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "workload_hash_sha256": "308c315ee96310a7845958652ede8d89dd0409b21fa877d5c370be25ebcd1fad",
+  "endpoint": "http://127.0.0.1:8083/v1/chat/completions",
+  "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+  "run_id_expected": "ornith-mlx-pi-20260901",
+  "temperature": 0,
+  "cases": [
+    "exact",
+    "summary",
+    "coding",
+    "json",
+    "tool"
+  ],
+  "reps": 3,
+  "warmup": "exact",
+  "timeout_s": 120,
+  "comparison_scope": "new_private_ornith_baseline",
+  "frozen_utc": "2026-09-01T00:40:59.254763+00:00"
+}

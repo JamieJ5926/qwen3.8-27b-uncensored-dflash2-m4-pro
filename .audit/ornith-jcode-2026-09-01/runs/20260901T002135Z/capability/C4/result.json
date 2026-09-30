@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "latency_s": 1.946187583002029,
+  "tokens": {
+    "prompt_tokens": 668,
+    "completion_tokens": 45
+  },
+  "meta": {
+    "malformed": 0,
+    "final": "The weather in Paris right now is **18\u00b0C and clear**. \ud83c\udf24\ufe0f"
+  }
+}

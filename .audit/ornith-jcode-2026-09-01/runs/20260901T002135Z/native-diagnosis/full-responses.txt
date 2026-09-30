@@ -1,0 +1,29 @@
+=== ownership.txt ===
+=== lsof -nP -iTCP:8083 -sTCP:LISTEN ===
+COMMAND   PID  USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+Python  23052 jamie    7u  IPv4 0x3335bb7404da7821      0t0  TCP 127.0.0.1:8083 (LISTEN)
+
+=== ps -p 23047,23052 -ww -o pid,ppid,user,lstart,etime,command ===
+  PID  PPID USER  STARTED                  ELAPSED COMMAND
+23047  7114 jamie Tue Sep  1 11:52:43 2026 37:15   /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -m router.hardware_lane --owner Main --model pocketai-ornith-35b-mlx4-pi --port 8083 --model-path /Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit --run-id ornith-mlx-pi-20260901 --action serve-pi --cleanup stop-server-release-lease --allowed-generation-port 8083 --artifact-path /Volumes/BBALL_GM_DATA/models/ornith35-obliterated-hillclimb-20260901/artifacts/ornith-mlx-pi-service.json -- /Volumes/BBALL_GM_DATA/models/venvs/ornith-mlx-vlm/bin/mlx_vlm.server --model /Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit --host 127.0.0.1 --port 8083 --max-tokens 8192 --log-progress-interval 0 --log-level INFO
+23052 23047 jamie Tue Sep  1 11:52:43 2026 37:15   /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python /Volumes/BBALL_GM_DATA/models/venvs/ornith-mlx-vlm/bin/mlx_vlm.server --model /Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit --host 127.0.0.1 --port 8083 --max-tokens 8192 --log-progress-interval 0 --log-level INFO
+
+=== mlx-vlm-version.txt ===
+venv=/Volumes/BBALL_GM_DATA/models/venvs/ornith-mlx-vlm
+python=/Volumes/BBALL_GM_DATA/models/venvs/ornith-mlx-vlm/bin/python
+importlib.metadata:
+name= mlx-vlm
+version= 0.6.8
+location= /Volumes/BBALL_GM_DATA/models/venvs/ornith-mlx-vlm/lib/python3.14/site-packages
+requires= ['mlx>=0.32.0', 'transformers>=5.14.0', 'miniaudio>=1.59', 'tqdm>=4.66.2', 'Pillow>=10.3.0', 'requests>=2.31.0', 'llguidance>=1.7.0', 'mlx-lm>=0.31.3', 'mlx-audio>=0.4.3', 'opencv-python>=4.12.0.88', 'fastapi>=0.95.1', 'python-multipart>=0.0.9', 'starlette>=1.0.1', 'uvicorn', 'numpy', 'gradio>=5.19.0; extra == "ui"', 'mlx-cuda; extra == "cuda"', 'mlx-cpu; extra == "cpu"', 'datasets>=2.19.1; extra == "train"']
+
+=== get-models resp ===
+{"object":"list","data":[{"id":"/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit","object":"model","created":1788222648}]}
+=== chat-hardware-lane resp ===
+{"detail":"Failed to load model: 401 Client Error. (Request ID: Root=1-6a961cbb-5c6469d827f674801dabf09a;647f4afc-51ac-4538-b692-88b5a8dd7067)\n\nRepository Not Found for url: https://huggingface.co/api/models/pocketai-ornith-35b-mlx4-pi/revision/main.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated and your token has the required permissions.\nFor more details, see https://huggingface.co/docs/huggingface_hub/authentication\nInvalid username or password."}
+=== chat-path-model resp ===
+{"id":"chatcmpl-2940f621-6762-498d-bf3a-4cfec0ce89df","object":"chat.completion","created":1788222650,"model":"/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"OK","reasoning_content":null,"reasoning":null,"tool_calls":null,"tool_call_id":null,"name":null},"logprobs":null}],"usage":{"prompt_tokens":19,"completion_tokens":2,"total_tokens":21,"prompt_tokens_details":{"cached_tokens":0}},"timings":{"prompt_n":19,"cache_n":0,"predicted_n":2,"prompt_ms":1965.784125000937,"prompt_per_token_ms":103.46232236847037,"prompt_per_second":9.665354276879688,"predicted_ms":31.129417999181896,"predicted_per_token_ms":15.564708999590948,"predicted_per_second":64.2479085234604,"peak_memory":20.975550529}}
+=== chat-ornith-35b resp ===
+{"detail":"Failed to load model: 401 Client Error. (Request ID: Root=1-6a961cbb-047c04a601a971c16382ca65;910acc40-e65f-43f8-840a-ac37a4a7c7ce)\n\nRepository Not Found for url: https://huggingface.co/api/models/ornith-35b/revision/main.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated and your token has the required permissions.\nFor more details, see https://huggingface.co/docs/huggingface_hub/authentication\nInvalid username or password."}
+=== chat-model-omitted resp ===
+{"detail":[{"type":"missing","loc":["body","model"],"msg":"Field required","input":{"messages":[{"role":"user","content":"Reply with the single word OK."}],"temperature":0,"max_tokens":8}}]}

@@ -1,0 +1,2 @@
+{"type":"session","version":3,"id":"01a05b1c-4337-79c4-991d-8d374038a0b2","timestamp":"2026-09-01T03:56:14.008Z","cwd":"/app"}
+Credential store read failed for ornith-local: EROFS: read-only file system, open '/pi-config/auth.json'

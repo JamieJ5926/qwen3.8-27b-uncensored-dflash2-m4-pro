@@ -1,0 +1,8 @@
+[
+  {
+    "role": "tool",
+    "tool_call_id": "c1ed0bcc-663a-4be6-879b-b82cc90e7401",
+    "name": "get_weather",
+    "content": "18 C, clear"
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "http_status": 200,
+  "timed_out": false,
+  "total_s": 1.2507985419942997,
+  "error": null,
+  "raw_body": "{\"id\":\"chatcmpl-7c0c6c3b-dc5e-4697-a963-4e096738ca17\",\"object\":\"chat.completion\",\"created\":1788223898,\"model\":\"/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit\",\"choices\":[{\"index\":0,\"finish_reason\":\"tool_calls\",\"message\":{\"role\":\"assistant\",\"content\":null,\"reasoning_content\":null,\"reasoning\":null,\"tool_calls\":[{\"type\":\"function\",\"index\":0,\"id\":\"b8147001-9a1b-4771-be4a-63598291275e\",\"function\":{\"name\":\"get_weather\",\"arguments\":\"{\\\"city\\\": \\\"Paris\\\"}\"}}],\"tool_call_id\":null,\"name\":null},\"logprobs\":null}],\"usage\":{\"prompt_tokens\":310,\"completion_tokens\":26,\"total_tokens\":336,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"timings\":{\"prompt_n\":310,\"cache_n\":0,\"predicted_n\":26,\"prompt_ms\":620.439708000049,\"prompt_per_token_ms\":2.001418412903384,\"prompt_per_second\":499.6456480828199,\"predicted_ms\":583.2480336690787,\"predicted_per_token_ms\":22.43261667957995,\"predicted_per_second\":44.57794711529502,\"peak_memory\":22.651002068}}",
+  "parsed": {
+    "id": "chatcmpl-7c0c6c3b-dc5e-4697-a963-4e096738ca17",
+    "object": "chat.completion",
+    "created": 1788223898,
+    "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "tool_calls",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "reasoning_content": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "b8147001-9a1b-4771-be4a-63598291275e",
+              "function": {
+                "name": "get_weather",
+                "arguments": "{\"city\": \"Paris\"}"
+              }
+            }
+          ],
+          "tool_call_id": null,
+          "name": null
+        },
+        "logprobs": null
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 310,
+      "completion_tokens": 26,
+      "total_tokens": 336,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "prompt_n": 310,
+      "cache_n": 0,
+      "predicted_n": 26,
+      "prompt_ms": 620.439708000049,
+      "prompt_per_token_ms": 2.001418412903384,
+      "prompt_per_second": 499.6456480828199,
+      "predicted_ms": 583.2480336690787,
+      "predicted_per_token_ms": 22.43261667957995,
+      "predicted_per_second": 44.57794711529502,
+      "peak_memory": 22.651002068
+    }
+  },
+  "prompt_tokens": 310,
+  "completion_tokens": 26,
+  "completion_tps": 20.786720744449422,
+  "finish_reason": "tool_calls",
+  "content": "",
+  "case": "tool",
+  "rep": 2,
+  "excluded": false,
+  "rss_before_kb": 13200,
+  "validity": true,
+  "ownership": {
+    "listener_pid": 23052,
+    "lane_pid": 23047,
+    "rss_kb": 13200
+  }
+}

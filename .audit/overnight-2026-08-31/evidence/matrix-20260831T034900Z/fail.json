@@ -1,0 +1,57 @@
+{
+  "run_id": "20260831T034900Z",
+  "verdict": "fail",
+  "reason": "tool measured rep 1: empty content",
+  "case": "tool",
+  "response": {
+    "id": "chatcmpl-b63b8096-06cf-4dcf-8cab-22da4249299c",
+    "system_fingerprint": "0.31.3-0.32.0-macOS-26.5-arm64-arm-64bit-Mach-O-applegpu_g16s",
+    "object": "chat.completion",
+    "model": "qwen3.8-27b",
+    "created": 1788148601,
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "tool_calls",
+        "message": {
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "name": "get_weather",
+                "arguments": "{\"city\": \"Paris\"}"
+              },
+              "type": "function",
+              "id": "b49106c8-cd3d-4910-a89d-4b4f469fd023"
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 292,
+      "completion_tokens": 26,
+      "total_tokens": 318
+    },
+    "dflash": {
+      "queue_wait_seconds": 0.0,
+      "block_size": 5,
+      "prompt_tokens": 292,
+      "completion_tokens": 26,
+      "acceptance_lengths": [
+        4,
+        5,
+        5,
+        5,
+        1,
+        5
+      ],
+      "mean_acceptance": 4.167,
+      "generation_tps": 20.66,
+      "prefill_tps": 66.9,
+      "peak_memory_gb": 21.6,
+      "wall_seconds": 6.206,
+      "finish_reason": "stop"
+    }
+  }
+}

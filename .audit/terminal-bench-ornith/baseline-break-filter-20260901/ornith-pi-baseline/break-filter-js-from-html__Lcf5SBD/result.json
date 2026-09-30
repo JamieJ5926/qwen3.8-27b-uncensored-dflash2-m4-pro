@@ -1,0 +1,114 @@
+{
+    "id": "97c4bbc7-cca5-488d-841c-83b3a6d5f761",
+    "task_name": "break-filter-js-from-html",
+    "trial_name": "break-filter-js-from-html__Lcf5SBD",
+    "trial_uri": "file:///Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/terminal-bench-ornith/baseline-break-filter-20260901/ornith-pi-baseline/break-filter-js-from-html__Lcf5SBD",
+    "task_id": {
+        "path": "."
+    },
+    "source": null,
+    "task_checksum": "b33421492e86b07de2a01bc2205f7e7d2fdc36446a84787265d99e5e138fdaaa",
+    "config": {
+        "task": {
+            "path": ".",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "break-filter-js-from-html__Lcf5SBD",
+        "trials_dir": "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/terminal-bench-ornith/baseline-break-filter-20260901/ornith-pi-baseline",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "pi",
+            "import_path": null,
+            "model_name": "openai//Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [
+                "host.docker.internal"
+            ],
+            "kwargs": {},
+            "env": {
+                "OPENAI_BASE_URL": "http://host.docker.internal:8083/v1",
+                "OPENAI_API_KEY": "****"
+            },
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": true
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": "1b7533e4-6780-4184-b1f4-bc7e703ab9ea",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "pi",
+        "version": "0.84.4",
+        "model_info": {
+            "name": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": null,
+    "verifier_environment_mode": "shared",
+    "exception_info": null,
+    "started_at": "2026-09-01T03:45:36.072896Z",
+    "finished_at": "2026-09-01T03:46:17.593284Z",
+    "environment_setup": {
+        "started_at": "2026-09-01T03:45:36.092690Z",
+        "finished_at": "2026-09-01T03:45:37.194726Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-09-01T03:45:37.194804Z",
+        "finished_at": "2026-09-01T03:46:03.079944Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-09-01T03:46:03.080304Z",
+        "finished_at": "2026-09-01T03:46:05.718754Z"
+    },
+    "verifier": null,
+    "step_results": null
+}

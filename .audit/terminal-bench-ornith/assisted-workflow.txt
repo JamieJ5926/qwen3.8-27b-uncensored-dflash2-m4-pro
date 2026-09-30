@@ -1,0 +1,7 @@
+Work in short plan, edit, and verification loops.
+Read the relevant task files once, then create a minimal candidate deliverable early.
+Run the task's declared verification command after each meaningful change.
+Keep the best working candidate in the required final path while exploring alternatives elsewhere.
+After three failed attempts in one direction, summarize the evidence and switch to a different hypothesis.
+Avoid broad brute-force searches and long speculative scripts when a focused check can distinguish the next choice.
+When verification passes, stop and leave the passing deliverable in place.

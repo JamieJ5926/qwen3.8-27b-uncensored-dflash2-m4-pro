@@ -1,0 +1,93 @@
+{
+  "http_status": 200,
+  "timed_out": false,
+  "total_s": 1.165904875000706,
+  "error": null,
+  "raw_body": "{\"id\":\"chatcmpl-f6143574-90b9-44a1-97e3-023f091ca73e\",\"object\":\"chat.completion\",\"created\":1788224222,\"model\":\"/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit\",\"choices\":[{\"index\":0,\"finish_reason\":\"tool_calls\",\"message\":{\"role\":\"assistant\",\"content\":\"I'll look up ticket T-42 for you.\",\"reasoning_content\":null,\"reasoning\":null,\"tool_calls\":[{\"type\":\"function\",\"index\":0,\"id\":\"ac9b1a0e-c387-4aad-a96a-60d93616564e\",\"function\":{\"name\":\"lookup_ticket\",\"arguments\":\"{\\\"ticket_id\\\": \\\"T-42\\\"}\"}}],\"tool_call_id\":null,\"name\":null},\"logprobs\":null}],\"usage\":{\"prompt_tokens\":290,\"completion_tokens\":44,\"total_tokens\":334,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"timings\":{\"prompt_n\":290,\"cache_n\":0,\"predicted_n\":44,\"prompt_ms\":589.1718339989893,\"prompt_per_token_ms\":2.031627013789618,\"prompt_per_second\":492.2163336146471,\"predicted_ms\":536.7841814985759,\"predicted_per_token_ms\":12.199640488603997,\"predicted_per_second\":81.96962860783694,\"peak_memory\":22.651002068}}",
+  "parsed": {
+    "id": "chatcmpl-f6143574-90b9-44a1-97e3-023f091ca73e",
+    "object": "chat.completion",
+    "created": 1788224222,
+    "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "tool_calls",
+        "message": {
+          "role": "assistant",
+          "content": "I'll look up ticket T-42 for you.",
+          "reasoning_content": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "ac9b1a0e-c387-4aad-a96a-60d93616564e",
+              "function": {
+                "name": "lookup_ticket",
+                "arguments": "{\"ticket_id\": \"T-42\"}"
+              }
+            }
+          ],
+          "tool_call_id": null,
+          "name": null
+        },
+        "logprobs": null
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 290,
+      "completion_tokens": 44,
+      "total_tokens": 334,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "prompt_n": 290,
+      "cache_n": 0,
+      "predicted_n": 44,
+      "prompt_ms": 589.1718339989893,
+      "prompt_per_token_ms": 2.031627013789618,
+      "prompt_per_second": 492.2163336146471,
+      "predicted_ms": 536.7841814985759,
+      "predicted_per_token_ms": 12.199640488603997,
+      "predicted_per_second": 81.96962860783694,
+      "peak_memory": 22.651002068
+    }
+  },
+  "prompt_tokens": 290,
+  "completion_tokens": 44,
+  "finish_reason": "tool_calls",
+  "content": "I'll look up ticket T-42 for you.",
+  "tool_calls": [
+    {
+      "type": "function",
+      "index": 0,
+      "id": "ac9b1a0e-c387-4aad-a96a-60d93616564e",
+      "function": {
+        "name": "lookup_ticket",
+        "arguments": "{\"ticket_id\": \"T-42\"}"
+      }
+    }
+  ],
+  "message": {
+    "role": "assistant",
+    "content": "I'll look up ticket T-42 for you.",
+    "reasoning_content": null,
+    "reasoning": null,
+    "tool_calls": [
+      {
+        "type": "function",
+        "index": 0,
+        "id": "ac9b1a0e-c387-4aad-a96a-60d93616564e",
+        "function": {
+          "name": "lookup_ticket",
+          "arguments": "{\"ticket_id\": \"T-42\"}"
+        }
+      }
+    ],
+    "tool_call_id": null,
+    "name": null
+  }
+}

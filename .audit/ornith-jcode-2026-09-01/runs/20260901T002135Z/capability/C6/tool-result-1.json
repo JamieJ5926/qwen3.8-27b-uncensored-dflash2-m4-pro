@@ -1,0 +1,8 @@
+[
+  {
+    "role": "tool",
+    "tool_call_id": "ac9b1a0e-c387-4aad-a96a-60d93616564e",
+    "name": "lookup_ticket",
+    "content": "transient error: unavailable"
+  }
+]

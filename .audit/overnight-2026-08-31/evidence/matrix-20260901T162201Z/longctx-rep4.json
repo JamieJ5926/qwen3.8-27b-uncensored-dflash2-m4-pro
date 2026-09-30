@@ -1,0 +1,90 @@
+{
+  "case": "longctx",
+  "rep": 4,
+  "queue_wait_seconds": 0.0,
+  "generation_tps": 20.72,
+  "prefill_tps": 98.65,
+  "wall_seconds": 33.16742549999981,
+  "peak_memory_gb": 20.19,
+  "mean_acceptance": 3.432,
+  "usage": {
+    "prompt_tokens": 2632,
+    "completion_tokens": 128,
+    "total_tokens": 2760
+  },
+  "derived_ttft_s": 26.680182463253928,
+  "completion_tokens": 128,
+  "response": {
+    "id": "chatcmpl-a671eb07-a446-4390-84a9-2298f475e430",
+    "system_fingerprint": "0.31.3-0.32.0-macOS-26.5-arm64-arm-64bit-Mach-O-applegpu_g16s",
+    "object": "chat.completion",
+    "model": "qwen3.8-27b",
+    "created": 1788279942,
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Based on the document provided, here is the analysis:\n\n1.  **Which component owns retry policy?**\n    The text states in every paragraph: \"The [Component Name] never owns retry policy **unless this is the retry policy component**; recovery stays centralized.\"\n    \n    Looking at paragraph **4**, the component is explicitly named **retry policy**. The sentence in paragraph 4 reads: \"The **retry policy** never owns retry policy unless this is the retry policy component...\"\n    \n    Therefore, the **retry policy** component (described in paragraph 4) is the one that owns the retry policy.\n\n2"
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2632,
+      "completion_tokens": 128,
+      "total_tokens": 2760
+    },
+    "dflash": {
+      "queue_wait_seconds": 0.0,
+      "block_size": 5,
+      "prompt_tokens": 2632,
+      "completion_tokens": 128,
+      "acceptance_lengths": [
+        1,
+        5,
+        5,
+        4,
+        5,
+        5,
+        2,
+        3,
+        4,
+        5,
+        2,
+        4,
+        4,
+        5,
+        5,
+        1,
+        1,
+        3,
+        2,
+        2,
+        4,
+        2,
+        1,
+        1,
+        5,
+        5,
+        5,
+        5,
+        5,
+        3,
+        5,
+        1,
+        1,
+        4,
+        5,
+        2,
+        5
+      ],
+      "mean_acceptance": 3.432,
+      "generation_tps": 20.72,
+      "prefill_tps": 98.65,
+      "peak_memory_gb": 20.19,
+      "wall_seconds": 33.161,
+      "finish_reason": "length"
+    }
+  }
+}

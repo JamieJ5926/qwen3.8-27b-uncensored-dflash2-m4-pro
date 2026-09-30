@@ -1,0 +1,14 @@
+[
+  {
+    "role": "tool",
+    "tool_call_id": "f1e85747-3bcd-414c-85d9-638c26059c4d",
+    "name": "add",
+    "content": "11"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "16cbf881-468c-4259-8c15-74d1085af742",
+    "name": "multiply",
+    "content": "15"
+  }
+]

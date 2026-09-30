@@ -1,0 +1,93 @@
+{
+  "http_status": 200,
+  "timed_out": false,
+  "total_s": 0.9741145830048481,
+  "error": null,
+  "raw_body": "{\"id\":\"chatcmpl-7db405fc-8751-4a2b-97e6-3acaca0e9818\",\"object\":\"chat.completion\",\"created\":1788224216,\"model\":\"/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit\",\"choices\":[{\"index\":0,\"finish_reason\":\"tool_calls\",\"message\":{\"role\":\"assistant\",\"content\":null,\"reasoning_content\":null,\"reasoning\":null,\"tool_calls\":[{\"type\":\"function\",\"index\":0,\"id\":\"c1ed0bcc-663a-4be6-879b-b82cc90e7401\",\"function\":{\"name\":\"get_weather\",\"arguments\":\"{\\\"city\\\": \\\"Paris\\\"}\"}}],\"tool_call_id\":null,\"name\":null},\"logprobs\":null}],\"usage\":{\"prompt_tokens\":310,\"completion_tokens\":26,\"total_tokens\":336,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"timings\":{\"prompt_n\":310,\"cache_n\":0,\"predicted_n\":26,\"prompt_ms\":605.5130829918198,\"prompt_per_token_ms\":1.9532680096510318,\"prompt_per_second\":511.96251362282777,\"predicted_ms\":327.9946799960453,\"predicted_per_token_ms\":12.615179999847896,\"predicted_per_second\":79.2695783977761,\"peak_memory\":22.651002068}}",
+  "parsed": {
+    "id": "chatcmpl-7db405fc-8751-4a2b-97e6-3acaca0e9818",
+    "object": "chat.completion",
+    "created": 1788224216,
+    "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "tool_calls",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "reasoning_content": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "c1ed0bcc-663a-4be6-879b-b82cc90e7401",
+              "function": {
+                "name": "get_weather",
+                "arguments": "{\"city\": \"Paris\"}"
+              }
+            }
+          ],
+          "tool_call_id": null,
+          "name": null
+        },
+        "logprobs": null
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 310,
+      "completion_tokens": 26,
+      "total_tokens": 336,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "prompt_n": 310,
+      "cache_n": 0,
+      "predicted_n": 26,
+      "prompt_ms": 605.5130829918198,
+      "prompt_per_token_ms": 1.9532680096510318,
+      "prompt_per_second": 511.96251362282777,
+      "predicted_ms": 327.9946799960453,
+      "predicted_per_token_ms": 12.615179999847896,
+      "predicted_per_second": 79.2695783977761,
+      "peak_memory": 22.651002068
+    }
+  },
+  "prompt_tokens": 310,
+  "completion_tokens": 26,
+  "finish_reason": "tool_calls",
+  "content": "",
+  "tool_calls": [
+    {
+      "type": "function",
+      "index": 0,
+      "id": "c1ed0bcc-663a-4be6-879b-b82cc90e7401",
+      "function": {
+        "name": "get_weather",
+        "arguments": "{\"city\": \"Paris\"}"
+      }
+    }
+  ],
+  "message": {
+    "role": "assistant",
+    "content": null,
+    "reasoning_content": null,
+    "reasoning": null,
+    "tool_calls": [
+      {
+        "type": "function",
+        "index": 0,
+        "id": "c1ed0bcc-663a-4be6-879b-b82cc90e7401",
+        "function": {
+          "name": "get_weather",
+          "arguments": "{\"city\": \"Paris\"}"
+        }
+      }
+    ],
+    "tool_call_id": null,
+    "name": null
+  }
+}

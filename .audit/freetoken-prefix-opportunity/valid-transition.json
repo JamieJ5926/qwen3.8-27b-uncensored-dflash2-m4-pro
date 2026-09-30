@@ -1,0 +1,40 @@
+{
+  "trace_id": "synth-trace-0001",
+  "session_id": "synth-session-aaaa",
+  "transition_index": 1,
+  "prior_request_fingerprint": {
+    "model_id": "synth-model",
+    "model_revision": "rev-a",
+    "tokenizer_id": "synth-tok",
+    "tokenizer_revision": "tok-a",
+    "chat_template_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "tool_schema_sha256": null,
+    "reasoning_mode": "off",
+    "draft_id": "synth-draft",
+    "draft_revision": "draft-a",
+    "block_size": 32,
+    "draft_bits": 4,
+    "generation_config_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  "next_request_fingerprint": {
+    "model_id": "synth-model",
+    "model_revision": "rev-a",
+    "tokenizer_id": "synth-tok",
+    "tokenizer_revision": "tok-a",
+    "chat_template_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "tool_schema_sha256": null,
+    "reasoning_mode": "off",
+    "draft_id": "synth-draft",
+    "draft_revision": "draft-a",
+    "block_size": 32,
+    "draft_bits": 4,
+    "generation_config_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  "prior_token_ids": [1, 2, 3],
+  "next_token_ids": [1, 2, 3, 4],
+  "semantic_boundaries": [
+    { "token_index": 3, "kind": "user_end" }
+  ],
+  "edit_kind": "append_only",
+  "weight": 1.0
+}

@@ -1,0 +1,63 @@
+{
+  "http_status": 200,
+  "timed_out": false,
+  "total_s": 0.9207254170032684,
+  "error": null,
+  "raw_body": "{\"id\":\"chatcmpl-de11825a-4870-4587-ad3d-030ccc3708ea\",\"object\":\"chat.completion\",\"created\":1788224215,\"model\":\"/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit\",\"choices\":[{\"index\":0,\"finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"```python\\ndef merge(defaults, file_values, env):\\n    result = {}\\n    for mapping in (defaults, file_values, env):\\n        for key, value in mapping.items():\\n            result[key] = value\\n    return result\\n```\",\"reasoning_content\":null,\"reasoning\":null,\"tool_calls\":null,\"tool_call_id\":null,\"name\":null},\"logprobs\":null}],\"usage\":{\"prompt_tokens\":66,\"completion_tokens\":55,\"total_tokens\":121,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"timings\":{\"prompt_n\":66,\"cache_n\":0,\"predicted_n\":55,\"prompt_ms\":212.7314999961527,\"prompt_per_token_ms\":3.223204545396253,\"prompt_per_second\":310.2502450327931,\"predicted_ms\":673.4531436126822,\"predicted_per_token_ms\":12.244602611139676,\"predicted_per_second\":81.66863652155097,\"peak_memory\":22.651002068}}",
+  "parsed": {
+    "id": "chatcmpl-de11825a-4870-4587-ad3d-030ccc3708ea",
+    "object": "chat.completion",
+    "created": 1788224215,
+    "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```python\ndef merge(defaults, file_values, env):\n    result = {}\n    for mapping in (defaults, file_values, env):\n        for key, value in mapping.items():\n            result[key] = value\n    return result\n```",
+          "reasoning_content": null,
+          "reasoning": null,
+          "tool_calls": null,
+          "tool_call_id": null,
+          "name": null
+        },
+        "logprobs": null
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 66,
+      "completion_tokens": 55,
+      "total_tokens": 121,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "prompt_n": 66,
+      "cache_n": 0,
+      "predicted_n": 55,
+      "prompt_ms": 212.7314999961527,
+      "prompt_per_token_ms": 3.223204545396253,
+      "prompt_per_second": 310.2502450327931,
+      "predicted_ms": 673.4531436126822,
+      "predicted_per_token_ms": 12.244602611139676,
+      "predicted_per_second": 81.66863652155097,
+      "peak_memory": 22.651002068
+    }
+  },
+  "prompt_tokens": 66,
+  "completion_tokens": 55,
+  "finish_reason": "stop",
+  "content": "```python\ndef merge(defaults, file_values, env):\n    result = {}\n    for mapping in (defaults, file_values, env):\n        for key, value in mapping.items():\n            result[key] = value\n    return result\n```",
+  "tool_calls": [],
+  "message": {
+    "role": "assistant",
+    "content": "```python\ndef merge(defaults, file_values, env):\n    result = {}\n    for mapping in (defaults, file_values, env):\n        for key, value in mapping.items():\n            result[key] = value\n    return result\n```",
+    "reasoning_content": null,
+    "reasoning": null,
+    "tool_calls": null,
+    "tool_call_id": null,
+    "name": null
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "http_status": 200,
+  "timed_out": false,
+  "total_s": 1.3203318750020117,
+  "error": null,
+  "raw_body": "{\"id\":\"chatcmpl-ecf21088-bf82-45ba-a8f6-5057ba8ef7a9\",\"object\":\"chat.completion\",\"created\":1788224221,\"model\":\"/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit\",\"choices\":[{\"index\":0,\"finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Here are the results:\\n\\n- **Sum of 4 and 7:** 11\\n- **Product of 3 and 5:** 15\",\"reasoning_content\":null,\"reasoning\":null,\"tool_calls\":null,\"tool_call_id\":null,\"name\":null},\"logprobs\":null}],\"usage\":{\"prompt_tokens\":476,\"completion_tokens\":34,\"total_tokens\":510,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"timings\":{\"prompt_n\":476,\"cache_n\":0,\"predicted_n\":34,\"prompt_ms\":852.3351670010015,\"prompt_per_token_ms\":1.7906200987415999,\"prompt_per_second\":558.4657520055613,\"predicted_ms\":427.6106158107392,\"predicted_per_token_ms\":12.576782817962918,\"predicted_per_second\":79.51159008420976,\"peak_memory\":22.651002068}}",
+  "parsed": {
+    "id": "chatcmpl-ecf21088-bf82-45ba-a8f6-5057ba8ef7a9",
+    "object": "chat.completion",
+    "created": 1788224221,
+    "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Here are the results:\n\n- **Sum of 4 and 7:** 11\n- **Product of 3 and 5:** 15",
+          "reasoning_content": null,
+          "reasoning": null,
+          "tool_calls": null,
+          "tool_call_id": null,
+          "name": null
+        },
+        "logprobs": null
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 476,
+      "completion_tokens": 34,
+      "total_tokens": 510,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "prompt_n": 476,
+      "cache_n": 0,
+      "predicted_n": 34,
+      "prompt_ms": 852.3351670010015,
+      "prompt_per_token_ms": 1.7906200987415999,
+      "prompt_per_second": 558.4657520055613,
+      "predicted_ms": 427.6106158107392,
+      "predicted_per_token_ms": 12.576782817962918,
+      "predicted_per_second": 79.51159008420976,
+      "peak_memory": 22.651002068
+    }
+  },
+  "prompt_tokens": 476,
+  "completion_tokens": 34,
+  "finish_reason": "stop",
+  "content": "Here are the results:\n\n- **Sum of 4 and 7:** 11\n- **Product of 3 and 5:** 15",
+  "tool_calls": [],
+  "message": {
+    "role": "assistant",
+    "content": "Here are the results:\n\n- **Sum of 4 and 7:** 11\n- **Product of 3 and 5:** 15",
+    "reasoning_content": null,
+    "reasoning": null,
+    "tool_calls": null,
+    "tool_call_id": null,
+    "name": null
+  }
+}

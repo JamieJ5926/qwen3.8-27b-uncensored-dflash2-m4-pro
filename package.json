@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "pi-extensions": "/home/bun/.pi/agent/npm",
+    "pi-subagents": "^0.62.0"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "C1": {
+    "kind": "coding",
+    "file": "slug.py",
+    "prompt": "Write Python code only. Create slug.py defining slug(text) that returns a string: lowercase the input, replace any run of spaces or hyphens with a single hyphen, and strip leading and trailing hyphens. Do not print anything. No markdown fences, no explanation."
+  },
+  "C2": {
+    "kind": "coding",
+    "file": "count_errors.py",
+    "prompt": "Write Python code only. Create count_errors.py that reads a JSONL file path from sys.argv[1], counts how many times each object's kind field appears, and prints one JSON object whose keys are the kind values sorted alphabetically and whose values are the counts. If a line is not valid JSON, exit with a non-zero status. No markdown fences, no explanation.",
+    "fixture_jsonl": "{\"kind\":\"io\",\"n\":1}\n{\"kind\":\"parse\",\"n\":2}\n{\"kind\":\"io\",\"n\":3}\n",
+    "fixture_bad": "{\"kind\":\"io\",\"n\":1}\nnot-json\n{\"kind\":\"io\",\"n\":3}\n"
+  },
+  "C3": {
+    "kind": "coding",
+    "file": "merge.py",
+    "prompt": "Write Python code only. Create merge.py defining merge(defaults, file_values, env) that returns a new dict. Later mappings override earlier ones: defaults first, then file_values, then env. Do not mutate any input mapping. No markdown fences, no explanation."
+  },
+  "C4": {
+    "kind": "tool",
+    "prompt": "What is the weather in Paris right now? Use get_weather.",
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "get_weather",
+          "description": "Get current weather for a city.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "city": {
+                "type": "string",
+                "description": "City name"
+              },
+              "units": {
+                "type": "string",
+                "enum": [
+                  "celsius",
+                  "fahrenheit"
+                ]
+              }
+            },
+            "required": [
+              "city"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "C5": {
+    "kind": "tool",
+    "prompt": "What is the sum of 4 and 7, and the product of 3 and 5? Use the tools.",
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "add",
+          "description": "Add two numbers.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "a": {
+                "type": "number"
+              },
+              "b": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "a",
+              "b"
+            ]
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "multiply",
+          "description": "Multiply two numbers.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "a": {
+                "type": "number"
+              },
+              "b": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "a",
+              "b"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "C6": {
+    "kind": "tool",
+    "prompt": "Look up ticket T-42 and tell me its status. Use lookup_ticket.",
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "lookup_ticket",
+          "description": "Look up a support ticket by id.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "ticket_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "ticket_id"
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

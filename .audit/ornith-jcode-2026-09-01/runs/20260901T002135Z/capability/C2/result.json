@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "http_status": 200,
+  "timed_out": false,
+  "latency_s": 3.183948750011041,
+  "tokens": {
+    "prompt_tokens": 88,
+    "completion_tokens": 232
+  },
+  "detail": {
+    "good": {
+      "returncode": 0,
+      "stdout": "{\"io\": 2, \"parse\": 1}\n",
+      "stderr": "",
+      "timed_out": false,
+      "elapsed_s": 0.019450791005510837,
+      "cmd": [
+        "python3",
+        "-I",
+        "-B",
+        "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/capability/C2/count_errors.py",
+        "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/capability/C2/rows.jsonl"
+      ]
+    },
+    "bad": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "",
+      "timed_out": false,
+      "elapsed_s": 0.019168707993230782,
+      "cmd": [
+        "python3",
+        "-I",
+        "-B",
+        "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/capability/C2/count_errors.py",
+        "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/capability/C2/bad.jsonl"
+      ]
+    },
+    "parsed_ok": true
+  }
+}

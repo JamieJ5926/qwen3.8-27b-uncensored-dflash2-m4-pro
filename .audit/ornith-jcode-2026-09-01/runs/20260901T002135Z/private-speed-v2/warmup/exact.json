@@ -1,0 +1,58 @@
+{
+  "http_status": 200,
+  "timed_out": false,
+  "total_s": 1.3413990419940092,
+  "error": null,
+  "raw_body": "{\"id\":\"chatcmpl-b5b1112e-e8c8-47d6-b6f0-2ef5661fb5d5\",\"object\":\"chat.completion\",\"created\":1788223882,\"model\":\"/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit\",\"choices\":[{\"index\":0,\"finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"ORNITH_SPEED_OK\",\"reasoning_content\":null,\"reasoning\":null,\"tool_calls\":null,\"tool_call_id\":null,\"name\":null},\"logprobs\":null}],\"usage\":{\"prompt_tokens\":26,\"completion_tokens\":5,\"total_tokens\":31,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"timings\":{\"prompt_n\":26,\"cache_n\":0,\"predicted_n\":5,\"prompt_ms\":1221.0939999931725,\"prompt_per_token_ms\":46.96515384589125,\"prompt_per_second\":21.292382077174544,\"predicted_ms\":66.12229124584701,\"predicted_per_token_ms\":13.224458249169402,\"predicted_per_second\":75.61746433452635,\"peak_memory\":21.146956138}}",
+  "parsed": {
+    "id": "chatcmpl-b5b1112e-e8c8-47d6-b6f0-2ef5661fb5d5",
+    "object": "chat.completion",
+    "created": 1788223882,
+    "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "ORNITH_SPEED_OK",
+          "reasoning_content": null,
+          "reasoning": null,
+          "tool_calls": null,
+          "tool_call_id": null,
+          "name": null
+        },
+        "logprobs": null
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 26,
+      "completion_tokens": 5,
+      "total_tokens": 31,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "prompt_n": 26,
+      "cache_n": 0,
+      "predicted_n": 5,
+      "prompt_ms": 1221.0939999931725,
+      "prompt_per_token_ms": 46.96515384589125,
+      "prompt_per_second": 21.292382077174544,
+      "predicted_ms": 66.12229124584701,
+      "predicted_per_token_ms": 13.224458249169402,
+      "predicted_per_second": 75.61746433452635,
+      "peak_memory": 21.146956138
+    }
+  },
+  "prompt_tokens": 26,
+  "completion_tokens": 5,
+  "completion_tps": 3.72745159603471,
+  "finish_reason": "stop",
+  "content": "ORNITH_SPEED_OK",
+  "case": "exact",
+  "rep": "warmup",
+  "excluded": true,
+  "rss_before_kb": 12960
+}

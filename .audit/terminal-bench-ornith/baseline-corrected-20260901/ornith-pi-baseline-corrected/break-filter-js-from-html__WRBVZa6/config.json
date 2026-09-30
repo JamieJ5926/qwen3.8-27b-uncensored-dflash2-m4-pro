@@ -1,0 +1,24 @@
+{
+    "task": {
+        "path": "/Users/jamie/.cache/harbor/tasks/JQfDtvG4qqL3QfwErWynWU/break-filter-js-from-html"
+    },
+    "trial_name": "break-filter-js-from-html__WRBVZa6",
+    "trials_dir": "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/terminal-bench-ornith/baseline-corrected-20260901/ornith-pi-baseline-corrected",
+    "agent": {
+        "name": "pi",
+        "model_name": "ornith-local//Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+        "extra_allowed_hosts": [
+            "host.docker.internal"
+        ],
+        "env": {
+            "PI_CODING_AGENT_DIR": "/pi-config"
+        }
+    },
+    "environment": {
+        "type": "docker",
+        "mounts": [
+            "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/terminal-bench-ornith/pi-config:/pi-config:ro"
+        ]
+    },
+    "job_id": "3d56145b-033b-4f75-871d-8fc523c5b56c"
+}

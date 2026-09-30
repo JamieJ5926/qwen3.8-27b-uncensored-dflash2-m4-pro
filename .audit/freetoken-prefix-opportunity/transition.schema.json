@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.audit/freetoken-prefix-opportunity/transition.schema.json",
+  "$comment": "Opportunity accounting only. This schema measures exact rendered token-prefix reuse opportunity. It is not permission to restore DFlash state or any runtime cache. Token ID arrays are local-sensitive: exact token IDs can reconstruct prompt content and must not be published raw.",
+  "title": "FreeTokenPrefixOpportunityTransition",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "trace_id",
+    "session_id",
+    "transition_index",
+    "prior_request_fingerprint",
+    "next_request_fingerprint",
+    "prior_token_ids",
+    "next_token_ids",
+    "semantic_boundaries",
+    "edit_kind",
+    "weight"
+  ],
+  "properties": {
+    "trace_id": { "type": "string", "minLength": 1 },
+    "session_id": { "type": "string", "minLength": 1 },
+    "transition_index": { "type": "integer", "minimum": 1 },
+    "prior_request_fingerprint": { "$ref": "#/$defs/requestFingerprint" },
+    "next_request_fingerprint": { "$ref": "#/$defs/requestFingerprint" },
+    "prior_token_ids": { "$ref": "#/$defs/tokenIds" },
+    "next_token_ids": { "$ref": "#/$defs/tokenIds" },
+    "semantic_boundaries": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/semanticBoundary" }
+    },
+    "edit_kind": { "$ref": "#/$defs/editKind" },
+    "weight": { "type": "number", "exclusiveMinimum": 0 }
+  },
+  "$defs": {
+    "sha256Hex": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "tokenIds": {
+      "$comment": "Local-sensitive. Exact token IDs can reconstruct prompt content and must not be published raw.",
+      "type": "array",
+      "items": { "type": "integer", "minimum": 0 }
+    },
+    "editKind": {
+      "type": "string",
+      "enum": [
+        "append_only",
+        "thinking_removed",
+        "tool_output_replaced",
+        "history_compacted",
+        "insertion",
+        "deletion",
+        "other"
+      ]
+    },
+    "boundaryKind": {
+      "type": "string",
+      "enum": [
+        "system_end",
+        "developer_end",
+        "user_end",
+        "assistant_end",
+        "thinking_end",
+        "tool_call_end",
+        "tool_result_end",
+        "compaction_boundary"
+      ]
+    },
+    "semanticBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["token_index", "kind"],
+      "properties": {
+        "token_index": { "type": "integer", "minimum": 0 },
+        "kind": { "$ref": "#/$defs/boundaryKind" }
+      }
+    },
+    "requestFingerprint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "model_id",
+        "model_revision",
+        "tokenizer_id",
+        "tokenizer_revision",
+        "chat_template_sha256",
+        "tool_schema_sha256",
+        "reasoning_mode",
+        "draft_id",
+        "draft_revision",
+        "block_size",
+        "draft_bits",
+        "generation_config_sha256"
+      ],
+      "properties": {
+        "model_id": { "type": "string", "minLength": 1 },
+        "model_revision": { "type": "string", "minLength": 1 },
+        "tokenizer_id": { "type": "string", "minLength": 1 },
+        "tokenizer_revision": { "type": "string", "minLength": 1 },
+        "chat_template_sha256": { "$ref": "#/$defs/sha256Hex" },
+        "tool_schema_sha256": {
+          "anyOf": [
+            { "$ref": "#/$defs/sha256Hex" },
+            { "type": "null" }
+          ]
+        },
+        "reasoning_mode": { "type": "string", "minLength": 1 },
+        "draft_id": { "type": "string", "minLength": 1 },
+        "draft_revision": { "type": "string", "minLength": 1 },
+        "block_size": { "type": "integer", "minimum": 1 },
+        "draft_bits": { "type": "integer", "minimum": 0 },
+        "generation_config_sha256": { "$ref": "#/$defs/sha256Hex" }
+      }
+    }
+  }
+}

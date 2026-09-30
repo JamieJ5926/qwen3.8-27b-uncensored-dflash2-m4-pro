@@ -1,0 +1,56 @@
+{
+  "labels": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6"
+  ],
+  "endpoint": "http://127.0.0.1:8083/v1/chat/completions",
+  "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+  "run_id_expected": "ornith-mlx-pi-20260901",
+  "temperature": 0,
+  "request_timeout_s": 60,
+  "check_timeout_s": 10,
+  "hashes": {
+    "C1": {
+      "prompt_sha256": "b8bb958db11bdc97932002131e2f6b1f15d5472c520d746a5813efb36e677789",
+      "tools_sha256": null,
+      "fixture_jsonl_sha256": null,
+      "fixture_bad_sha256": null
+    },
+    "C2": {
+      "prompt_sha256": "91e436f55884160891a4e3d9c1b54d73206b7debbd50c8c7cff814b74107dcc4",
+      "tools_sha256": null,
+      "fixture_jsonl_sha256": "9c68d974447da47746bb9a3cec2039a955c42fbc46c8b0dce7dc776344f5c181",
+      "fixture_bad_sha256": "29c4970c82d43dc7655f90e1ddc10853183b9dda9bd23aa33f9eee3afd6326b5"
+    },
+    "C3": {
+      "prompt_sha256": "b973ff944f95d98a708e93d594c61fb9b6c2debcbdb49e477465d325eae9939a",
+      "tools_sha256": null,
+      "fixture_jsonl_sha256": null,
+      "fixture_bad_sha256": null
+    },
+    "C4": {
+      "prompt_sha256": "dc9e14533156c0a9667aea8066dbf40a578d9273aa748adcfe4bcd6ceb2861ac",
+      "tools_sha256": "29ee11577952973d92454746f2740d92c5383dcc7e406eb899ab57528d915dde",
+      "fixture_jsonl_sha256": null,
+      "fixture_bad_sha256": null
+    },
+    "C5": {
+      "prompt_sha256": "3fe3641c5960206d05053750e340601d699656ca8ee63b91a90a3a9b9e28e2e1",
+      "tools_sha256": "1de66bda00f9389c9a0c5af00c6488debd8cfa5e2796cdb7c2fdbc9c7567cd82",
+      "fixture_jsonl_sha256": null,
+      "fixture_bad_sha256": null
+    },
+    "C6": {
+      "prompt_sha256": "f5ce07daa7fd54c604d20510214e6bfd40d50f18d25396c165a4edf9c94a7c99",
+      "tools_sha256": "f2eec3a6689534d1bcbc52f91fc6cc993af429f9837d43fbb7e6ab6005c87940",
+      "fixture_jsonl_sha256": null,
+      "fixture_bad_sha256": null
+    }
+  },
+  "workload_hash_sha256": "22e535b62088ad0ca8607c01c65205c62a950d05b3c035bb64497976f9257e8e",
+  "frozen_utc": "2026-09-01T00:56:50.134436+00:00"
+}

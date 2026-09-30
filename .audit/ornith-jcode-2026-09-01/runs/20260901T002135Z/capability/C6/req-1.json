@@ -1,0 +1,32 @@
+{
+  "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+  "temperature": 0,
+  "max_tokens": 1024,
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "lookup_ticket",
+        "description": "Look up a support ticket by id.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "ticket_id": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "ticket_id"
+          ]
+        }
+      }
+    }
+  ],
+  "tool_choice": "auto",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Look up ticket T-42 and tell me its status. Use lookup_ticket."
+    }
+  ]
+}

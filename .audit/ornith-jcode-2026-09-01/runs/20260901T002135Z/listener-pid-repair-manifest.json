@@ -1,0 +1,131 @@
+{
+  "repaired_field_count": 18,
+  "repairs": [
+    {
+      "file": "private-speed-v2/ownership-before.json",
+      "json_pointer": "/listener_pid",
+      "old": null,
+      "new": 23052,
+      "lsof_evidence_hash": "41e2bffd176ee0e4432baa0f96226d9ff31d0d7b7ebbfab1a34e440c60a1073b"
+    },
+    {
+      "file": "private-speed-v2/ownership-after.json",
+      "json_pointer": "/listener_pid",
+      "old": null,
+      "new": 23052,
+      "lsof_evidence_hash": "41e2bffd176ee0e4432baa0f96226d9ff31d0d7b7ebbfab1a34e440c60a1073b"
+    },
+    {
+      "file": "private-speed-v2/summary.json",
+      "json_pointer": "/ownership_before/listener_pid",
+      "old": null,
+      "new": 23052,
+      "lsof_evidence_hash": "41e2bffd176ee0e4432baa0f96226d9ff31d0d7b7ebbfab1a34e440c60a1073b"
+    },
+    {
+      "file": "private-speed-v2/summary.json",
+      "json_pointer": "/ownership_after/listener_pid",
+      "old": null,
+      "new": 23052,
+      "lsof_evidence_hash": "41e2bffd176ee0e4432baa0f96226d9ff31d0d7b7ebbfab1a34e440c60a1073b"
+    },
+    {
+      "file": "capability/ownership-before.json",
+      "json_pointer": "/listener_pid",
+      "old": null,
+      "new": 23052,
+      "lsof_evidence_hash": "41e2bffd176ee0e4432baa0f96226d9ff31d0d7b7ebbfab1a34e440c60a1073b"
+    },
+    {
+      "file": "capability/ownership-after.json",
+      "json_pointer": "/listener_pid",
+      "old": null,
+      "new": 23052,
+      "lsof_evidence_hash": "41e2bffd176ee0e4432baa0f96226d9ff31d0d7b7ebbfab1a34e440c60a1073b"
+    },
+    {
+      "file": "capability/summary.json",
+      "json_pointer": "/ownership_before/listener_pid",
+      "old": null,
+      "new": 23052,
+      "lsof_evidence_hash": "41e2bffd176ee0e4432baa0f96226d9ff31d0d7b7ebbfab1a34e440c60a1073b"
+    },
+    {
+      "file": "capability/summary.json",
+      "json_pointer": "/ownership_after/listener_pid",
+      "old": null,
+      "new": 23052,
+      "lsof_evidence_hash": "41e2bffd176ee0e4432baa0f96226d9ff31d0d7b7ebbfab1a34e440c60a1073b"
+    },
+    {
+      "file": "private-speed-v2/records/coding-rep1.json",
+      "json_pointer": "/ownership/listener_pid",
+      "old": null,
+      "new": 23052,
+      "lsof_evidence_hash": "41e2bffd176ee0e4432baa0f96226d9ff31d0d7b7ebbfab1a34e440c60a1073b"
+    },
+    {
+      "file": "private-speed-v2/records/coding-rep2.json",
+      "json_pointer": "/ownership/listener_pid",
+      "old": null,
+      "new": 23052,
+      "lsof_evidence_hash": "41e2bffd176ee0e4432baa0f96226d9ff31d0d7b7ebbfab1a34e440c60a1073b"
+    },
+    {
+      "file": "private-speed-v2/records/exact-rep1.json",
+      "json_pointer": "/ownership/listener_pid",
+      "old": null,
+      "new": 23052,
+      "lsof_evidence_hash": "41e2bffd176ee0e4432baa0f96226d9ff31d0d7b7ebbfab1a34e440c60a1073b"
+    },
+    {
+      "file": "private-speed-v2/records/exact-rep2.json",
+      "json_pointer": "/ownership/listener_pid",
+      "old": null,
+      "new": 23052,
+      "lsof_evidence_hash": "41e2bffd176ee0e4432baa0f96226d9ff31d0d7b7ebbfab1a34e440c60a1073b"
+    },
+    {
+      "file": "private-speed-v2/records/json-rep1.json",
+      "json_pointer": "/ownership/listener_pid",
+      "old": null,
+      "new": 23052,
+      "lsof_evidence_hash": "41e2bffd176ee0e4432baa0f96226d9ff31d0d7b7ebbfab1a34e440c60a1073b"
+    },
+    {
+      "file": "private-speed-v2/records/json-rep2.json",
+      "json_pointer": "/ownership/listener_pid",
+      "old": null,
+      "new": 23052,
+      "lsof_evidence_hash": "41e2bffd176ee0e4432baa0f96226d9ff31d0d7b7ebbfab1a34e440c60a1073b"
+    },
+    {
+      "file": "private-speed-v2/records/summary-rep1.json",
+      "json_pointer": "/ownership/listener_pid",
+      "old": null,
+      "new": 23052,
+      "lsof_evidence_hash": "41e2bffd176ee0e4432baa0f96226d9ff31d0d7b7ebbfab1a34e440c60a1073b"
+    },
+    {
+      "file": "private-speed-v2/records/summary-rep2.json",
+      "json_pointer": "/ownership/listener_pid",
+      "old": null,
+      "new": 23052,
+      "lsof_evidence_hash": "41e2bffd176ee0e4432baa0f96226d9ff31d0d7b7ebbfab1a34e440c60a1073b"
+    },
+    {
+      "file": "private-speed-v2/records/tool-rep1.json",
+      "json_pointer": "/ownership/listener_pid",
+      "old": null,
+      "new": 23052,
+      "lsof_evidence_hash": "41e2bffd176ee0e4432baa0f96226d9ff31d0d7b7ebbfab1a34e440c60a1073b"
+    },
+    {
+      "file": "private-speed-v2/records/tool-rep2.json",
+      "json_pointer": "/ownership/listener_pid",
+      "old": null,
+      "new": 23052,
+      "lsof_evidence_hash": "41e2bffd176ee0e4432baa0f96226d9ff31d0d7b7ebbfab1a34e440c60a1073b"
+    }
+  ]
+}

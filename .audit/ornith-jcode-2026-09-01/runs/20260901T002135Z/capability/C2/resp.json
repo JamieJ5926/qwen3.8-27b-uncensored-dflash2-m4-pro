@@ -1,0 +1,63 @@
+{
+  "http_status": 200,
+  "timed_out": false,
+  "total_s": 3.183948750011041,
+  "error": null,
+  "raw_body": "{\"id\":\"chatcmpl-4584735e-1fc7-4848-82ca-856b7116e644\",\"object\":\"chat.completion\",\"created\":1788224214,\"model\":\"/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit\",\"choices\":[{\"index\":0,\"finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"```python\\nimport sys\\nimport json\\n\\n\\ndef main():\\n    if len(sys.argv) < 2:\\n        sys.stderr.write(\\\"usage: count_errors.py <file.jsonl>\\\\n\\\")\\n        sys.exit(2)\\n\\n    path = sys.argv[1]\\n\\n    counts = {}\\n    with open(path, \\\"r\\\", encoding=\\\"utf-8\\\") as f:\\n        for line in f:\\n            line = line.strip()\\n            if not line:\\n                continue\\n            try:\\n                obj = json.loads(line)\\n            except json.JSONDecodeError:\\n                sys.exit(1)\\n\\n            if not isinstance(obj, dict):\\n                sys.exit(1)\\n\\n            kind = obj.get(\\\"kind\\\")\\n            counts[kind] = counts.get(kind, 0) + 1\\n\\n    ordered = {k: counts[k] for k in sorted(counts, key=lambda x: str(x))}\\n    sys.stdout.write(json.dumps(ordered))\\n    sys.stdout.write(\\\"\\\\n\\\")\\n\\n\\nif __name__ == \\\"__main__\\\":\\n    main()\\n```\",\"reasoning_content\":null,\"reasoning\":null,\"tool_calls\":null,\"tool_call_id\":null,\"name\":null},\"logprobs\":null}],\"usage\":{\"prompt_tokens\":88,\"completion_tokens\":232,\"total_tokens\":320,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"timings\":{\"prompt_n\":88,\"cache_n\":0,\"predicted_n\":232,\"prompt_ms\":254.23991699062753,\"prompt_per_token_ms\":2.8890899658025857,\"prompt_per_second\":346.12975429520804,\"predicted_ms\":2895.6752337598004,\"predicted_per_token_ms\":12.481358766206036,\"predicted_per_second\":80.11948207975199,\"peak_memory\":22.651002068}}",
+  "parsed": {
+    "id": "chatcmpl-4584735e-1fc7-4848-82ca-856b7116e644",
+    "object": "chat.completion",
+    "created": 1788224214,
+    "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```python\nimport sys\nimport json\n\n\ndef main():\n    if len(sys.argv) < 2:\n        sys.stderr.write(\"usage: count_errors.py <file.jsonl>\\n\")\n        sys.exit(2)\n\n    path = sys.argv[1]\n\n    counts = {}\n    with open(path, \"r\", encoding=\"utf-8\") as f:\n        for line in f:\n            line = line.strip()\n            if not line:\n                continue\n            try:\n                obj = json.loads(line)\n            except json.JSONDecodeError:\n                sys.exit(1)\n\n            if not isinstance(obj, dict):\n                sys.exit(1)\n\n            kind = obj.get(\"kind\")\n            counts[kind] = counts.get(kind, 0) + 1\n\n    ordered = {k: counts[k] for k in sorted(counts, key=lambda x: str(x))}\n    sys.stdout.write(json.dumps(ordered))\n    sys.stdout.write(\"\\n\")\n\n\nif __name__ == \"__main__\":\n    main()\n```",
+          "reasoning_content": null,
+          "reasoning": null,
+          "tool_calls": null,
+          "tool_call_id": null,
+          "name": null
+        },
+        "logprobs": null
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 88,
+      "completion_tokens": 232,
+      "total_tokens": 320,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "prompt_n": 88,
+      "cache_n": 0,
+      "predicted_n": 232,
+      "prompt_ms": 254.23991699062753,
+      "prompt_per_token_ms": 2.8890899658025857,
+      "prompt_per_second": 346.12975429520804,
+      "predicted_ms": 2895.6752337598004,
+      "predicted_per_token_ms": 12.481358766206036,
+      "predicted_per_second": 80.11948207975199,
+      "peak_memory": 22.651002068
+    }
+  },
+  "prompt_tokens": 88,
+  "completion_tokens": 232,
+  "finish_reason": "stop",
+  "content": "```python\nimport sys\nimport json\n\n\ndef main():\n    if len(sys.argv) < 2:\n        sys.stderr.write(\"usage: count_errors.py <file.jsonl>\\n\")\n        sys.exit(2)\n\n    path = sys.argv[1]\n\n    counts = {}\n    with open(path, \"r\", encoding=\"utf-8\") as f:\n        for line in f:\n            line = line.strip()\n            if not line:\n                continue\n            try:\n                obj = json.loads(line)\n            except json.JSONDecodeError:\n                sys.exit(1)\n\n            if not isinstance(obj, dict):\n                sys.exit(1)\n\n            kind = obj.get(\"kind\")\n            counts[kind] = counts.get(kind, 0) + 1\n\n    ordered = {k: counts[k] for k in sorted(counts, key=lambda x: str(x))}\n    sys.stdout.write(json.dumps(ordered))\n    sys.stdout.write(\"\\n\")\n\n\nif __name__ == \"__main__\":\n    main()\n```",
+  "tool_calls": [],
+  "message": {
+    "role": "assistant",
+    "content": "```python\nimport sys\nimport json\n\n\ndef main():\n    if len(sys.argv) < 2:\n        sys.stderr.write(\"usage: count_errors.py <file.jsonl>\\n\")\n        sys.exit(2)\n\n    path = sys.argv[1]\n\n    counts = {}\n    with open(path, \"r\", encoding=\"utf-8\") as f:\n        for line in f:\n            line = line.strip()\n            if not line:\n                continue\n            try:\n                obj = json.loads(line)\n            except json.JSONDecodeError:\n                sys.exit(1)\n\n            if not isinstance(obj, dict):\n                sys.exit(1)\n\n            kind = obj.get(\"kind\")\n            counts[kind] = counts.get(kind, 0) + 1\n\n    ordered = {k: counts[k] for k in sorted(counts, key=lambda x: str(x))}\n    sys.stdout.write(json.dumps(ordered))\n    sys.stdout.write(\"\\n\")\n\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "reasoning_content": null,
+    "reasoning": null,
+    "tool_calls": null,
+    "tool_call_id": null,
+    "name": null
+  }
+}

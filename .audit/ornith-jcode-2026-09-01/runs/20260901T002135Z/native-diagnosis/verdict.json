@@ -1,0 +1,20 @@
+{
+  "verdict": "PASS_MODEL_ID",
+  "accepted_model_value": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+  "package_version": "0.6.8",
+  "evidence_paths": [
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/native-diagnosis/ownership.txt",
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/native-diagnosis/mlx-vlm-version.txt",
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/native-diagnosis/req-get-models.txt",
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/native-diagnosis/req-chat-path-model.json",
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/native-diagnosis/req-chat-hardware-lane.json",
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/native-diagnosis/req-chat-ornith-35b.json",
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/native-diagnosis/req-chat-model-omitted.json",
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/native-diagnosis/resp-get-models.txt",
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/native-diagnosis/resp-chat-path-model.txt",
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/native-diagnosis/resp-chat-hardware-lane.txt",
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/native-diagnosis/resp-chat-ornith-35b.txt",
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/native-diagnosis/resp-chat-model-omitted.txt",
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/native-diagnosis/full-responses.txt"
+  ]
+}

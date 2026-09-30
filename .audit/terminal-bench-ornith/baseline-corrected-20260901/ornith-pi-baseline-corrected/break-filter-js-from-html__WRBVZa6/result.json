@@ -1,0 +1,107 @@
+{
+    "id": "476524fa-a7bc-4fcf-a859-7f24b83241de",
+    "task_name": "break-filter-js-from-html",
+    "trial_name": "break-filter-js-from-html__WRBVZa6",
+    "trial_uri": "file:///Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/terminal-bench-ornith/baseline-corrected-20260901/ornith-pi-baseline-corrected/break-filter-js-from-html__WRBVZa6",
+    "task_id": {
+        "path": "/Users/jamie/.cache/harbor/tasks/JQfDtvG4qqL3QfwErWynWU/break-filter-js-from-html"
+    },
+    "source": null,
+    "task_checksum": "b33421492e86b07de2a01bc2205f7e7d2fdc36446a84787265d99e5e138fdaaa",
+    "config": {
+        "task": {
+            "path": "/Users/jamie/.cache/harbor/tasks/JQfDtvG4qqL3QfwErWynWU/break-filter-js-from-html",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "break-filter-js-from-html__WRBVZa6",
+        "trials_dir": "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/terminal-bench-ornith/baseline-corrected-20260901/ornith-pi-baseline-corrected",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "pi",
+            "import_path": null,
+            "model_name": "ornith-local//Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [
+                "host.docker.internal"
+            ],
+            "kwargs": {},
+            "env": {
+                "PI_CODING_AGENT_DIR": "/pi-config"
+            },
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": [
+                "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/terminal-bench-ornith/pi-config:/pi-config:ro"
+            ],
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": "3d56145b-033b-4f75-871d-8fc523c5b56c",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "pi",
+        "version": "unknown",
+        "model_info": {
+            "name": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+            "provider": "ornith-local"
+        }
+    },
+    "agent_result": null,
+    "verifier_result": null,
+    "verifier_environment_mode": "shared",
+    "exception_info": {
+        "exception_type": "AttributeError",
+        "exception_message": "'str' object has no attribute 'get'",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/jamie/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 375, in run\n    await self._prepare()\n  File \"/Users/jamie/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 409, in _prepare\n    await self._setup_agent_environment()\n  File \"/Users/jamie/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 1210, in _setup_agent_environment\n    await self._start_agent_environment()\n  File \"/Users/jamie/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 1216, in _start_agent_environment\n    await asyncio.wait_for(\n    ...<4 lines>...\n    )\n  File \"/Users/jamie/.local/share/uv/python/cpython-3.13.14-macos-aarch64-none/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/jamie/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker.py\", line 904, in start\n    await self._run_docker_compose_command([\"down\", \"--remove-orphans\"])\n  File \"/Users/jamie/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker.py\", line 627, in _run_docker_compose_command\n    env = self._compose_env_vars(include_os_env=True)\n  File \"/Users/jamie/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker.py\", line 586, in _compose_env_vars\n    infra = self._compose_infra_env_vars()\n  File \"/Users/jamie/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker.py\", line 560, in _compose_infra_env_vars\n    env_vars.update(legacy_log_mount_env_vars(self._mounts, host_value=\"source\"))\n                    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jamie/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/compose_env.py\", line 70, in legacy_log_mount_env_vars\n    target = mount.get(\"target\")\n             ^^^^^^^^^\nAttributeError: 'str' object has no attribute 'get'\n",
+        "occurred_at": "2026-09-01T03:53:29.053397Z"
+    },
+    "started_at": "2026-09-01T03:53:27.252095Z",
+    "finished_at": "2026-09-01T03:53:29.055332Z",
+    "environment_setup": {
+        "started_at": "2026-09-01T03:53:27.277038Z",
+        "finished_at": "2026-09-01T03:53:29.049713Z"
+    },
+    "agent_setup": null,
+    "agent_execution": null,
+    "verifier": null,
+    "step_results": null
+}

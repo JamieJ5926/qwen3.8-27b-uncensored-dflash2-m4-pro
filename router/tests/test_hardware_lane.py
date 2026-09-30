@@ -566,5 +566,52 @@ class HardwareLaneTests(unittest.TestCase):
         self.assertEqual(_cli_exit_code("run", result), 2)
 
 
+class TestHardwareLaneSelfExclusion(unittest.TestCase):
+    def test_current_lane_contains_llama_server(self) -> None:
+        current_pid = __import__("os").getpid()
+        ancestor_pid = current_pid + 1
+
+        def fake_ps(
+            *args: object, **kwargs: object
+        ) -> subprocess.CompletedProcess[str]:
+            return subprocess.CompletedProcess(
+                args[0],
+                0,
+                stdout=(
+                    f"{current_pid} {ancestor_pid} python -m router.hardware_lane "
+                    "-- /bin/bash -c llama-server\n"
+                    f"{ancestor_pid} 1 bash -c llama-server\n"
+                    "10 1 postgres\n"
+                ),
+                stderr="",
+            )
+
+        observed = observe_processes(run=fake_ps)
+        self.assertEqual(
+            observed,
+            (ProcessObservation(pid=10, command="postgres"),),
+        )
+        self.assertTrue(
+            preflight(
+                _spec(artifact_path=""),
+                processes=observed,
+                listeners=(),
+            ).ok
+        )
+
+        conflicting = (
+            *observed,
+            ProcessObservation(pid=99, command="llama-server --port 9090"),
+        )
+        result = preflight(
+            _spec(artifact_path=""),
+            processes=conflicting,
+            listeners=(),
+        )
+        self.assertFalse(result.ok)
+        self.assertTrue(
+            any("forbidden generation process pid=99" in item for item in result.conflicts)
+        )
 if __name__ == "__main__":
     unittest.main()
+

@@ -1,0 +1,63 @@
+{
+  "http_status": 200,
+  "timed_out": false,
+  "total_s": 0.9720729999971809,
+  "error": null,
+  "raw_body": "{\"id\":\"chatcmpl-b416e1a7-33b8-4f16-8b3d-23604cbdabf4\",\"object\":\"chat.completion\",\"created\":1788224217,\"model\":\"/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit\",\"choices\":[{\"index\":0,\"finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"The weather in Paris right now is **18\u00b0C and clear**. \ud83c\udf24\ufe0f\",\"reasoning_content\":null,\"reasoning\":null,\"tool_calls\":null,\"tool_call_id\":null,\"name\":null},\"logprobs\":null}],\"usage\":{\"prompt_tokens\":358,\"completion_tokens\":19,\"total_tokens\":377,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"timings\":{\"prompt_n\":358,\"cache_n\":0,\"predicted_n\":19,\"prompt_ms\":692.7803750004387,\"prompt_per_token_ms\":1.9351407122917281,\"prompt_per_second\":516.7582872129906,\"predicted_ms\":240.49496367580204,\"predicted_per_token_ms\":12.657629667147475,\"predicted_per_second\":79.00373342376038,\"peak_memory\":22.651002068}}",
+  "parsed": {
+    "id": "chatcmpl-b416e1a7-33b8-4f16-8b3d-23604cbdabf4",
+    "object": "chat.completion",
+    "created": 1788224217,
+    "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "The weather in Paris right now is **18\u00b0C and clear**. \ud83c\udf24\ufe0f",
+          "reasoning_content": null,
+          "reasoning": null,
+          "tool_calls": null,
+          "tool_call_id": null,
+          "name": null
+        },
+        "logprobs": null
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 358,
+      "completion_tokens": 19,
+      "total_tokens": 377,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "prompt_n": 358,
+      "cache_n": 0,
+      "predicted_n": 19,
+      "prompt_ms": 692.7803750004387,
+      "prompt_per_token_ms": 1.9351407122917281,
+      "prompt_per_second": 516.7582872129906,
+      "predicted_ms": 240.49496367580204,
+      "predicted_per_token_ms": 12.657629667147475,
+      "predicted_per_second": 79.00373342376038,
+      "peak_memory": 22.651002068
+    }
+  },
+  "prompt_tokens": 358,
+  "completion_tokens": 19,
+  "finish_reason": "stop",
+  "content": "The weather in Paris right now is **18\u00b0C and clear**. \ud83c\udf24\ufe0f",
+  "tool_calls": [],
+  "message": {
+    "role": "assistant",
+    "content": "The weather in Paris right now is **18\u00b0C and clear**. \ud83c\udf24\ufe0f",
+    "reasoning_content": null,
+    "reasoning": null,
+    "tool_calls": null,
+    "tool_call_id": null,
+    "name": null
+  }
+}

@@ -1,0 +1,2712 @@
+{
+  "elapsed_s": 0.004404666999107576,
+  "error": null,
+  "exit_code": 0,
+  "mode": "run",
+  "plan": {
+    "action": "stop-conflicting-lfm-swarm",
+    "adopted_pid": 7124,
+    "artifact_path": ".audit/overnight-2026-08-31/evidence/stop-lfm-swarm-20260831.json",
+    "cleanup": "qwen-remains-adopted",
+    "command_argv": [
+      "/bin/launchctl",
+      "bootout",
+      "gui/501/com.jamie.lfm-swarm"
+    ],
+    "mode": "run",
+    "model": "qwen-dflash",
+    "model_path": "/Volumes/BBALL_GM_DATA/models/Qwen3.8-27B-Uncensored-MLX/4-bit",
+    "owner": "main-hardware-lane",
+    "port": 8083,
+    "run_id": "stop-lfm-swarm-20260831"
+  },
+  "preflight": {
+    "conflicts": [],
+    "listeners": [
+      {
+        "pid": 685,
+        "port": 49163
+      },
+      {
+        "pid": 822,
+        "port": 18317
+      },
+      {
+        "pid": 823,
+        "port": 18081
+      },
+      {
+        "pid": 829,
+        "port": 8084
+      },
+      {
+        "pid": 833,
+        "port": 59869
+      },
+      {
+        "pid": 835,
+        "port": 8317
+      },
+      {
+        "pid": 842,
+        "port": 18080
+      },
+      {
+        "pid": 858,
+        "port": 7768
+      },
+      {
+        "pid": 858,
+        "port": 58014
+      },
+      {
+        "pid": 858,
+        "port": 57621
+      },
+      {
+        "pid": 4342,
+        "port": 8081
+      },
+      {
+        "pid": 4343,
+        "port": 8080
+      },
+      {
+        "pid": 4358,
+        "port": 8090
+      },
+      {
+        "pid": 4359,
+        "port": 8091
+      },
+      {
+        "pid": 4360,
+        "port": 8092
+      },
+      {
+        "pid": 4361,
+        "port": 8093
+      },
+      {
+        "pid": 4362,
+        "port": 8094
+      },
+      {
+        "pid": 7124,
+        "port": 8083
+      },
+      {
+        "pid": 58494,
+        "port": 56195
+      },
+      {
+        "pid": 58494,
+        "port": 56196
+      },
+      {
+        "pid": 66742,
+        "port": 57060
+      }
+    ],
+    "ok": true,
+    "processes": [
+      {
+        "command": "/sbin/launchd",
+        "pid": 1
+      },
+      {
+        "command": "/usr/libexec/logd",
+        "pid": 338
+      },
+      {
+        "command": "/usr/libexec/smd",
+        "pid": 339
+      },
+      {
+        "command": "/usr/libexec/UserEventAgent (System)",
+        "pid": 340
+      },
+      {
+        "command": "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/FSEvents.framework/Versions/A/Support/fseventsd",
+        "pid": 342
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/MediaRemote.framework/Support/mediaremoted",
+        "pid": 343
+      },
+      {
+        "command": "/usr/sbin/systemstats --daemon",
+        "pid": 346
+      },
+      {
+        "command": "/usr/libexec/configd",
+        "pid": 350
+      },
+      {
+        "command": "/System/Library/CoreServices/powerd.bundle/powerd",
+        "pid": 352
+      },
+      {
+        "command": "/usr/libexec/IOMFB_bics_daemon",
+        "pid": 353
+      },
+      {
+        "command": "/usr/libexec/amfid",
+        "pid": 355
+      },
+      {
+        "command": "/usr/libexec/remoted",
+        "pid": 357
+      },
+      {
+        "command": "/usr/libexec/keybagd -t 15",
+        "pid": 359
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/MobileSoftwareUpdate.framework/Support/softwareupdated",
+        "pid": 360
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CoreSpeech.framework/corespeechd_system",
+        "pid": 361
+      },
+      {
+        "command": "/usr/libexec/watchdogd",
+        "pid": 363
+      },
+      {
+        "command": "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mds",
+        "pid": 367
+      },
+      {
+        "command": "/System/Library/CoreServices/iconservicesd",
+        "pid": 368
+      },
+      {
+        "command": "/usr/libexec/kernelmanagerd",
+        "pid": 369
+      },
+      {
+        "command": "/usr/libexec/diskarbitrationd",
+        "pid": 370
+      },
+      {
+        "command": "/usr/libexec/coreduetd",
+        "pid": 373
+      },
+      {
+        "command": "/usr/sbin/syslogd",
+        "pid": 374
+      },
+      {
+        "command": "/usr/libexec/thermalmonitord",
+        "pid": 376
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CoreDuetContext.framework/Resources/contextstored",
+        "pid": 377
+      },
+      {
+        "command": "/usr/libexec/xprotectd",
+        "pid": 378
+      },
+      {
+        "command": "/usr/libexec/opendirectoryd",
+        "pid": 379
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/ApplePushService.framework/apsd",
+        "pid": 380
+      },
+      {
+        "command": "/System/Library/CoreServices/launchservicesd",
+        "pid": 381
+      },
+      {
+        "command": "/usr/libexec/timed",
+        "pid": 382
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/usbmuxd -launchd",
+        "pid": 383
+      },
+      {
+        "command": "/usr/sbin/securityd -i",
+        "pid": 384
+      },
+      {
+        "command": "/usr/libexec/locationd",
+        "pid": 386
+      },
+      {
+        "command": "autofsd",
+        "pid": 389
+      },
+      {
+        "command": "/usr/libexec/dasd",
+        "pid": 390
+      },
+      {
+        "command": "/usr/libexec/corerepaird",
+        "pid": 391
+      },
+      {
+        "command": "/usr/sbin/distnoted daemon",
+        "pid": 393
+      },
+      {
+        "command": "/usr/libexec/PerfPowerServices",
+        "pid": 395
+      },
+      {
+        "command": "/System/Library/CoreServices/logind",
+        "pid": 397
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/GenerationalStorage.framework/Versions/A/Support/revisiond",
+        "pid": 398
+      },
+      {
+        "command": "/usr/sbin/KernelEventAgent",
+        "pid": 399
+      },
+      {
+        "command": "/usr/libexec/usermanagerd -t 15",
+        "pid": 401
+      },
+      {
+        "command": "/usr/sbin/bluetoothd",
+        "pid": 403
+      },
+      {
+        "command": "/usr/sbin/notifyd",
+        "pid": 404
+      },
+      {
+        "command": "/usr/libexec/sandboxd",
+        "pid": 405
+      },
+      {
+        "command": "/usr/libexec/corebrightnessd --launchd",
+        "pid": 406
+      },
+      {
+        "command": "/usr/libexec/AirPlayXPCHelper",
+        "pid": 407
+      },
+      {
+        "command": "/System/Library/Frameworks/CoreMediaIO.framework/Versions/A/Resources/com.apple.cmio.registerassistantservice",
+        "pid": 408
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer -daemon",
+        "pid": 411
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/TCC.framework/Support/tccd system",
+        "pid": 412
+      },
+      {
+        "command": "/usr/sbin/cfprefsd daemon",
+        "pid": 413
+      },
+      {
+        "command": "/System/Library/CoreServices/loginwindow.app/Contents/MacOS/loginwindow console",
+        "pid": 414
+      },
+      {
+        "command": "/System/Library/CoreServices/coreservicesd",
+        "pid": 417
+      },
+      {
+        "command": "/usr/libexec/runningboardd",
+        "pid": 418
+      },
+      {
+        "command": "/usr/libexec/trustd",
+        "pid": 419
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CoreAnalytics.framework/Support/analyticsd",
+        "pid": 420
+      },
+      {
+        "command": "/usr/libexec/lsd runAsRoot",
+        "pid": 424
+      },
+      {
+        "command": "/usr/sbin/coreaudiod",
+        "pid": 425
+      },
+      {
+        "command": "/System/Library/CoreServices/liquiddetectiond.app/liquiddetectiond",
+        "pid": 426
+      },
+      {
+        "command": "/usr/libexec/apfsd",
+        "pid": 428
+      },
+      {
+        "command": "/usr/libexec/nsurlsessiond --privileged",
+        "pid": 429
+      },
+      {
+        "command": "/usr/libexec/nehelper",
+        "pid": 430
+      },
+      {
+        "command": "/System/Library/Frameworks/CoreMediaIO.framework/Resources/VDC.plugin/Contents/Resources/VDCAssistant",
+        "pid": 431
+      },
+      {
+        "command": "/usr/libexec/biometrickitd --launchd",
+        "pid": 432
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/SystemStatusServer.framework/Support/systemstatusd",
+        "pid": 433
+      },
+      {
+        "command": "/usr/libexec/mobileassetd",
+        "pid": 434
+      },
+      {
+        "command": "/usr/libexec/PowerUIAgent",
+        "pid": 436
+      },
+      {
+        "command": "/usr/libexec/eligibilityd",
+        "pid": 438
+      },
+      {
+        "command": "/usr/sbin/distnoted agent",
+        "pid": 447
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/BackgroundTaskManagement.framework/Resources/backgroundtaskmanagementd -daemon",
+        "pid": 452
+      },
+      {
+        "command": "/usr/libexec/ApplicationFirewall/socketfilterfw",
+        "pid": 461
+      },
+      {
+        "command": "/usr/libexec/securityd_system",
+        "pid": 467
+      },
+      {
+        "command": "/System/Library/Frameworks/Security.framework/Versions/A/XPCServices/com.apple.CodeSigningHelper.xpc/Contents/MacOS/com.apple.CodeSigningHelper",
+        "pid": 485
+      },
+      {
+        "command": "/usr/sbin/distnoted agent",
+        "pid": 489
+      },
+      {
+        "command": "/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/Applications/Karabiner-VirtualHIDDevice-Daemon.app/Contents/MacOS/Karabiner-VirtualHIDDevice-Daemon",
+        "pid": 496
+      },
+      {
+        "command": "/Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Core-Service.app/Contents/MacOS/Karabiner-Core-Service",
+        "pid": 497
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/BiomeStreams.framework/Support/biomed",
+        "pid": 498
+      },
+      {
+        "command": "/Applications/Mullvad VPN.app/Contents/Resources/mullvad-daemon -vv",
+        "pid": 511
+      },
+      {
+        "command": "/Library/Application Support/Logitech.localized/LogiOptionsPlus/logioptionsplus_agent.app/Contents/Frameworks/logioptionsplus_updater.app/Contents/MacOS/logioptionsplus_updater",
+        "pid": 512
+      },
+      {
+        "command": "/Library/PrivilegedHelperTools/com.docker.vmnetd",
+        "pid": 513
+      },
+      {
+        "command": "/usr/libexec/airportd",
+        "pid": 514
+      },
+      {
+        "command": "/usr/libexec/symptomsd",
+        "pid": 521
+      },
+      {
+        "command": "/System/Library/Frameworks/AudioToolbox.framework/AudioComponentRegistrar -daemon",
+        "pid": 523
+      },
+      {
+        "command": "/usr/libexec/syspolicyd",
+        "pid": 524
+      },
+      {
+        "command": "/System/Library/Frameworks/Security.framework/Versions/A/XPCServices/authd.xpc/Contents/MacOS/authd",
+        "pid": 525
+      },
+      {
+        "command": "/usr/sbin/mDNSResponder",
+        "pid": 526
+      },
+      {
+        "command": "/System/Library/CoreServices/TimeMachine/backupd",
+        "pid": 528
+      },
+      {
+        "command": "/usr/sbin/WirelessRadioManagerd",
+        "pid": 531
+      },
+      {
+        "command": "/usr/sbin/distnoted agent",
+        "pid": 532
+      },
+      {
+        "command": "/usr/libexec/findmybeaconingd",
+        "pid": 537
+      },
+      {
+        "command": "/usr/sbin/mDNSResponderHelper",
+        "pid": 539
+      },
+      {
+        "command": "/usr/sbin/distnoted agent",
+        "pid": 541
+      },
+      {
+        "command": "/usr/libexec/com.apple.cmio.videodriverkithostextension.systemextension/Contents/MacOS/com.apple.cmio.videodriverkithostextension",
+        "pid": 542
+      },
+      {
+        "command": "/System/Library/CoreServices/Software Update.app/Contents/Resources/softwareupdated",
+        "pid": 543
+      },
+      {
+        "command": "Core Audio Driver (BlackHole16ch.driver)",
+        "pid": 545
+      },
+      {
+        "command": "/usr/libexec/audioclocksyncd",
+        "pid": 546
+      },
+      {
+        "command": "/usr/libexec/audiomxd",
+        "pid": 547
+      },
+      {
+        "command": "/usr/libexec/cameracaptured",
+        "pid": 550
+      },
+      {
+        "command": "/System/Library/Frameworks/CoreMediaIO.framework/Versions/A/Resources/UVCAssistant.systemextension/Contents/MacOS/UVCAssistant",
+        "pid": 551
+      },
+      {
+        "command": "/usr/libexec/modelmanagerd",
+        "pid": 553
+      },
+      {
+        "command": "/usr/libexec/mobileactivationd",
+        "pid": 554
+      },
+      {
+        "command": "/System/Library/CoreServices/Software Update.app/Contents/Resources/suhelperd",
+        "pid": 556
+      },
+      {
+        "command": "/usr/libexec/audioanalyticsd",
+        "pid": 558
+      },
+      {
+        "command": "/usr/sbin/distnoted agent",
+        "pid": 559
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/GeoServices.framework/Versions/A/XPCServices/com.apple.geod.xpc/Contents/MacOS/com.apple.geod",
+        "pid": 560
+      },
+      {
+        "command": "/usr/sbin/distnoted agent",
+        "pid": 562
+      },
+      {
+        "command": "/System/Library/CoreServices/appleeventsd --server",
+        "pid": 563
+      },
+      {
+        "command": "/System/Library/CoreServices/sharedfilelistd",
+        "pid": 564
+      },
+      {
+        "command": "Core Audio Driver (ParrotAudioPlugin.driver)",
+        "pid": 566
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/Categories.framework/Versions/A/XPCServices/CategoriesService.xpc/Contents/MacOS/CategoriesService",
+        "pid": 568
+      },
+      {
+        "command": "/usr/sbin/filecoordinationd",
+        "pid": 569
+      },
+      {
+        "command": "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mds_stores",
+        "pid": 573
+      },
+      {
+        "command": "/usr/sbin/cfprefsd agent",
+        "pid": 574
+      },
+      {
+        "command": "/usr/libexec/ospredictiond",
+        "pid": 579
+      },
+      {
+        "command": "/usr/sbin/distnoted agent",
+        "pid": 581
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/PowerLog.framework/Versions/A/XPCServices/PerfPowerTelemetryClientRegistrationService.xpc/Contents/MacOS/PerfPowerTelemetryClientRegistrationService",
+        "pid": 583
+      },
+      {
+        "command": "/usr/libexec/searchpartyd",
+        "pid": 585
+      },
+      {
+        "command": "/usr/sbin/distnoted agent",
+        "pid": 586
+      },
+      {
+        "command": "/System/Library/CoreServices/osanalyticshelper server-init",
+        "pid": 588
+      },
+      {
+        "command": "/System/Library/Audio/Plug-Ins/usbaudio.bundle/Contents/MacOS/usbaudiod",
+        "pid": 589
+      },
+      {
+        "command": "/usr/libexec/rtcreportingd",
+        "pid": 590
+      },
+      {
+        "command": "/System/Library/DriverExtensions/com.apple.DriverKit-AppleBCMWLAN.dext/com.apple.DriverKit-AppleBCMWLAN com.apple.bcmwlan 0x10000103a com.apple.DriverKit-AppleBCMWLAN",
+        "pid": 591
+      },
+      {
+        "command": "/usr/libexec/triald_system",
+        "pid": 592
+      },
+      {
+        "command": "/Library/SystemExtensions/4A195C7D-5C24-486E-BC13-C85A7D55948F/org.pqrs.Karabiner-DriverKit-VirtualHIDDevice.dext/org.pqrs.Karabiner-DriverKit-VirtualHIDDevice org.pqrs.Karabiner-DriverKit-VirtualHIDDevice 0x100001274 org.pqrs.Karabiner-DriverKit-VirtualHIDDevice",
+        "pid": 593
+      },
+      {
+        "command": "/usr/libexec/colorsyncd",
+        "pid": 595
+      },
+      {
+        "command": "/usr/sbin/netbiosd",
+        "pid": 596
+      },
+      {
+        "command": "/System/Library/DriverExtensions/com.apple.AppleUserHIDDrivers.dext/com.apple.AppleUserHIDDrivers com.apple.driverkit.AppleUserHIDDrivers 0x100001277 com.apple.AppleUserHIDDrivers",
+        "pid": 598
+      },
+      {
+        "command": "/System/Library/DriverExtensions/com.apple.DriverKit-IOUserDockChannelSerial.dext/com.apple.DriverKit-IOUserDockChannelSerial com.apple.IOUserDockChannelSerial 0x100001275 com.apple.DriverKit-IOUserDockChannelSerial",
+        "pid": 599
+      },
+      {
+        "command": "/usr/libexec/aneuserd",
+        "pid": 600
+      },
+      {
+        "command": "/usr/libexec/aned",
+        "pid": 601
+      },
+      {
+        "command": "/usr/sbin/distnoted agent",
+        "pid": 617
+      },
+      {
+        "command": "/usr/sbin/BTLEServer",
+        "pid": 623
+      },
+      {
+        "command": "/usr/libexec/gamepolicyd",
+        "pid": 624
+      },
+      {
+        "command": "/System/Library/Frameworks/LocalAuthentication.framework/Support/coreauthd",
+        "pid": 627
+      },
+      {
+        "command": "/usr/sbin/distnoted agent",
+        "pid": 629
+      },
+      {
+        "command": "/usr/sbin/distnoted agent",
+        "pid": 631
+      },
+      {
+        "command": "/usr/sbin/cfprefsd agent",
+        "pid": 632
+      },
+      {
+        "command": "/usr/libexec/secd",
+        "pid": 636
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CoreSymbolication.framework/coresymbolicationd",
+        "pid": 641
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CloudTelemetry.framework/Versions/A/XPCServices/CloudTelemetryService.xpc/Contents/MacOS/CloudTelemetryService",
+        "pid": 642
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/XprotectFramework.framework/Versions/A/XPCServices/XProtectBridgeService.xpc/Contents/MacOS/XProtectBridgeService",
+        "pid": 643
+      },
+      {
+        "command": "/usr/libexec/wifip2pd",
+        "pid": 644
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/ContextKit.framework/Versions/A/XPCServices/ContextService.xpc/Contents/MacOS/ContextService",
+        "pid": 645
+      },
+      {
+        "command": "/usr/sbin/distnoted agent",
+        "pid": 647
+      },
+      {
+        "command": "/usr/libexec/UserEventAgent (Aqua)",
+        "pid": 655
+      },
+      {
+        "command": "/usr/libexec/neagent",
+        "pid": 660
+      },
+      {
+        "command": "/System/Library/CoreServices/CoreServicesUIAgent.app/Contents/MacOS/CoreServicesUIAgent",
+        "pid": 661
+      },
+      {
+        "command": "/usr/sbin/universalaccessd launchd -s",
+        "pid": 662
+      },
+      {
+        "command": "/usr/libexec/knowledge-agent",
+        "pid": 664
+      },
+      {
+        "command": "/usr/libexec/pboard",
+        "pid": 665
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/BiomeStreams.framework/Support/BiomeAgent",
+        "pid": 666
+      },
+      {
+        "command": "/usr/libexec/lsd",
+        "pid": 667
+      },
+      {
+        "command": "/usr/libexec/ContinuityCaptureAgent server",
+        "pid": 668
+      },
+      {
+        "command": "/usr/libexec/containermanagerd --runmode=agent --user-container-mode=current --bundle-container-mode=proxy --system-container-mode=none",
+        "pid": 669
+      },
+      {
+        "command": "/System/Library/CoreServices/WindowManager.app/Contents/MacOS/WindowManager",
+        "pid": 670
+      },
+      {
+        "command": "/usr/libexec/findmydeviced",
+        "pid": 671
+      },
+      {
+        "command": "/usr/libexec/linkd",
+        "pid": 672
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/AccessibilitySupport.framework/Versions/A/Resources/AccessibilityVisualsAgent.app/Contents/MacOS/AccessibilityVisualsAgent",
+        "pid": 673
+      },
+      {
+        "command": "/System/Library/CoreServices/talagentd",
+        "pid": 674
+      },
+      {
+        "command": "/System/Library/CoreServices/Dock.app/Contents/MacOS/Dock",
+        "pid": 675
+      },
+      {
+        "command": "/System/Library/CoreServices/ControlCenter.app/Contents/MacOS/ControlCenter",
+        "pid": 676
+      },
+      {
+        "command": "/System/Library/Frameworks/CoreTelephony.framework/Support/CommCenter -L",
+        "pid": 677
+      },
+      {
+        "command": "/System/Library/CoreServices/SystemUIServer.app/Contents/MacOS/SystemUIServer",
+        "pid": 679
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/MobileDevice.framework/Resources/MobileDeviceUpdater.app/Contents/MacOS/MobileDeviceUpdater",
+        "pid": 681
+      },
+      {
+        "command": "/usr/libexec/nsurlsessiond",
+        "pid": 682
+      },
+      {
+        "command": "/System/Library/CoreServices/lockoutagent",
+        "pid": 683
+      },
+      {
+        "command": "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/XPCServices/com.apple.hiservices-xpcservice.xpc/Contents/MacOS/com.apple.hiservices-xpcservice",
+        "pid": 684
+      },
+      {
+        "command": "/usr/libexec/rapportd",
+        "pid": 685
+      },
+      {
+        "command": "/System/Library/CoreServices/Finder.app/Contents/MacOS/Finder",
+        "pid": 686
+      },
+      {
+        "command": "/usr/sbin/usernoted",
+        "pid": 687
+      },
+      {
+        "command": "/usr/libexec/routined LAUNCHED_BY_LAUNCHD",
+        "pid": 688
+      },
+      {
+        "command": "/System/Library/CoreServices/AccessibilityUIServer.app/Contents/MacOS/AccessibilityUIServer",
+        "pid": 691
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CoreDuetContext.framework/Resources/ContextStoreAgent",
+        "pid": 692
+      },
+      {
+        "command": "/usr/libexec/dmd",
+        "pid": 693
+      },
+      {
+        "command": "/System/Library/Frameworks/QuickLookThumbnailing.framework/Support/com.apple.quicklook.ThumbnailsAgent",
+        "pid": 695
+      },
+      {
+        "command": "/System/Library/Frameworks/QuickLookUI.framework/Versions/A/XPCServices/QuickLookUIService.xpc/Contents/MacOS/QuickLookUIService",
+        "pid": 697
+      },
+      {
+        "command": "/System/Library/CoreServices/WallpaperAgent.app/Contents/MacOS/WallpaperAgent",
+        "pid": 698
+      },
+      {
+        "command": "/usr/libexec/secinitd",
+        "pid": 699
+      },
+      {
+        "command": "/System/Library/CoreServices/CoreLocationAgent.app/Contents/MacOS/CoreLocationAgent",
+        "pid": 700
+      },
+      {
+        "command": "/usr/sbin/systemsoundserverd",
+        "pid": 701
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/VoiceShortcuts.framework/Versions/A/Support/siriactionsd",
+        "pid": 702
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/iCloudDriveCore.framework/Versions/A/Support/bird",
+        "pid": 704
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/TCC.framework/Support/tccd",
+        "pid": 705
+      },
+      {
+        "command": "/usr/libexec/trustd --agent",
+        "pid": 706
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/SocialLayer.framework/sociallayerd.app/Contents/MacOS/sociallayerd",
+        "pid": 707
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CoreSuggestions.framework/Versions/A/Support/suggestd",
+        "pid": 708
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CalendarDaemon.framework/Support/calaccessd",
+        "pid": 709
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/TelephonyUtilities.framework/callservicesd",
+        "pid": 710
+      },
+      {
+        "command": "automountd",
+        "pid": 712
+      },
+      {
+        "command": "/System/Library/CoreServices/sharedfilelistd",
+        "pid": 713
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/FileProvider.framework/Support/fileproviderd",
+        "pid": 714
+      },
+      {
+        "command": "/usr/libexec/pkd",
+        "pid": 715
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/AMPDevices.framework/Versions/A/Support/AMPDeviceDiscoveryAgent --launchd",
+        "pid": 716
+      },
+      {
+        "command": "/System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATS.framework/Support/fontd",
+        "pid": 718
+      },
+      {
+        "command": "/System/Library/CoreServices/WiFiAgent.app/Contents/MacOS/WiFiAgent",
+        "pid": 721
+      },
+      {
+        "command": "/System/Library/CoreServices/iconservicesagent",
+        "pid": 722
+      },
+      {
+        "command": "/usr/libexec/intelligentroutingd",
+        "pid": 723
+      },
+      {
+        "command": "/System/Library/CoreServices/audioaccessoryd",
+        "pid": 724
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/SyncedDefaults.framework/Support/syncdefaultsd",
+        "pid": 725
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/IDS.framework/identityservicesd.app/Contents/MacOS/identityservicesd",
+        "pid": 726
+      },
+      {
+        "command": "/System/Library/Frameworks/Accounts.framework/Versions/A/Support/accountsd",
+        "pid": 727
+      },
+      {
+        "command": "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/Support/fontworker",
+        "pid": 728
+      },
+      {
+        "command": "/usr/libexec/studentd",
+        "pid": 729
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/MobileTimer.framework/Executables/mobiletimerd",
+        "pid": 730
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/UserNotificationsCore.framework/Support/usernotificationsd",
+        "pid": 732
+      },
+      {
+        "command": "/System/Library/Frameworks/AudioToolbox.framework/AudioComponentRegistrar",
+        "pid": 733
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/ChronoCore.framework/Support/chronod",
+        "pid": 734
+      },
+      {
+        "command": "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/corespotlightd",
+        "pid": 737
+      },
+      {
+        "command": "/usr/libexec/countryd",
+        "pid": 738
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CommunicationTrust.framework/Support/communicationtrustd",
+        "pid": 739
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/cloudd",
+        "pid": 740
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/DoNotDisturbServer.framework/Support/donotdisturbd",
+        "pid": 741
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/IMCore.framework/imagent.app/Contents/MacOS/imagent",
+        "pid": 743
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/ViewBridge.framework/Versions/A/XPCServices/ViewBridgeAuxiliary.xpc/Contents/MacOS/ViewBridgeAuxiliary",
+        "pid": 744
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CacheDelete.framework/deleted",
+        "pid": 745
+      },
+      {
+        "command": "/usr/libexec/rosetta/oahd",
+        "pid": 746
+      },
+      {
+        "command": "/System/Library/Frameworks/ColorSync.framework/Support/colorsync.useragent",
+        "pid": 747
+      },
+      {
+        "command": "/usr/libexec/findmylocateagent",
+        "pid": 748
+      },
+      {
+        "command": "/System/Library/Frameworks/CryptoTokenKit.framework/ctkahp.bundle/Contents/MacOS/ctkahp -d",
+        "pid": 750
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CommunicationsFilter.framework/CMFSyncAgent",
+        "pid": 751
+      },
+      {
+        "command": "/System/Library/CoreServices/NotificationCenter.app/Contents/MacOS/NotificationCenter",
+        "pid": 752
+      },
+      {
+        "command": "/usr/libexec/nearbyd",
+        "pid": 753
+      },
+      {
+        "command": "/System/Library/Frameworks/CryptoTokenKit.framework/ctkd -tw",
+        "pid": 755
+      },
+      {
+        "command": "/usr/libexec/transparencyd",
+        "pid": 756
+      },
+      {
+        "command": "/System/Library/Frameworks/LocalAuthentication.framework/Support/coreauthd",
+        "pid": 760
+      },
+      {
+        "command": "/System/Library/Frameworks/CryptoTokenKit.framework/ctkd -st",
+        "pid": 761
+      },
+      {
+        "command": "/System/Library/CoreServices/UIKitSystem.app/Contents/MacOS/UIKitSystem system_app_start",
+        "pid": 762
+      },
+      {
+        "command": "/System/Library/ExtensionKit/Extensions/WallpaperAerialsExtension.appex/Contents/MacOS/WallpaperAerialsExtension -LaunchArguments eyJlbmhhbmNlZFNlY3VyaXR5IjpmYWxzZSwic2VydmljZU5hbWUiOiJjb20uYXBwbGUud2FsbHBhcGVyLmV4dGVuc2lvbi5hZXJpYWxzIiwidHlwZSI6MX0=",
+        "pid": 763
+      },
+      {
+        "command": "/System/Library/ExtensionKit/Extensions/WallpaperImageExtension.appex/Contents/MacOS/WallpaperImageExtension -LaunchArguments eyJlbmhhbmNlZFNlY3VyaXR5IjpmYWxzZSwidHlwZSI6MSwic2VydmljZU5hbWUiOiJjb20uYXBwbGUud2FsbHBhcGVyLmV4dGVuc2lvbi5pbWFnZSJ9",
+        "pid": 764
+      },
+      {
+        "command": "/usr/libexec/sharingd",
+        "pid": 766
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/SessionCore.framework/Support/liveactivitiesd",
+        "pid": 767
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/GeoServices.framework/Versions/A/XPCServices/com.apple.geod.xpc/Contents/MacOS/com.apple.geod",
+        "pid": 770
+      },
+      {
+        "command": "/usr/libexec/milod",
+        "pid": 772
+      },
+      {
+        "command": "/System/Library/Frameworks/Contacts.framework/Support/contactsd",
+        "pid": 773
+      },
+      {
+        "command": "/System/Library/Frameworks/NetFS.framework/Versions/A/XPCServices/PlugInLibraryService.xpc/Contents/MacOS/PlugInLibraryService",
+        "pid": 776
+      },
+      {
+        "command": "/System/Library/Frameworks/CryptoTokenKit.framework/ctkahp.bundle/Contents/MacOS/ctkahp",
+        "pid": 777
+      },
+      {
+        "command": "/Applications/Mos.app/Contents/MacOS/Mos",
+        "pid": 781
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/AppSSO.framework/Support/AppSSOAgent.app/Contents/MacOS/AppSSOAgent",
+        "pid": 782
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/AppSSO.framework/Support/AppSSODaemon",
+        "pid": 784
+      },
+      {
+        "command": "/Applications/Karabiner-Elements.app/Contents/MacOS/Karabiner-Elements",
+        "pid": 785
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/iCloudNotification.framework/iCloudNotificationAgent",
+        "pid": 787
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/IMDPersistence.framework/XPCServices/IMDPersistenceAgent.xpc/Contents/MacOS/IMDPersistenceAgent",
+        "pid": 788
+      },
+      {
+        "command": "/Applications/Hammerspoon.app/Contents/MacOS/Hammerspoon",
+        "pid": 789
+      },
+      {
+        "command": "/Applications/CodexBar.app/Contents/MacOS/CodexBar",
+        "pid": 791
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/HomeKitDaemon.framework/Support/homed",
+        "pid": 798
+      },
+      {
+        "command": "/System/Library/CoreServices/pbs",
+        "pid": 799
+      },
+      {
+        "command": "/System/Library/ExtensionKit/Extensions/AudiovisualThumbnailExtension.appex/Contents/MacOS/AudiovisualThumbnailExtension -LaunchArguments eyJzZXJ2aWNlTmFtZSI6ImNvbS5hcHBsZS5xdWlja2xvb2sudGh1bWJuYWlsLkF1ZGlvdmlzdWFsRXh0ZW5zaW9uIiwidHlwZSI6MSwiZW5oYW5jZWRTZWN1cml0eSI6ZmFsc2V9",
+        "pid": 802
+      },
+      {
+        "command": "/usr/libexec/spotlightknowledged.updater -u",
+        "pid": 803
+      },
+      {
+        "command": "/System/Library/CoreServices/Spotlight.app/Contents/MacOS/Spotlight",
+        "pid": 804
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/HearingCore.framework/heard",
+        "pid": 808
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CoreSpeech.framework/corespeechd",
+        "pid": 809
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/AXAssetLoader.framework/Support/axassetsd",
+        "pid": 810
+      },
+      {
+        "command": "Contents/Library/LoginItems/Mac Mouse Fix Helper.app/Contents/MacOS/Mac Mouse Fix Helper",
+        "pid": 812
+      },
+      {
+        "command": "/System/Library/Frameworks/InputMethodKit.framework/Resources/imklaunchagent",
+        "pid": 817
+      },
+      {
+        "command": "/System/Library/CoreServices/Siri.app/Contents/MacOS/Siri launchd",
+        "pid": 819
+      },
+      {
+        "command": "/opt/homebrew/opt/borders/bin/borders",
+        "pid": 820
+      },
+      {
+        "command": "/System/Library/Image Capture/Support/icdd",
+        "pid": 821
+      },
+      {
+        "command": "/Users/jamie/cpa-manager-plus/cpa-manager-plus_v1.12.3_darwin_arm64/cpa-manager-plus",
+        "pid": 822
+      },
+      {
+        "command": "/Users/jamie/.bun/bin/bun run /Users/jamie/.local/share/opencode2api/muse-router.js",
+        "pid": 823
+      },
+      {
+        "command": "/Library/Application Support/Logitech.localized/LogiRightSightForWebcams/LogiRightSight.app/Contents/MacOS/LogiRightSight",
+        "pid": 824
+      },
+      {
+        "command": "/Users/jamie/.local/bin/jcode setup-hotkey --listen-macos-hotkey",
+        "pid": 828
+      },
+      {
+        "command": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python /Users/jamie/.omp/logs/qwen_proxy.py",
+        "pid": 829
+      },
+      {
+        "command": "/Library/Application Support/Logitech.localized/LogiOptionsPlus/logioptionsplus_agent.app/Contents/MacOS/logioptionsplus_agent --launchd",
+        "pid": 833
+      },
+      {
+        "command": "/opt/homebrew/opt/cliproxyapi/bin/cliproxyapi",
+        "pid": 835
+      },
+      {
+        "command": "/System/Library/CoreServices/AirPlayUIAgent.app/Contents/MacOS/AirPlayUIAgent --launchd",
+        "pid": 836
+      },
+      {
+        "command": "/System/Library/CoreServices/diagnostics_agent",
+        "pid": 839
+      },
+      {
+        "command": "/System/Library/CoreServices/TextInputMenuAgent.app/Contents/MacOS/TextInputMenuAgent",
+        "pid": 840
+      },
+      {
+        "command": "/Users/jamie/.local/share/opencode2api/opencode2api_v1.1.2_darwin_arm64/opencode2api -config /Users/jamie/.local/share/opencode2api/config.json",
+        "pid": 842
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/AppleMediaServices.framework/Resources/amsaccountsd",
+        "pid": 843
+      },
+      {
+        "command": "/System/Library/ExtensionKit/Extensions/TextThumbnailExtension.appex/Contents/MacOS/TextThumbnailExtension -LaunchArguments eyJlbmhhbmNlZFNlY3VyaXR5IjpmYWxzZSwidHlwZSI6MSwic2VydmljZU5hbWUiOiJjb20uYXBwbGUucXVpY2tsb29rLnRodW1ibmFpbC5UZXh0RXh0ZW5zaW9uIn0=",
+        "pid": 846
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/SoftwareUpdate.framework/Resources/SoftwareUpdateNotificationManager.app/Contents/MacOS/SoftwareUpdateNotificationManager",
+        "pid": 849
+      },
+      {
+        "command": "/System/Library/ExtensionKit/Extensions/ImageThumbnailExtension.appex/Contents/MacOS/ImageThumbnailExtension -LaunchArguments eyJlbmhhbmNlZFNlY3VyaXR5IjpmYWxzZSwidHlwZSI6MSwic2VydmljZU5hbWUiOiJjb20uYXBwbGUucXVpY2tsb29rLnRodW1ibmFpbC5JbWFnZUV4dGVuc2lvbiJ9",
+        "pid": 850
+      },
+      {
+        "command": "/System/Library/ExtensionKit/Extensions/ClippingsThumbnailExtension.appex/Contents/MacOS/ClippingsThumbnailExtension -LaunchArguments eyJlbmhhbmNlZFNlY3VyaXR5IjpmYWxzZSwidHlwZSI6MSwic2VydmljZU5hbWUiOiJjb20uYXBwbGUucXVpY2tsb29rLnRodW1ibmFpbC5DbGlwcGluZ3NFeHRlbnNpb24ifQ==",
+        "pid": 851
+      },
+      {
+        "command": "/System/Library/CoreServices/TextInputSwitcher.app/Contents/MacOS/TextInputSwitcher",
+        "pid": 852
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/UniversalAccess.framework/Versions/A/Resources/universalAccessAuthWarn.app/Contents/MacOS/universalAccessAuthWarn launchd -s",
+        "pid": 857
+      },
+      {
+        "command": "/Applications/Spotify.app/Contents/MacOS/Spotify --autostart",
+        "pid": 858
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/StatusKit.framework/StatusKitAgent",
+        "pid": 859
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CoreParsec.framework/parsecd",
+        "pid": 861
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/TextInputUIMacHelper.framework/Versions/A/XPCServices/CursorUIViewService.xpc/Contents/MacOS/CursorUIViewService",
+        "pid": 864
+      },
+      {
+        "command": "/usr/libexec/duetexpertd",
+        "pid": 865
+      },
+      {
+        "command": "/Applications/Spotify.app/Contents/Frameworks/Spotify Helper.app/Contents/MacOS/Spotify Helper --monitor-self-annotation=ptype=crashpad-handler --type=crashpad-handler --max-uploads=5 --max-db-size=20 --max-db-age=5 --database=/Users/jamie/Library/Caches/com.spotify.client --url=https://crashdump.spotify.com:443/ --annotation=platform=macosarm64 --annotation=product=spotify --annotation=version=1.2.98.301 --handshake-fd=6",
+        "pid": 867
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CloudTelemetry.framework/Versions/A/XPCServices/CloudTelemetryService.xpc/Contents/MacOS/CloudTelemetryService",
+        "pid": 868
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/MediaAnalysis.framework/Versions/A/mediaanalysisd",
+        "pid": 872
+      },
+      {
+        "command": "/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_console_user_server",
+        "pid": 877
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/ContinuousDialogManagerService.framework/assistant_cdmd",
+        "pid": 878
+      },
+      {
+        "command": "/Applications/Spotify.app/Contents/Frameworks/Spotify Helper.app/Contents/MacOS/Spotify Helper --type=gpu-process --start-stack-profiler --user-data-dir=/Users/jamie/Library/Caches/com.spotify.client --log-severity=disable --user-agent-product=Chrome/146.0.7680.179 Spotify/1.2.98.301 --gpu-preferences=SAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAAAwAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --metrics-shmem-handle=1752395122,r,14260606521285874330,16613886914166945266,262144 --field-trial-handle=1718379636,r,17643845281498898927,9773359489227660791,262144 --disable-features=AutofillActorMode,BackForwardCache,FullscreenBubbleShowOrigin,GatherProcessRequirementMetrics,GlicActorUi,LensOverlay,MacAppCodeSignClone,PartitionAllocDanglingPtr,PartitionAllocUnretainedDanglingPtr,StorageNotificationService --variations-seed-version --pseudonymization-salt-handle=1935764596,r,13151670143471987025,13565737373896504797,4 --trace-process-track-uuid=3190708988185955192 --seatbelt-client=18",
+        "pid": 879
+      },
+      {
+        "command": "/Applications/Spotify.app/Contents/Frameworks/Spotify Helper.app/Contents/MacOS/Spotify Helper --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en --service-sandbox-type=network --start-stack-profiler --user-data-dir=/Users/jamie/Library/Caches/com.spotify.client --log-severity=disable --user-agent-product=Chrome/146.0.7680.179 Spotify/1.2.98.301 --shared-files --metrics-shmem-handle=1752395122,r,2398551564283480614,17906354218308144572,524288 --field-trial-handle=1718379636,r,17643845281498898927,9773359489227660791,262144 --disable-features=AutofillActorMode,BackForwardCache,FullscreenBubbleShowOrigin,GatherProcessRequirementMetrics,GlicActorUi,LensOverlay,MacAppCodeSignClone,PartitionAllocDanglingPtr,PartitionAllocUnretainedDanglingPtr,StorageNotificationService --variations-seed-version --pseudonymization-salt-handle=1935764596,r,13151670143471987025,13565737373896504797,4 --trace-process-track-uuid=3190708989122997041 --seatbelt-client=30",
+        "pid": 882
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/EmailDaemon.framework/Versions/A/maild",
+        "pid": 886
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/PhotoLibraryServices.framework/Versions/A/Support/photolibraryd",
+        "pid": 889
+      },
+      {
+        "command": "/Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Core-Service.app/Contents/MacOS/Karabiner-Core-Service",
+        "pid": 896
+      },
+      {
+        "command": "/System/Library/CoreServices/ScopedBookmarkAgent",
+        "pid": 899
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/FamilyCircle.framework/Versions/A/Resources/familycircled",
+        "pid": 900
+      },
+      {
+        "command": "/System/Library/Frameworks/ExtensionFoundation.framework/Versions/A/XPCServices/extensionkitservice.xpc/Contents/MacOS/extensionkitservice",
+        "pid": 901
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/AuthKit.framework/Versions/A/Support/akd",
+        "pid": 902
+      },
+      {
+        "command": "/System/Applications/Calendar.app/Contents/PlugIns/CalendarWidgetExtension.appex/Contents/MacOS/CalendarWidgetExtension -LaunchArguments eyJ0eXBlIjoxLCJzZXJ2aWNlTmFtZSI6ImNvbS5hcHBsZS5pQ2FsLkNhbGVuZGFyV2lkZ2V0RXh0ZW5zaW9uIiwiZW5oYW5jZWRTZWN1cml0eSI6ZmFsc2V9",
+        "pid": 903
+      },
+      {
+        "command": "/Applications/Spotify.app/Contents/Frameworks/Spotify Helper.app/Contents/MacOS/Spotify Helper --type=utility --utility-sub-type=storage.mojom.StorageService --lang=en --service-sandbox-type=service --user-data-dir=/Users/jamie/Library/Caches/com.spotify.client --log-severity=disable --user-agent-product=Chrome/146.0.7680.179 Spotify/1.2.98.301 --shared-files --metrics-shmem-handle=1752395122,r,3550114148009187008,9312691971055324138,524288 --field-trial-handle=1718379636,r,17643845281498898927,9773359489227660791,262144 --disable-features=AutofillActorMode,BackForwardCache,FullscreenBubbleShowOrigin,GatherProcessRequirementMetrics,GlicActorUi,LensOverlay,MacAppCodeSignClone,PartitionAllocDanglingPtr,PartitionAllocUnretainedDanglingPtr,StorageNotificationService --variations-seed-version --pseudonymization-salt-handle=1935764596,r,13151670143471987025,13565737373896504797,4 --trace-process-track-uuid=3190708990060038890 --seatbelt-client=33",
+        "pid": 904
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/UserActivity.framework/Agents/useractivityd",
+        "pid": 916
+      },
+      {
+        "command": "/System/Library/CoreServices/Dock.app/Contents/XPCServices/com.apple.dock.extra.xpc/Contents/MacOS/com.apple.dock.extra",
+        "pid": 917
+      },
+      {
+        "command": "/System/Library/CoreServices/Dock.app/Contents/XPCServices/com.apple.dock.external.extra.arm64.xpc/Contents/MacOS/com.apple.dock.external.extra.arm64",
+        "pid": 918
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/AssetCacheServices.framework/Versions/A/XPCServices/AssetCacheLocatorService.xpc/Contents/MacOS/AssetCacheLocatorService -a",
+        "pid": 923
+      },
+      {
+        "command": "cloudphotod",
+        "pid": 932
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/iTunesCloud.framework/Support/itunescloudd",
+        "pid": 933
+      },
+      {
+        "command": "/usr/libexec/networkserviceproxy",
+        "pid": 936
+      },
+      {
+        "command": "/System/Applications/Weather.app/Contents/PlugIns/WeatherWidget.appex/Contents/MacOS/WeatherWidget -LaunchArguments eyJ0eXBlIjoxLCJzZXJ2aWNlTmFtZSI6ImNvbS5hcHBsZS53ZWF0aGVyLndpZGdldCIsImVuaGFuY2VkU2VjdXJpdHkiOmZhbHNlfQ==",
+        "pid": 957
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CoreADI.framework/adid",
+        "pid": 959
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/MediaRemote.framework/Support/mediaremoteagent",
+        "pid": 960
+      },
+      {
+        "command": "/usr/libexec/avconferenced",
+        "pid": 961
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CacheDelete.framework/deleted_helper",
+        "pid": 962
+      },
+      {
+        "command": "/System/Applications/Photos.app/Contents/PlugIns/PhotosReliveWidget.appex/Contents/MacOS/PhotosReliveWidget -LaunchArguments eyJ0eXBlIjoxLCJzZXJ2aWNlTmFtZSI6ImNvbS5hcHBsZS5QaG90b3MuUGhvdG9zUmVsaXZlV2lkZ2V0IiwiZW5oYW5jZWRTZWN1cml0eSI6ZmFsc2V9",
+        "pid": 969
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/AssistantServices.framework/Versions/A/Support/assistantd",
+        "pid": 972
+      },
+      {
+        "command": "/System/Library/CoreServices/ReportCrash daemon",
+        "pid": 974
+      },
+      {
+        "command": "/Applications/Spotify.app/Contents/Frameworks/Spotify Helper (Renderer).app/Contents/MacOS/Spotify Helper (Renderer) --type=renderer --user-data-dir=/Users/jamie/Library/Caches/com.spotify.client --log-severity=disable --user-agent-product=Chrome/146.0.7680.179 Spotify/1.2.98.301 --autoplay-policy=no-user-gesture-required --enable-blink-features=DocumentPictureInPictureCefOptions --lang=en --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=7 --time-ticks-at-unix-epoch=-1788127505550084 --launch-time-ticks=78874200 --shared-files --metrics-shmem-handle=1752395122,r,5922548329322273476,2321170240220759090,2097152 --field-trial-handle=1718379636,r,17643845281498898927,9773359489227660791,262144 --disable-features=AutofillActorMode,BackForwardCache,FullscreenBubbleShowOrigin,GatherProcessRequirementMetrics,GlicActorUi,LensOverlay,MacAppCodeSignClone,PartitionAllocDanglingPtr,PartitionAllocUnretainedDanglingPtr,StorageNotificationService --variations-seed-version --pseudonymization-salt-handle=1935764596,r,13151670143471987025,13565737373896504797,4 --trace-process-track-uuid=3190708992871164437 --seatbelt-client=174",
+        "pid": 975
+      },
+      {
+        "command": "/usr/libexec/searchpartyuseragent",
+        "pid": 989
+      },
+      {
+        "command": "/usr/sbin/BTLEServerAgent",
+        "pid": 1001
+      },
+      {
+        "command": "/usr/libexec/swcd",
+        "pid": 1004
+      },
+      {
+        "command": "/System/Library/CoreServices/UniversalControl.app/Contents/MacOS/UniversalControl",
+        "pid": 1008
+      },
+      {
+        "command": "/usr/libexec/siriknowledged",
+        "pid": 1009
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/AmbientDisplay.framework/Versions/A/XPCServices/com.apple.AmbientDisplayAgent.xpc/Contents/MacOS/com.apple.AmbientDisplayAgent",
+        "pid": 1010
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CoreRecents.framework/Versions/A/Support/recentsd",
+        "pid": 1021
+      },
+      {
+        "command": "/System/Library/Frameworks/Contacts.framework/Support/postersyncd",
+        "pid": 1025
+      },
+      {
+        "command": "/usr/libexec/SidecarRelay",
+        "pid": 1043
+      },
+      {
+        "command": "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mds_stores",
+        "pid": 1059
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/BackgroundTaskManagement.framework/Support/BackgroundTaskManagementAgent.app/Contents/MacOS/BackgroundTaskManagementAgent",
+        "pid": 1065
+      },
+      {
+        "command": "/System/Library/DriverExtensions/IOUserBluetoothSerialDriver.dext/IOUserBluetoothSerialDriver com.apple.IOUserBluetoothSerialDriver 0x100001561 com.apple.IOUserBluetoothSerialDriver",
+        "pid": 1084
+      },
+      {
+        "command": "/Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-Menu.app/Contents/MacOS/Karabiner-Menu",
+        "pid": 1123
+      },
+      {
+        "command": "/usr/libexec/sysmond",
+        "pid": 1125
+      },
+      {
+        "command": "/Library/Application Support/org.pqrs/Karabiner-Elements/Karabiner-NotificationWindow.app/Contents/MacOS/Karabiner-NotificationWindow",
+        "pid": 1127
+      },
+      {
+        "command": "/usr/libexec/nfcd",
+        "pid": 1133
+      },
+      {
+        "command": "/usr/sbin/distnoted agent",
+        "pid": 1134
+      },
+      {
+        "command": "/Applications/Spotify.app/Contents/Frameworks/Spotify Helper.app/Contents/MacOS/Spotify Helper --type=utility --utility-sub-type=media.mojom.CdmServiceBroker --lang=en --service-sandbox-type=cdm --user-data-dir=/Users/jamie/Library/Caches/com.spotify.client --log-severity=disable --user-agent-product=Chrome/146.0.7680.179 Spotify/1.2.98.301 --shared-files --metrics-shmem-handle=1752395122,r,11251327598439389487,7307007644729633674,524288 --field-trial-handle=1718379636,r,17643845281498898927,9773359489227660791,262144 --disable-features=AutofillActorMode,BackForwardCache,FullscreenBubbleShowOrigin,GatherProcessRequirementMetrics,GlicActorUi,LensOverlay,MacAppCodeSignClone,PartitionAllocDanglingPtr,PartitionAllocUnretainedDanglingPtr,StorageNotificationService --variations-seed-version --pseudonymization-salt-handle=1935764596,r,13151670143471987025,13565737373896504797,4 --trace-process-track-uuid=3190708995682289984 --seatbelt-client=243",
+        "pid": 1142
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/MapsSync.framework/mapssyncd",
+        "pid": 1147
+      },
+      {
+        "command": "/usr/sbin/distnoted agent",
+        "pid": 1155
+      },
+      {
+        "command": "/System/Library/CoreServices/UserNotificationCenter.app/Contents/MacOS/UserNotificationCenter",
+        "pid": 1165
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/SiriInference.framework/Versions/A/siriinferenced",
+        "pid": 1166
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/UsageTracking.framework/Versions/A/UsageTrackingAgent",
+        "pid": 1167
+      },
+      {
+        "command": "/usr/sbin/distnoted agent",
+        "pid": 1169
+      },
+      {
+        "command": "/usr/libexec/inputanalyticsd",
+        "pid": 1170
+      },
+      {
+        "command": "/System/Library/Input Methods/PressAndHold.app/Contents/PlugIns/PAH_Extension.appex/Contents/MacOS/PAH_Extension -AppleLanguages (\"en-US\")",
+        "pid": 1171
+      },
+      {
+        "command": "/System/iOSSupport/System/Library/ExtensionKit/Extensions/KonaSynthesizer.appex/Contents/MacOS/KonaSynthesizer -AppleLanguages (\"en-US\")",
+        "pid": 1172
+      },
+      {
+        "command": "/System/iOSSupport/System/Library/ExtensionKit/Extensions/SiriAUSP.appex/Contents/MacOS/SiriAUSP -AppleLanguages (\"en-US\")",
+        "pid": 1173
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/MacinTalk.framework/PlugIns/WardaSynthesizer.appex/Contents/MacOS/WardaSynthesizer -AppleLanguages (\"en-US\")",
+        "pid": 1174
+      },
+      {
+        "command": "/System/iOSSupport/System/Library/ExtensionKit/Extensions/MauiAUSP.appex/Contents/MacOS/MauiAUSP -AppleLanguages (\"en-US\")",
+        "pid": 1175
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/MacinTalk.framework/PlugIns/MacinTalkAUSP.appex/Contents/MacOS/MacinTalkAUSP -AppleLanguages (\"en-US\")",
+        "pid": 1176
+      },
+      {
+        "command": "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdbulkimport -s mdworker-bundle -c MDSImporterBundleFinder -m com.apple.metadata.mdbulkimport",
+        "pid": 1182
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/IntelligenceFlowContextRuntime.framework/Versions/A/intelligencecontextd",
+        "pid": 1186
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/IntelligencePlatformCompute.framework/Versions/A/XPCServices/IntelligencePlatformComputeService.xpc/Contents/MacOS/IntelligencePlatformComputeService",
+        "pid": 1190
+      },
+      {
+        "command": "/System/Library/CoreServices/ReportCrash agent",
+        "pid": 1209
+      },
+      {
+        "command": "/usr/sbin/systemstats --logger-helper /private/var/db/systemstats",
+        "pid": 1213
+      },
+      {
+        "command": "/System/Library/Services/AppleSpell.service/Contents/MacOS/AppleSpell",
+        "pid": 1215
+      },
+      {
+        "command": "/usr/libexec/naturallanguaged",
+        "pid": 1216
+      },
+      {
+        "command": "/usr/libexec/keyboardservicesd",
+        "pid": 1218
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CascadeSets.framework/Versions/A/XPCServices/SetStoreUpdateService.xpc/Contents/MacOS/SetStoreUpdateService",
+        "pid": 1224
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/UIFoundation.framework/Versions/A/XPCServices/nsattributedstringagent.xpc/Contents/MacOS/nsattributedstringagent",
+        "pid": 1228
+      },
+      {
+        "command": "/usr/libexec/adprivacyd",
+        "pid": 1280
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CoreFP.framework/Versions/A/fairplayd",
+        "pid": 1292
+      },
+      {
+        "command": "/usr/libexec/promotedcontentd",
+        "pid": 1295
+      },
+      {
+        "command": "/System/Applications/Calendar.app/Contents/Extensions/CalendarIntentsExtension.appex/Contents/MacOS/CalendarIntentsExtension -LaunchArguments eyJ0eXBlIjoxLCJlbmhhbmNlZFNlY3VyaXR5IjpmYWxzZSwic2VydmljZU5hbWUiOiJjb20uYXBwbGUuY2FsZW5kYXIuQ2FsZW5kYXJJbnRlbnRzRXh0ZW5zaW9uIn0=",
+        "pid": 1312
+      },
+      {
+        "command": "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app/Contents/Extensions/SafariLinkExtension.appex/Contents/MacOS/SafariLinkExtension -LaunchArguments eyJzZXJ2aWNlTmFtZSI6ImNvbS5hcHBsZS5TYWZhcmkuU2FmYXJpTGlua0V4dGVuc2lvbiIsImVuaGFuY2VkU2VjdXJpdHkiOmZhbHNlLCJ0eXBlIjoxfQ==",
+        "pid": 1313
+      },
+      {
+        "command": "/System/Applications/Messages.app/Contents/Extensions/MessagesActionExtension.appex/Contents/MacOS/MessagesActionExtension -LaunchArguments eyJ0eXBlIjoxLCJlbmhhbmNlZFNlY3VyaXR5IjpmYWxzZSwic2VydmljZU5hbWUiOiJjb20uYXBwbGUuTW9iaWxlU01TLk1lc3NhZ2VzQWN0aW9uRXh0ZW5zaW9uIn0=",
+        "pid": 1314
+      },
+      {
+        "command": "/System/Library/CoreServices/Keychain Circle Notification.app/Contents/MacOS/Keychain Circle Notification",
+        "pid": 1351
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/AppStoreDaemon.framework/Support/appstoreagent",
+        "pid": 1386
+      },
+      {
+        "command": "/usr/sbin/distnoted agent",
+        "pid": 1401
+      },
+      {
+        "command": "/System/Library/CoreServices/SubmitDiagInfo server-init",
+        "pid": 1423
+      },
+      {
+        "command": "/usr/libexec/GamePolicyAgent",
+        "pid": 1427
+      },
+      {
+        "command": "/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/CVMServer",
+        "pid": 1431
+      },
+      {
+        "command": "/System/Library/CoreServices/CrashReporterSupportHelper server-init",
+        "pid": 1436
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/DataAccess.framework/Support/dataaccessd",
+        "pid": 1536
+      },
+      {
+        "command": "/usr/libexec/trustd --agent",
+        "pid": 1615
+      },
+      {
+        "command": "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdworker",
+        "pid": 1668
+      },
+      {
+        "command": "/System/Library/CoreServices/Siri.app/Contents/XPCServices/SiriNCService.xpc/Contents/MacOS/SiriNCService",
+        "pid": 1677
+      },
+      {
+        "command": "/System/Cryptexes/App/usr/libexec/SafariBookmarksSyncAgent",
+        "pid": 1706
+      },
+      {
+        "command": "/usr/libexec/tipsd",
+        "pid": 1791
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/WorkflowKit.framework/XPCServices/ShortcutsViewService.xpc/Contents/MacOS/ShortcutsViewService",
+        "pid": 1862
+      },
+      {
+        "command": "/usr/sbin/distnoted agent",
+        "pid": 1993
+      },
+      {
+        "command": "/usr/sbin/spindump",
+        "pid": 2069
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/OnDeviceStorage.framework/Support/amsondevicestoraged",
+        "pid": 2549
+      },
+      {
+        "command": "/usr/libexec/ASPCarryLog",
+        "pid": 2770
+      },
+      {
+        "command": "/Library/Apple/System/Library/CoreServices/XProtect.app/Contents/MacOS/XProtect",
+        "pid": 2857
+      },
+      {
+        "command": "/usr/libexec/ciphermld",
+        "pid": 2864
+      },
+      {
+        "command": "/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.Networking.xpc/Contents/MacOS/com.apple.WebKit.Networking",
+        "pid": 2871
+      },
+      {
+        "command": "/usr/sbin/cfprefsd agent",
+        "pid": 2882
+      },
+      {
+        "command": "/Library/Apple/System/Library/CoreServices/XProtect.app/Contents/MacOS/XProtect",
+        "pid": 2885
+      },
+      {
+        "command": "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/managedcorespotlightd",
+        "pid": 2906
+      },
+      {
+        "command": "/usr/libexec/mlhostd",
+        "pid": 2965
+      },
+      {
+        "command": "/usr/sbin/cfprefsd agent",
+        "pid": 2971
+      },
+      {
+        "command": "/usr/libexec/metrickitd",
+        "pid": 2977
+      },
+      {
+        "command": "/System/Library/Frameworks/ExtensionFoundation.framework/Versions/A/XPCServices/extensionkitservice.xpc/Contents/MacOS/extensionkitservice",
+        "pid": 2984
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/IMDPersistence.framework/IMAutomaticHistoryDeletionAgent.app/Contents/MacOS/IMAutomaticHistoryDeletionAgent",
+        "pid": 3027
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/AppleNeuralEngine.framework/XPCServices/ANEStorageMaintainer.xpc/Contents/MacOS/ANEStorageMaintainer",
+        "pid": 3028
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/AppleNeuralEngine.framework/XPCServices/ANEStorageMaintainer.xpc/Contents/MacOS/ANEStorageMaintainer",
+        "pid": 3102
+      },
+      {
+        "command": "/usr/sbin/distnoted agent",
+        "pid": 3103
+      },
+      {
+        "command": "/usr/sbin/cfprefsd agent",
+        "pid": 3105
+      },
+      {
+        "command": "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/XPCServices/SpeechSynthesisServerXPC.xpc/Contents/MacOS/SpeechSynthesisServerXPC",
+        "pid": 3527
+      },
+      {
+        "command": "/System/Library/Frameworks/NetFS.framework/Versions/A/XPCServices/PlugInLibraryService.xpc/Contents/MacOS/PlugInLibraryService",
+        "pid": 3538
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/IntelligencePlatformCore.framework/Versions/A/intelligenceplatformd",
+        "pid": 3542
+      },
+      {
+        "command": "/System/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal",
+        "pid": 3568
+      },
+      {
+        "command": "/System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.SandboxHelper.xpc/Contents/MacOS/com.apple.audio.SandboxHelper",
+        "pid": 3570
+      },
+      {
+        "command": "/Applications/Ghostty.app/Contents/MacOS/ghostty",
+        "pid": 3687
+      },
+      {
+        "command": "/System/Library/Frameworks/NetFS.framework/Versions/A/XPCServices/PlugInLibraryService.xpc/Contents/MacOS/PlugInLibraryService",
+        "pid": 3688
+      },
+      {
+        "command": "/Users/jamie/.local/bin/herdr server",
+        "pid": 3745
+      },
+      {
+        "command": "/System/Applications/Utilities/Activity Monitor.app/Contents/MacOS/Activity Monitor",
+        "pid": 4214
+      },
+      {
+        "command": "/System/Library/Frameworks/ColorSync.framework/Versions/A/XPCServices/com.apple.ColorSyncXPCAgent.xpc/Contents/MacOS/com.apple.ColorSyncXPCAgent",
+        "pid": 4216
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/AssetCacheServicesExtensions.framework/XPCServices/AssetCacheManagerService.xpc/Contents/MacOS/AssetCacheManagerService",
+        "pid": 4217
+      },
+      {
+        "command": "/opt/homebrew/bin/llama-server --model /Users/jamie/.gbrain/models/bge-reranker-v2-m3-Q4_K_M.gguf --alias bge-reranker-v2-m3 --reranking --port 8081 --ctx-size 8192 --batch-size 8192 --ubatch-size 8192",
+        "pid": 4342
+      },
+      {
+        "command": "/opt/homebrew/bin/llama-server --model /Users/jamie/.gbrain/models/bge-m3-Q8_0.gguf --embeddings --pooling cls --port 8080 --ctx-size 8192 --batch-size 8192 --ubatch-size 8192",
+        "pid": 4343
+      },
+      {
+        "command": "/bin/bash /Users/jamie/.omp/scripts/lfm-swarm.sh",
+        "pid": 4357
+      },
+      {
+        "command": "/opt/homebrew/bin/llama-server -m /Users/jamie/models/LFM2.5-2.6B-heretic-Q8_0.gguf --alias lfm-heretic-1 --port 8090 --ctx-size 8192 --jinja --parallel 1 -ngl 999",
+        "pid": 4358
+      },
+      {
+        "command": "/opt/homebrew/bin/llama-server -m /Users/jamie/models/LFM2.5-2.6B-heretic-Q8_0.gguf --alias lfm-heretic-2 --port 8091 --ctx-size 8192 --jinja --parallel 1 -ngl 999",
+        "pid": 4359
+      },
+      {
+        "command": "/opt/homebrew/bin/llama-server -m /Users/jamie/models/LFM2.5-2.6B-heretic-Q8_0.gguf --alias lfm-heretic-3 --port 8092 --ctx-size 8192 --jinja --parallel 1 -ngl 999",
+        "pid": 4360
+      },
+      {
+        "command": "/opt/homebrew/bin/llama-server -m /Users/jamie/models/LFM2.5-2.6B-heretic-Q8_0.gguf --alias lfm-heretic-4 --port 8093 --ctx-size 8192 --jinja --parallel 1 -ngl 999",
+        "pid": 4361
+      },
+      {
+        "command": "/opt/homebrew/bin/llama-server -m /Users/jamie/models/LFM2.5-2.6B-heretic-Q8_0.gguf --alias lfm-heretic-5 --port 8094 --ctx-size 8192 --jinja --parallel 1 -ngl 999",
+        "pid": 4362
+      },
+      {
+        "command": "/usr/libexec/powerdatad",
+        "pid": 4379
+      },
+      {
+        "command": "/System/iOSSupport/System/Library/PrivateFrameworks/HomeEnergyDaemon.framework/Support/homeenergyd",
+        "pid": 5030
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/SiriAnalytics.framework/Versions/A/XPCServices/SAExtensionOrchestrator.xpc/Contents/MacOS/SAExtensionOrchestrator",
+        "pid": 5233
+      },
+      {
+        "command": "/System/Library/Frameworks/ExtensionFoundation.framework/Versions/A/XPCServices/extensionkitservice.xpc/Contents/MacOS/extensionkitservice",
+        "pid": 5234
+      },
+      {
+        "command": "/System/Library/ExtensionKit/Extensions/GMSSELFIngestor.appex/Contents/MacOS/GMSSELFIngestor -LaunchArguments eyJ0eXBlIjoxLCJzZXJ2aWNlTmFtZSI6ImNvbS5hcHBsZS5zaXJpLkdNU1NFTEZJbmdlc3RvciIsImVuaGFuY2VkU2VjdXJpdHkiOmZhbHNlfQ==",
+        "pid": 5235
+      },
+      {
+        "command": "/System/Library/ExtensionKit/Extensions/IFTranscriptSELFIngestor.appex/Contents/MacOS/IFTranscriptSELFIngestor -LaunchArguments eyJlbmhhbmNlZFNlY3VyaXR5IjpmYWxzZSwidHlwZSI6MSwic2VydmljZU5hbWUiOiJjb20uYXBwbGUubGlnaHRob3VzZS5JRlRyYW5zY3JpcHRTRUxGSW5nZXN0b3IifQ==",
+        "pid": 5236
+      },
+      {
+        "command": "/System/Library/ExtensionKit/Extensions/BiomeSELFIngestor.appex/Contents/MacOS/BiomeSELFIngestor -LaunchArguments eyJlbmhhbmNlZFNlY3VyaXR5IjpmYWxzZSwidHlwZSI6MSwic2VydmljZU5hbWUiOiJjb20uYXBwbGUubGlnaHRob3VzZS5CaW9tZVNFTEZJbmdlc3RvciJ9",
+        "pid": 5239
+      },
+      {
+        "command": "/System/Library/ExtensionKit/Extensions/IFTelemetrySELFIngestor.appex/Contents/MacOS/IFTelemetrySELFIngestor -LaunchArguments eyJlbmhhbmNlZFNlY3VyaXR5IjpmYWxzZSwidHlwZSI6MSwic2VydmljZU5hbWUiOiJjb20uYXBwbGUubGlnaHRob3VzZS5JRlRlbGVtZXRyeVNFTEZJbmdlc3RvciJ9",
+        "pid": 5240
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/zen",
+        "pid": 5875
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/gpu-helper.app/Contents/MacOS/Zen GPU Helper -parentBuildID 20260828113729 -prefsHandle 0:43307 -prefMapHandle 1:305796 -sbStartup -sbAppPath /Applications/Zen.app -ipcHandle 0 -initialChannelId {0e535419-6505-45a9-a1a0-81afc032aa13} -parentPid 5875 -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.1747626271 1 gpu",
+        "pid": 5877
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -parentBuildID 20260828113729 -prefsHandle 0:43374 -prefMapHandle 1:305796 -sbStartup -sbAppPath /Applications/Zen.app -ipcHandle 0 -initialChannelId {a67f4215-9a50-4b20-aaab-775e67a4ffe7} -parentPid 5875 -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.215393183 2 socket",
+        "pid": 5885
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:43526 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {37fcd748-9cde-4b05-871c-1b4ba03dad5a} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.815406260 3 tab",
+        "pid": 5890
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -parentBuildID 20260828113729 -prefsHandle 0:43526 -prefMapHandle 1:305796 -sbStartup -sbAppPath /Applications/Zen.app -ipcHandle 0 -initialChannelId {e2a537eb-7f1f-40d8-93f2-b85546b4c0c2} -parentPid 5875 -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.1903158678 4 rdd",
+        "pid": 5891
+      },
+      {
+        "command": "/System/Library/Frameworks/VideoToolbox.framework/Versions/A/XPCServices/VTDecoderXPCService.xpc/Contents/MacOS/VTDecoderXPCService",
+        "pid": 5893
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:35896 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {198e876b-d0d9-4bdb-b9f3-359bb7c3dd7e} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.845561949 5 tab",
+        "pid": 5894
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/SafariPlatformSupport.framework/Versions/A/XPCServices/com.apple.SafariPlatformSupport.Helper.xpc/Contents/MacOS/com.apple.SafariPlatformSupport.Helper",
+        "pid": 5896
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:43583 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {97ae4eab-9668-4fb7-b8e9-8697728daf6b} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.1685539867 7 tab",
+        "pid": 5908
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -parentBuildID 20260828113729 -sandboxingKind 0 -prefsHandle 0:58571 -prefMapHandle 1:305796 -sbStartup -sbAppPath /Applications/Zen.app -ipcHandle 0 -initialChannelId {a27391e5-9df9-4f63-94ba-29b92f0c8154} -parentPid 5875 -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.1956194673 8 utility",
+        "pid": 5910
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/Synapse.framework/Support/contentlinkingd",
+        "pid": 5934
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51167 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {7847a7c2-8a1d-4136-92f8-ad3f2bd6ddc7} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.1126684723 11 tab",
+        "pid": 5940
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -parentBuildID 20260828113729 -sandboxingKind 1 -prefsHandle 0:58863 -prefMapHandle 1:305796 -sbStartup -sbAppPath /Applications/Zen.app -ipcHandle 0 -initialChannelId {6b355687-cb1a-476f-8903-c147a5aead3e} -parentPid 5875 -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.708007998 16 utility",
+        "pid": 5976
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51167 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {adfc0d44-df37-4df9-8184-d3d6eda746f8} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.426998063 17 tab",
+        "pid": 5979
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51167 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {fd40502c-9361-44b6-a9a1-3ee5477bec0a} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.1746370205 19 tab",
+        "pid": 6372
+      },
+      {
+        "command": "/System/Library/CoreServices/Dock.app/Contents/XPCServices/DockHelper.xpc/Contents/MacOS/DockHelper",
+        "pid": 6870
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/ToneLibrary.framework/Versions/A/XPCServices/com.apple.tonelibraryd.xpc/Contents/MacOS/com.apple.tonelibraryd",
+        "pid": 6962
+      },
+      {
+        "command": "/Users/jamie/.bun/bin/omp __omp_worker_daemon_broker",
+        "pid": 7114
+      },
+      {
+        "command": "/usr/libexec/assessmentagent",
+        "pid": 8317
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51165 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {01223af2-5af7-413d-bf23-0f5bc8c2851e} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.951094826 104 tab",
+        "pid": 8427
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51167 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {b903cbcb-5002-41ab-9661-ae431a3cb516} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.2021062587 27 tab",
+        "pid": 8484
+      },
+      {
+        "command": "/Applications/Docker.app/Contents/MacOS/com.docker.backend",
+        "pid": 10073
+      },
+      {
+        "command": "/Applications/Docker.app/Contents/MacOS/com.docker.backend services",
+        "pid": 10075
+      },
+      {
+        "command": "/Applications/Docker.app/Contents/MacOS/com.docker.backend fork",
+        "pid": 10076
+      },
+      {
+        "command": "/Applications/Docker.app/Contents/MacOS/com.docker.build --log-no-timestamp",
+        "pid": 10133
+      },
+      {
+        "command": "/Applications/Docker.app/Contents/MacOS/Docker Desktop.app/Contents/MacOS/Docker Desktop --reason=open-tray --analytics-enabled=true --disable-hardware-acceleration=false --name=dashboard",
+        "pid": 10136
+      },
+      {
+        "command": "/System/Library/Frameworks/NetFS.framework/Versions/A/XPCServices/PlugInLibraryService.xpc/Contents/MacOS/PlugInLibraryService",
+        "pid": 10151
+      },
+      {
+        "command": "/Applications/Docker.app/Contents/MacOS/Docker Desktop.app/Contents/Frameworks/Electron Framework.framework/Helpers/chrome_crashpad_handler --no-rate-limit --monitor-self-annotation=ptype=crashpad-handler --database=/Users/jamie/Library/Containers/com.docker.docker/Data/log/host/electron-crash-reports --annotation=_productName=Docker Desktop --annotation=_version=4.84.0 --annotation=plat=OS X --annotation=prod=Electron --annotation=ver=42.5.0 --handshake-fd=24",
+        "pid": 10155
+      },
+      {
+        "command": "/Applications/Docker.app/Contents/MacOS/Docker Desktop.app/Contents/Frameworks/Docker Desktop Helper.app/Contents/MacOS/Docker Desktop Helper --type=gpu-process --user-data-dir=/Users/jamie/Library/Application Support/Docker Desktop --gpu-preferences=SAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAAAwAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --field-trial-handle=1718379636,r,2841455587429269291,4585941593502324825,262144 --enable-features=PdfUseShowSaveFilePicker,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TimeoutHangingVideoCaptureStarts,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=1935764596,r,10007018866449460174,4763726362458963267,4 --trace-process-track-uuid=3190708988185955192 --seatbelt-client=41",
+        "pid": 10166
+      },
+      {
+        "command": "/Applications/Docker.app/Contents/MacOS/Docker Desktop.app/Contents/Frameworks/Docker Desktop Helper.app/Contents/MacOS/Docker Desktop Helper --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=network --user-data-dir=/Users/jamie/Library/Application Support/Docker Desktop --standard-schemes=app --enable-sandbox --secure-schemes=app --cors-schemes=dd --fetch-schemes=dd --code-cache-schemes=app --shared-files --field-trial-handle=1718379636,r,2841455587429269291,4585941593502324825,262144 --enable-features=PdfUseShowSaveFilePicker,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TimeoutHangingVideoCaptureStarts,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=1935764596,r,10007018866449460174,4763726362458963267,4 --trace-process-track-uuid=3190708989122997041 --seatbelt-client=24",
+        "pid": 10167
+      },
+      {
+        "command": "/usr/libexec/logd_helper",
+        "pid": 10168
+      },
+      {
+        "command": "/Applications/Docker.app/Contents/MacOS/Docker Desktop.app/Contents/Frameworks/Docker Desktop Helper (Renderer).app/Contents/MacOS/Docker Desktop Helper (Renderer) --type=renderer --user-data-dir=/Users/jamie/Library/Application Support/Docker Desktop --standard-schemes=app --enable-sandbox --secure-schemes=app --cors-schemes=dd --fetch-schemes=dd --code-cache-schemes=app --app-path=/Applications/Docker.app/Contents/MacOS/Docker Desktop.app/Contents/Resources/app.asar --enable-sandbox --lang=en-US --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=4 --time-ticks-at-unix-epoch=-1788127505566718 --launch-time-ticks=1476150025 --shared-files --field-trial-handle=1718379636,r,2841455587429269291,4585941593502324825,262144 --enable-features=PdfUseShowSaveFilePicker,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TimeoutHangingVideoCaptureStarts,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=1935764596,r,10007018866449460174,4763726362458963267,4 --trace-process-track-uuid=3190708990060038890 --desktop-ui-preload-params={\"needsBackendErrorsIpcClient\":true,\"needsPrimaryIpcClient\":true} --seatbelt-client=85",
+        "pid": 10174
+      },
+      {
+        "command": "/Applications/Docker.app/Contents/Resources/cli-plugins/docker-agent serve api --listen unix:///Users/jamie/Library/Containers/com.docker.docker/Data/docker-agent.sock --data-dir /Users/jamie/Library/Containers/com.docker.docker/Data/cagent --models-gateway https://ai-backend-service.docker.com/proxy/gordon-light?origin=desktop&desktopVersion=4.84.0&gordonTag=v11-light --mcp-oauth-redirect-uri https://ai-backend-service.docker.com/gordon/mcp-oauth/callback https://ai-backend-service.docker.com/proxy/gordon-agent?gordonTag=v11-light&desktopVersion=4.84.0&origin=desktop --pull-interval 60",
+        "pid": 10222
+      },
+      {
+        "command": "/System/Library/Frameworks/NetFS.framework/Versions/A/XPCServices/PlugInLibraryService.xpc/Contents/MacOS/PlugInLibraryService",
+        "pid": 10325
+      },
+      {
+        "command": "/System/Library/Frameworks/MediaExtension.framework/Versions/A/Helpers/MENotificationAgent",
+        "pid": 10427
+      },
+      {
+        "command": "/System/Library/Frameworks/NetFS.framework/Versions/A/XPCServices/PlugInLibraryService.xpc/Contents/MacOS/PlugInLibraryService",
+        "pid": 10428
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/SiriSuggestionsSupport.framework/Versions/A/XPCServices/SiriSuggestionsBookkeepingService.xpc/Contents/MacOS/SiriSuggestionsBookkeepingService",
+        "pid": 10429
+      },
+      {
+        "command": "/System/Library/Frameworks/NetFS.framework/Versions/A/XPCServices/PlugInLibraryService.xpc/Contents/MacOS/PlugInLibraryService",
+        "pid": 10430
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/PhotoAnalysis.framework/Versions/A/Support/photoanalysisd",
+        "pid": 10705
+      },
+      {
+        "command": "/usr/libexec/replayd",
+        "pid": 10773
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/commerce",
+        "pid": 10972
+      },
+      {
+        "command": "/usr/libexec/online-auth-agent",
+        "pid": 11282
+      },
+      {
+        "command": "/usr/libexec/feedbackd",
+        "pid": 11287
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CoreAnalytics.framework/Support/analyticsagent",
+        "pid": 11338
+      },
+      {
+        "command": "/usr/libexec/powerexperienced",
+        "pid": 12815
+      },
+      {
+        "command": "/usr/libexec/seputil --daemonize-reseed",
+        "pid": 13074
+      },
+      {
+        "command": "/System/Library/CoreServices/TimeMachine/backupd-helper -launchd",
+        "pid": 13075
+      },
+      {
+        "command": "/usr/libexec/findmydevice-user-agent",
+        "pid": 13332
+      },
+      {
+        "command": "/Applications/Rectangle.app/Contents/MacOS/Rectangle",
+        "pid": 13701
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51167 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {0d7e8a8a-8e02-4a3d-93f8-f036290b3173} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.447419701 36 tab",
+        "pid": 14118
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51167 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {59db67a0-cd81-4096-ab26-a37c5d34e5c8} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.1546331384 37 tab",
+        "pid": 14315
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51167 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {f2b6b998-5515-43ca-a3f8-a1d63e71ed97} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.1367828099 38 tab",
+        "pid": 14528
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51167 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {9756c927-f2d1-4173-81c4-3473f851e9a4} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.1812809005 39 tab",
+        "pid": 14572
+      },
+      {
+        "command": "/usr/libexec/triald",
+        "pid": 14660
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/TrialServer.framework/Versions/A/XPCServices/TrialArchivingService.xpc/Contents/MacOS/TrialArchivingService",
+        "pid": 14662
+      },
+      {
+        "command": "/System/Library/Frameworks/MediaAccessibility.framework/Versions/A/XPCServices/com.apple.accessibility.mediaaccessibilityd.xpc/Contents/MacOS/com.apple.accessibility.mediaaccessibilityd",
+        "pid": 15592
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/SafariSafeBrowsing.framework/com.apple.Safari.SafeBrowsing.Service",
+        "pid": 15595
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/ScreenTimeCore.framework/Versions/A/ScreenTimeAgent",
+        "pid": 15599
+      },
+      {
+        "command": "/System/Library/Frameworks/FamilyControls.framework/Versions/A/FamilyControlsAgent",
+        "pid": 15601
+      },
+      {
+        "command": "/System/Library/Frameworks/ManagedSettings.framework/Versions/A/ManagedSettingsAgent",
+        "pid": 15605
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51166 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {a2a5d211-dbce-4738-94c4-1e040a1190cd} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.1015986666 43 tab",
+        "pid": 16141
+      },
+      {
+        "command": "/usr/libexec/taskgated-helper",
+        "pid": 17027
+      },
+      {
+        "command": "/Library/SystemExtensions/2BCA637C-18A9-4BFE-A27B-B909F88AEA8D/io.tailscale.ipn.macsys.network-extension.systemextension/Contents/MacOS/io.tailscale.ipn.macsys.network-extension",
+        "pid": 17040
+      },
+      {
+        "command": "/usr/libexec/secinitd",
+        "pid": 17053
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/HelpData.framework/Versions/A/Resources/helpd",
+        "pid": 17490
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/AppleMediaServicesUI.framework/amsengagementd",
+        "pid": 18345
+      },
+      {
+        "command": "/Applications/Tailscale.app/Contents/MacOS/Tailscale",
+        "pid": 18955
+      },
+      {
+        "command": "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdworker_shared -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared",
+        "pid": 19403
+      },
+      {
+        "command": "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdworker_shared -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared",
+        "pid": 19482
+      },
+      {
+        "command": "bash /Users/jamie/.omp/scripts/verify-pstack-injection.sh",
+        "pid": 19925
+      },
+      {
+        "command": "/Users/jamie/.bun/bin/omp /skill:poteto-mode\\012\\012Going to bed, run this autonomously until done, then stop. Work only inside /var/folders/kx/lvxr4bxx37l02vlr4bs2lm4w0000gn/T//pstack-health-20260831-121622-64691.OcZ5Kj/canary-auto. Exit predicate, stated before the first iteration: the file /var/folders/kx/lvxr4bxx37l02vlr4bs2lm4w0000gn/T//pstack-health-20260831-121622-64691.OcZ5Kj/canary-auto/trail.md exists and its final line is exactly 'PREDICATE MET'. Drive exactly three iterations: on iteration N append the row 'iteration N: <what changed>; predicate moved: no' to trail.md, read the file back to verify the row landed, and checkpoint the trail before the next iteration. Only after the third verified row, append the final line 'PREDICATE MET' and stop. Do not spawn subagents; this is a single-lane drive. Reply with the exit condition, iterations run, what landed, what was discarded, and the final predicate state. --print --mode text --tools todo,read,task,grep,glob,write,hub --yolo --no-title --max-time 15m --session-dir /var/folders/kx/lvxr4bxx37l02vlr4bs2lm4w0000gn/T//pstack-health-20260831-121622-64691.OcZ5Kj/sessions --cwd /Users/jamie/.omp",
+        "pid": 19926
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51166 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {348de4e1-5ecf-4996-8b3b-82efea341d5a} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.1045823698 63 tab",
+        "pid": 20195
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51166 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {70ad442e-bcba-4cf4-a032-d7ac941aa656} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.622534033 66 tab",
+        "pid": 21225
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51166 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {3e660aba-1ec8-4dea-a164-c950611d075e} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.2021101379 68 tab",
+        "pid": 24412
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51166 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {ee1d0f26-7b79-4b6d-816e-9412b747a00b} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.1210386755 69 tab",
+        "pid": 24873
+      },
+      {
+        "command": "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -m router.hardware_lane --owner main-hardware-lane --model qwen-dflash --port 8083 --model-path /Volumes/BBALL_GM_DATA/models/Qwen3.8-27B-Uncensored-MLX/4-bit --run-id stop-lfm-swarm-20260831 --action stop-conflicting-lfm-swarm --cleanup qwen-remains-adopted --adopted-pid 7124 --allowed-generation-port 8080 --allowed-generation-port 8081 --allowed-generation-port 8083 --allowed-generation-port 8090 --allowed-generation-port 8091 --allowed-generation-port 8092 --allowed-generation-port 8093 --allowed-generation-port 8094 --artifact-path .audit/overnight-2026-08-31/evidence/stop-lfm-swarm-20260831.json --timeout 20 -- /bin/launchctl bootout gui/501/com.jamie.lfm-swarm",
+        "pid": 25212
+      },
+      {
+        "command": "ps -ax -o pid=,command=",
+        "pid": 25213
+      },
+      {
+        "command": "/Users/jamie/.bun/bin/omp __omp_worker_daemon_broker",
+        "pid": 26415
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/XprotectFramework.framework/Versions/A/XPCServices/XprotectService.xpc/Contents/MacOS/XprotectService",
+        "pid": 27124
+      },
+      {
+        "command": "/usr/libexec/MTLAssetUpgraderD",
+        "pid": 27253
+      },
+      {
+        "command": "/usr/libexec/nesessionmanager",
+        "pid": 27269
+      },
+      {
+        "command": "/System/Library/Frameworks/SystemExtensions.framework/Versions/A/Helpers/sysextd",
+        "pid": 27272
+      },
+      {
+        "command": "/usr/libexec/frauddefensed",
+        "pid": 27471
+      },
+      {
+        "command": "/usr/sbin/cfprefsd agent",
+        "pid": 28011
+      },
+      {
+        "command": "/usr/sbin/cfprefsd agent",
+        "pid": 28012
+      },
+      {
+        "command": "/usr/sbin/cfprefsd agent",
+        "pid": 28015
+      },
+      {
+        "command": "/System/Library/Frameworks/CoreSpotlight.framework/spotlightknowledged",
+        "pid": 28031
+      },
+      {
+        "command": "/usr/sbin/cfprefsd agent",
+        "pid": 28041
+      },
+      {
+        "command": "/usr/sbin/cfprefsd agent",
+        "pid": 28042
+      },
+      {
+        "command": "/usr/sbin/cfprefsd agent",
+        "pid": 28043
+      },
+      {
+        "command": "/usr/sbin/cfprefsd agent",
+        "pid": 28044
+      },
+      {
+        "command": "/usr/libexec/dprivacyd",
+        "pid": 28170
+      },
+      {
+        "command": "/usr/libexec/dprivacyd",
+        "pid": 28171
+      },
+      {
+        "command": "/usr/libexec/dirhelper",
+        "pid": 28173
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/BookKit.framework/Versions/A/XPCServices/com.apple.BKAgentService.xpc/Contents/MacOS/com.apple.BKAgentService",
+        "pid": 28188
+      },
+      {
+        "command": "/System/Library/Frameworks/NetFS.framework/Versions/A/XPCServices/PlugInLibraryService.xpc/Contents/MacOS/PlugInLibraryService",
+        "pid": 28190
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CloudPhotoServices.framework/Versions/A/XPCServices/com.apple.CloudPhotosConfiguration.xpc/Contents/MacOS/com.apple.CloudPhotosConfiguration",
+        "pid": 28198
+      },
+      {
+        "command": "/usr/libexec/storagekitd",
+        "pid": 28199
+      },
+      {
+        "command": "/usr/libexec/fskitd",
+        "pid": 28210
+      },
+      {
+        "command": "/usr/libexec/containermanagerd_system --runmode=privileged --user-container-mode=current --bundle-container-mode=global --bundle-container-owner=_appinstalld --system-container-mode=none",
+        "pid": 28213
+      },
+      {
+        "command": "/System/Library/CoreServices/iconservicesagent runAsRoot",
+        "pid": 28217
+      },
+      {
+        "command": "endpointsecurityd",
+        "pid": 29775
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51166 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {c54be424-f7fe-4f58-ae5c-fd9b38e83084} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.1555726581 72 tab",
+        "pid": 33974
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51166 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {1f881db6-bace-443d-a0f0-1c4ef2b9b60d} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.1947479649 76 tab",
+        "pid": 34171
+      },
+      {
+        "command": "/System/Library/Frameworks/Intents.framework/XPCServices/intents_helper.xpc/Contents/MacOS/intents_helper",
+        "pid": 34883
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51165 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {544aec04-0885-4d0e-9017-67544d573c17} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.144736227 79 tab",
+        "pid": 35239
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/Categories.framework/Versions/A/XPCServices/CategoriesService.xpc/Contents/MacOS/CategoriesService",
+        "pid": 35505
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/ContextKit.framework/Versions/A/XPCServices/ContextService.xpc/Contents/MacOS/ContextService",
+        "pid": 35506
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/PrivateCloudCompute.framework/privatecloudcomputed.app/Contents/MacOS/privatecloudcomputed",
+        "pid": 43087
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/GeoAnalytics.framework/geoanalyticsd",
+        "pid": 43088
+      },
+      {
+        "command": "/usr/libexec/filevaultd",
+        "pid": 43089
+      },
+      {
+        "command": "/System/Cryptexes/App/usr/libexec/AuthenticationServicesAgent",
+        "pid": 43090
+      },
+      {
+        "command": "/usr/libexec/keychainsharingmessagingd",
+        "pid": 43094
+      },
+      {
+        "command": "/System/Library/Frameworks/Security.framework/Versions/A/XPCServices/TrustedPeersHelper.xpc/Contents/MacOS/TrustedPeersHelper",
+        "pid": 43106
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CoreFollowUp.framework/Versions/A/Support/followupd",
+        "pid": 44073
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/CoreCDP.framework/Versions/A/Resources/cdpd",
+        "pid": 44075
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/IntlPreferences.framework/Support/localizationswitcherd",
+        "pid": 44076
+      },
+      {
+        "command": "/usr/libexec/appleaccountd",
+        "pid": 44077
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/AppleCredentialManager.framework/AppleCredentialManagerDaemon",
+        "pid": 44078
+      },
+      {
+        "command": "/System/Library/Frameworks/ExtensionFoundation.framework/Versions/A/XPCServices/extensionkitservice.xpc/Contents/MacOS/extensionkitservice",
+        "pid": 44087
+      },
+      {
+        "command": "/System/Library/Frameworks/LocalAuthentication.framework/Support/coreautha.bundle/Contents/MacOS/coreautha",
+        "pid": 44091
+      },
+      {
+        "command": "/usr/libexec/applekeystored",
+        "pid": 44120
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/IASUtilities.framework/Versions/A/Resources/installerauthagent",
+        "pid": 44121
+      },
+      {
+        "command": "/System/Volumes/Update/MobileAsset/AssetsV2/com_apple_MobileAsset_MobileSoftwareUpdate_MacUpdateBrain/ffae183956161d61f46f0a8acbd7586980d5083f.asset/AssetData/com.apple.MobileSoftwareUpdate.UpdateBrainService.xpc/Contents/MacOS/com.apple.MobileSoftwareUpdate.UpdateBrainService",
+        "pid": 44122
+      },
+      {
+        "command": "/System/Library/CoreServices/appplaceholdersyncd",
+        "pid": 44155
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/PackageKit.framework/Resources/system_installd",
+        "pid": 44157
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/PackageKit.framework/Resources/installd",
+        "pid": 44160
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/UIFoundation.framework/Versions/A/XPCServices/nsattributedstringagent.xpc/Contents/MacOS/nsattributedstringagent",
+        "pid": 44180
+      },
+      {
+        "command": "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/XPCServices/com.apple.hiservices-xpcservice.xpc/Contents/MacOS/com.apple.hiservices-xpcservice",
+        "pid": 44193
+      },
+      {
+        "command": "/System/Library/Frameworks/MediaAccessibility.framework/Versions/A/XPCServices/com.apple.accessibility.mediaaccessibilityd.xpc/Contents/MacOS/com.apple.accessibility.mediaaccessibilityd",
+        "pid": 44199
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/ReplicatorCore.framework/Support/replicatord",
+        "pid": 44200
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/StreamingZip.framework/Versions/A/XPCServices/com.apple.StreamingUnzipService.xpc/Contents/MacOS/com.apple.StreamingUnzipService",
+        "pid": 44222
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/GeoServices.framework/Versions/A/XPCServices/com.apple.geod.xpc/Contents/MacOS/com.apple.geod",
+        "pid": 49528
+      },
+      {
+        "command": "/usr/sbin/distnoted agent",
+        "pid": 49531
+      },
+      {
+        "command": "/usr/libexec/secinitd",
+        "pid": 49532
+      },
+      {
+        "command": "/usr/sbin/cfprefsd agent",
+        "pid": 49533
+      },
+      {
+        "command": "/usr/libexec/trustd --agent",
+        "pid": 49534
+      },
+      {
+        "command": "/usr/libexec/trustdFileHelper",
+        "pid": 49535
+      },
+      {
+        "command": "/usr/libexec/containermanagerd --runmode=agent --user-container-mode=current --bundle-container-mode=proxy --system-container-mode=none",
+        "pid": 49537
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/GeoServices.framework/Versions/A/XPCServices/com.apple.geod.xpc/Contents/MacOS/com.apple.geod",
+        "pid": 49539
+      },
+      {
+        "command": "/usr/libexec/secinitd",
+        "pid": 49540
+      },
+      {
+        "command": "/usr/libexec/trustd --agent",
+        "pid": 49542
+      },
+      {
+        "command": "/usr/libexec/containermanagerd --runmode=agent --user-container-mode=current --bundle-container-mode=proxy --system-container-mode=none",
+        "pid": 49545
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51167 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {99facff8-7eeb-411c-9af5-544258698a6d} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.439365158 81 tab",
+        "pid": 50664
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51167 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {d4940005-0806-4c1f-89dc-eb2ea39a04b2} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.742986610 82 tab",
+        "pid": 50681
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51167 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {f9e37e65-bdf9-4c73-91e5-8dbffb6a32c4} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.39958714 83 tab",
+        "pid": 52353
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51167 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {f6f9d198-884d-4023-8e19-f195c550472e} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.229951093 84 tab",
+        "pid": 52466
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51166 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {2c6d1f8f-32ef-44fc-9042-bd56d99ea08a} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.1378007359 85 tab",
+        "pid": 53334
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51166 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {6bbf8e2e-bdf1-434a-b253-406d83d842eb} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.1559026821 86 tab",
+        "pid": 53371
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/ProtectedCloudStorage.framework/Helpers/ProtectedCloudKeySyncing",
+        "pid": 55050
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/GenerativeExperiencesRuntime.framework/Versions/A/generativeexperiencesd",
+        "pid": 55332
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/ModelCatalogRuntime.framework/Versions/A/modelcatalogd",
+        "pid": 55335
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/ModelCatalogRuntime.framework/Versions/A/ModelCatalogAgent",
+        "pid": 55372
+      },
+      {
+        "command": "/Applications/DisplayLink Manager.app/Contents/MacOS/DisplayLinkUserAgent",
+        "pid": 55544
+      },
+      {
+        "command": "Contents/MacOS/DisplayLinkXpcService",
+        "pid": 55546
+      },
+      {
+        "command": "Contents/MacOS/CrashRestartHelper",
+        "pid": 55547
+      },
+      {
+        "command": "/usr/libexec/loginitemregisterd",
+        "pid": 55552
+      },
+      {
+        "command": "/System/Library/Frameworks/QuickLook.framework/Versions/A/XPCServices/QuickLookSatellite.xpc/Contents/MacOS/QuickLookSatellite",
+        "pid": 55590
+      },
+      {
+        "command": "/usr/libexec/colorsync.displayservices",
+        "pid": 55591
+      },
+      {
+        "command": "/System/Library/Frameworks/ColorSync.framework/Versions/A/XPCServices/com.apple.ColorSyncXPCAgent.xpc/Contents/MacOS/com.apple.ColorSyncXPCAgent",
+        "pid": 55592
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51166 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {78b83198-c158-4465-8636-527df9133ca6} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.968634542 91 tab",
+        "pid": 55598
+      },
+      {
+        "command": "/Users/jamie/.jcode/builds/current/jcode menubar --no-update",
+        "pid": 58027
+      },
+      {
+        "command": "/Users/jamie/.jcode/builds/shared-server/jcode serve --socket /var/folders/kx/lvxr4bxx37l02vlr4bs2lm4w0000gn/T/jcode.sock",
+        "pid": 58028
+      },
+      {
+        "command": "<defunct>",
+        "pid": 58119
+      },
+      {
+        "command": "<defunct>",
+        "pid": 58120
+      },
+      {
+        "command": "/opt/homebrew/bin/uv tool uvx git+https://github.com/googlecolab/colab-mcp",
+        "pid": 58464
+      },
+      {
+        "command": "/Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node_repl",
+        "pid": 58465
+      },
+      {
+        "command": "/Users/jamie/.cache/uv/archive-v0/vIhEHr0qWIdnr87O/bin/python /Users/jamie/.cache/uv/archive-v0/vIhEHr0qWIdnr87O/bin/colab-mcp",
+        "pid": 58494
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/DeviceCheckInternal.framework/devicecheckd",
+        "pid": 59909
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51166 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {8d02c57c-8b1a-45ba-a4be-73e3f0f2b308} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.559061515 97 tab",
+        "pid": 64489
+      },
+      {
+        "command": "bash /Users/jamie/.omp/scripts/verify-pstack-injection.sh",
+        "pid": 64691
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51166 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {b5abaa3c-9072-4966-8673-e279e0e8e53c} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.450297860 102 tab",
+        "pid": 65245
+      },
+      {
+        "command": "/Applications/Zen.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -isForBrowser -prefsHandle 0:51166 -prefMapHandle 1:305796 -jsInitHandle 2:161776 -sbStartup -sbAppPath /Applications/Zen.app -sbLevel 3 -parentBuildID 20260828113729 -ipcHandle 0 -initialChannelId {4db84005-7d8b-454a-bef6-f57e93b66c3a} -parentPid 5875 -greomni /Applications/Zen.app/Contents/Resources/omni.ja -appomni /Applications/Zen.app/Contents/Resources/browser/omni.ja -appDir /Applications/Zen.app/Contents/Resources/browser -profile /Users/jamie/Library/Application Support/zen/Profiles/mnnp8dsc.Default (release) org.mozilla.machname.312295654 103 tab",
+        "pid": 66241
+      },
+      {
+        "command": "/System/Library/Frameworks/ExtensionFoundation.framework/Versions/A/XPCServices/extensionkitservice.xpc/Contents/MacOS/extensionkitservice",
+        "pid": 66676
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/WebPrivacy.framework/webprivacyd",
+        "pid": 66684
+      },
+      {
+        "command": "/Users/jamie/.hermes/hermes-agent/apps/desktop/release/mac-arm64/Hermes.app/Contents/MacOS/Hermes",
+        "pid": 66691
+      },
+      {
+        "command": "/System/Library/Frameworks/StoreKit.framework/Support/storekitagent",
+        "pid": 66694
+      },
+      {
+        "command": "/Users/jamie/.hermes/hermes-agent/apps/desktop/release/mac-arm64/Hermes.app/Contents/Frameworks/Hermes Helper.app/Contents/MacOS/Hermes Helper --type=gpu-process --user-data-dir=/Users/jamie/Library/Application Support/Hermes --gpu-preferences=SAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAAAwAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --field-trial-handle=1718379636,r,13494952604177286552,14197801873204261749,262144 --enable-features=PdfUseShowSaveFilePicker,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TimeoutHangingVideoCaptureStarts,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708988185955192 --seatbelt-client=31",
+        "pid": 66695
+      },
+      {
+        "command": "/Users/jamie/.hermes/hermes-agent/apps/desktop/release/mac-arm64/Hermes.app/Contents/Frameworks/Hermes Helper.app/Contents/MacOS/Hermes Helper --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=network --user-data-dir=/Users/jamie/Library/Application Support/Hermes --standard-schemes=hermes-media --secure-schemes=hermes-media --fetch-schemes=hermes-media --streaming-schemes=hermes-media --shared-files --field-trial-handle=1718379636,r,13494952604177286552,14197801873204261749,262144 --enable-features=PdfUseShowSaveFilePicker,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TimeoutHangingVideoCaptureStarts,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708989122997041 --seatbelt-client=31",
+        "pid": 66697
+      },
+      {
+        "command": "/Users/jamie/.hermes/hermes-agent/apps/desktop/release/mac-arm64/Hermes.app/Contents/Frameworks/Hermes Helper (Renderer).app/Contents/MacOS/Hermes Helper (Renderer) --type=renderer --user-data-dir=/Users/jamie/Library/Application Support/Hermes --standard-schemes=hermes-media --secure-schemes=hermes-media --fetch-schemes=hermes-media --streaming-schemes=hermes-media --app-path=/Users/jamie/.hermes/hermes-agent/apps/desktop/release/mac-arm64/Hermes.app/Contents/Resources/app.asar --enable-sandbox --lang=en-US --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=4 --time-ticks-at-unix-epoch=-1788127505466234 --launch-time-ticks=8080018161 --shared-files --field-trial-handle=1718379636,r,13494952604177286552,14197801873204261749,262144 --enable-features=PdfUseShowSaveFilePicker,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TimeoutHangingVideoCaptureStarts,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708990060038890 --seatbelt-client=61",
+        "pid": 66712
+      },
+      {
+        "command": "/Users/jamie/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main serve --host 127.0.0.1 --port 0",
+        "pid": 66742
+      },
+      {
+        "command": "/Users/jamie/.hermes/hermes-agent/apps/desktop/release/mac-arm64/Hermes.app/Contents/Frameworks/Hermes Helper.app/Contents/MacOS/Hermes Helper --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=audio --message-loop-type-ui --user-data-dir=/Users/jamie/Library/Application Support/Hermes --standard-schemes=hermes-media --secure-schemes=hermes-media --fetch-schemes=hermes-media --streaming-schemes=hermes-media --shared-files --field-trial-handle=1718379636,r,13494952604177286552,14197801873204261749,262144 --enable-features=PdfUseShowSaveFilePicker,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TimeoutHangingVideoCaptureStarts,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708990997080739 --seatbelt-client=67",
+        "pid": 66764
+      },
+      {
+        "command": "/System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.SandboxHelper.xpc/Contents/MacOS/com.apple.audio.SandboxHelper",
+        "pid": 66765
+      },
+      {
+        "command": "/System/Library/Frameworks/Metal.framework/Versions/A/XPCServices/MTLCompilerService.xpc/Contents/MacOS/MTLCompilerService",
+        "pid": 66793
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/SafariPlatformSupport.framework/Versions/A/XPCServices/com.apple.SafariPlatformSupport.Helper.xpc/Contents/MacOS/com.apple.SafariPlatformSupport.Helper",
+        "pid": 66794
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/AOSKit.framework/Versions/A/XPCServices/com.apple.iCloudHelper.xpc/Contents/MacOS/com.apple.iCloudHelper",
+        "pid": 67314
+      },
+      {
+        "command": "/Applications/CuaDriver.app/Contents/MacOS/cua-driver serve",
+        "pid": 67509
+      },
+      {
+        "command": "/Applications/Ghostty.app/Contents/MacOS/ghostty -e /Users/jamie/.cargo-target/debug/oic",
+        "pid": 72243
+      },
+      {
+        "command": "/System/Library/Frameworks/AppKit.framework/Versions/C/XPCServices/ThemeWidgetControlViewService.xpc/Contents/MacOS/ThemeWidgetControlViewService",
+        "pid": 72600
+      },
+      {
+        "command": "/Applications/Ghostty.app/Contents/MacOS/ghostty -e /Users/jamie/.cargo-target/release/g-spot",
+        "pid": 76884
+      },
+      {
+        "command": "/Users/jamie/.cargo-target/release/g-spot __terminal-host --bootstrap-stdio",
+        "pid": 76929
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/SafariPlatformSupport.framework/Versions/A/XPCServices/com.apple.SafariPlatformSupport.Helper.xpc/Contents/MacOS/com.apple.SafariPlatformSupport.Helper",
+        "pid": 76977
+      },
+      {
+        "command": "/System/Library/Frameworks/PaperKit.framework/Contents/LinkedNotesUIService.app/Contents/MacOS/LinkedNotesUIService",
+        "pid": 78450
+      },
+      {
+        "command": "/System/Library/Frameworks/AppKit.framework/Versions/C/XPCServices/ThemeWidgetControlViewService.xpc/Contents/MacOS/ThemeWidgetControlViewService",
+        "pid": 79010
+      },
+      {
+        "command": "/System/Library/Frameworks/AppKit.framework/Versions/C/XPCServices/ThemeWidgetControlViewService.xpc/Contents/MacOS/ThemeWidgetControlViewService",
+        "pid": 88017
+      },
+      {
+        "command": "/Users/jamie/Applications/Mr Crabs.app/Contents/MacOS/mr-crabs",
+        "pid": 94489
+      },
+      {
+        "command": "/System/Library/PrivateFrameworks/SafariPlatformSupport.framework/Versions/A/XPCServices/com.apple.SafariPlatformSupport.Helper.xpc/Contents/MacOS/com.apple.SafariPlatformSupport.Helper",
+        "pid": 95041
+      },
+      {
+        "command": "/System/Library/Frameworks/AppKit.framework/Versions/C/XPCServices/ThemeWidgetControlViewService.xpc/Contents/MacOS/ThemeWidgetControlViewService",
+        "pid": 95863
+      },
+      {
+        "command": "/usr/bin/login -flp jamie /bin/bash --noprofile --norc -c exec -l /bin/zsh",
+        "pid": 3689
+      },
+      {
+        "command": "-/bin/zsh",
+        "pid": 3690
+      },
+      {
+        "command": "herdr",
+        "pid": 3744
+      },
+      {
+        "command": "/usr/bin/login -flp jamie /bin/bash --noprofile --norc -c exec -l /bin/zsh",
+        "pid": 3701
+      },
+      {
+        "command": "-/bin/zsh",
+        "pid": 3703
+      },
+      {
+        "command": "/usr/bin/login -flp jamie /bin/bash --noprofile --norc -c exec -l /bin/zsh",
+        "pid": 3702
+      },
+      {
+        "command": "-/bin/zsh",
+        "pid": 3706
+      },
+      {
+        "command": "omp",
+        "pid": 55818
+      },
+      {
+        "command": "-zsh",
+        "pid": 3746
+      },
+      {
+        "command": "-zsh",
+        "pid": 3747
+      },
+      {
+        "command": "-zsh",
+        "pid": 3748
+      },
+      {
+        "command": "-zsh",
+        "pid": 3749
+      },
+      {
+        "command": "-zsh",
+        "pid": 3754
+      },
+      {
+        "command": "omp -c",
+        "pid": 32893
+      },
+      {
+        "command": "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python ./dflash_server.py --model /Volumes/BBALL_GM_DATA/models/Qwen3.8-27B-Uncensored-MLX/4-bit --host 127.0.0.1 --port 8083",
+        "pid": 7124
+      },
+      {
+        "command": "-zsh",
+        "pid": 24496
+      },
+      {
+        "command": "omp",
+        "pid": 24561
+      },
+      {
+        "command": "/usr/bin/login -flp jamie /bin/bash --noprofile --norc -c exec -l /bin/zsh",
+        "pid": 58004
+      },
+      {
+        "command": "-/bin/zsh",
+        "pid": 58005
+      },
+      {
+        "command": "/Users/jamie/.jcode/builds/current/jcode --resume session_jaguar_1788134971840_45782a6b8ec96c6c",
+        "pid": 58026
+      },
+      {
+        "command": "<defunct>",
+        "pid": 58206
+      },
+      {
+        "command": "<defunct>",
+        "pid": 58616
+      },
+      {
+        "command": "-zsh",
+        "pid": 30774
+      },
+      {
+        "command": "omp",
+        "pid": 30794
+      },
+      {
+        "command": "/usr/bin/login -flp jamie /bin/bash --noprofile --norc -c exec -l /bin/zsh",
+        "pid": 72252
+      },
+      {
+        "command": "-/bin/zsh",
+        "pid": 72253
+      },
+      {
+        "command": "/bin/zsh",
+        "pid": 94515
+      },
+      {
+        "command": "/usr/bin/login -flp jamie /Users/jamie/.cargo-target/release/g-spot",
+        "pid": 76889
+      },
+      {
+        "command": "g-spot",
+        "pid": 76890
+      },
+      {
+        "command": "/usr/bin/login -flp jamie /bin/bash --noprofile --norc -c exec -l /bin/zsh",
+        "pid": 76892
+      },
+      {
+        "command": "-/bin/zsh",
+        "pid": 76894
+      },
+      {
+        "command": "/bin/zsh",
+        "pid": 76930
+      }
+    ],
+    "unknown_listeners": []
+  },
+  "status": "ok",
+  "stderr": "",
+  "stdout": "",
+  "timed_out": false
+}

@@ -1,0 +1,54 @@
+{
+  "case": "short",
+  "rep": 2,
+  "queue_wait_seconds": 0.0,
+  "generation_tps": 12.18,
+  "prefill_tps": 57.03,
+  "wall_seconds": 0.9994210830009251,
+  "peak_memory_gb": 21.6,
+  "mean_acceptance": 1.0,
+  "usage": {
+    "prompt_tokens": 25,
+    "completion_tokens": 2,
+    "total_tokens": 27
+  },
+  "derived_ttft_s": 0.43836577240049096,
+  "completion_tokens": 2,
+  "response": {
+    "id": "chatcmpl-ca276f73-2343-4b56-bdde-9ae782987c40",
+    "system_fingerprint": "0.31.3-0.32.0-macOS-26.5-arm64-arm-64bit-Mach-O-applegpu_g16s",
+    "object": "chat.completion",
+    "model": "qwen3.8-27b",
+    "created": 1788148776,
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Paris"
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 25,
+      "completion_tokens": 2,
+      "total_tokens": 27
+    },
+    "dflash": {
+      "queue_wait_seconds": 0.0,
+      "block_size": 5,
+      "prompt_tokens": 25,
+      "completion_tokens": 2,
+      "acceptance_lengths": [
+        1
+      ],
+      "mean_acceptance": 1.0,
+      "generation_tps": 12.18,
+      "prefill_tps": 57.03,
+      "peak_memory_gb": 21.6,
+      "wall_seconds": 0.992,
+      "finish_reason": "stop"
+    }
+  }
+}

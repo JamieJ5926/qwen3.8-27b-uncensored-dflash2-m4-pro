@@ -1,0 +1,23 @@
+{
+  "providers": {
+    "ornith-local": {
+      "baseUrl": "http://host.docker.internal:8083/v1",
+      "api": "openai-completions",
+      "apiKey": "EMPTY",
+      "compat": {
+        "supportsDeveloperRole": false,
+        "supportsReasoningEffort": false,
+        "maxTokensField": "max_tokens"
+      },
+      "models": [
+        {
+          "id": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+          "name": "Ornith 1.5 35B A3B Abliterated MLX 4-bit",
+          "reasoning": true,
+          "contextWindow": 262144,
+          "maxTokens": 8192
+        }
+      ]
+    }
+  }
+}

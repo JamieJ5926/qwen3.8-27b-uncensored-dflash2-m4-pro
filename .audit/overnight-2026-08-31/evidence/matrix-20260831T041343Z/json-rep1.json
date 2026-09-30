@@ -1,0 +1,82 @@
+{
+  "case": "json",
+  "rep": 1,
+  "queue_wait_seconds": 0.0,
+  "generation_tps": 19.91,
+  "prefill_tps": 55.4,
+  "wall_seconds": 5.93466908299888,
+  "peak_memory_gb": 21.6,
+  "mean_acceptance": 3.519,
+  "usage": {
+    "prompt_tokens": 41,
+    "completion_tokens": 96,
+    "total_tokens": 137
+  },
+  "derived_ttft_s": 0.740072202166065,
+  "completion_tokens": 96,
+  "json_gate": true,
+  "json_fence_stripped": false,
+  "response": {
+    "id": "chatcmpl-2d1f3d3a-348a-4e40-875c-e66f21b1c802",
+    "system_fingerprint": "0.31.3-0.32.0-macOS-26.5-arm64-arm-64bit-Mach-O-applegpu_g16s",
+    "object": "chat.completion",
+    "model": "qwen3.8-27b",
+    "created": 1788150003,
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"name\": \"Reverse Python List\",\n  \"steps\": [\n    \"Use the built-in reverse() method to modify the list in place: my_list.reverse()\",\n    \"Alternatively, use slicing to create a new reversed list: reversed_list = my_list[::-1]\",\n    \"Alternatively, use the reversed() function with list() to create a new reversed list: reversed_list = list(reversed(my_list))\"\n  ]\n}"
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 41,
+      "completion_tokens": 96,
+      "total_tokens": 137
+    },
+    "dflash": {
+      "queue_wait_seconds": 0.0,
+      "block_size": 5,
+      "prompt_tokens": 41,
+      "completion_tokens": 96,
+      "acceptance_lengths": [
+        5,
+        2,
+        1,
+        5,
+        5,
+        4,
+        2,
+        3,
+        5,
+        2,
+        3,
+        5,
+        2,
+        5,
+        3,
+        5,
+        5,
+        5,
+        2,
+        1,
+        1,
+        3,
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "mean_acceptance": 3.519,
+      "generation_tps": 19.91,
+      "prefill_tps": 55.4,
+      "peak_memory_gb": 21.6,
+      "wall_seconds": 5.921,
+      "finish_reason": "stop"
+    }
+  }
+}

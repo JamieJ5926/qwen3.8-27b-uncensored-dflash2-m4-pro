@@ -1,0 +1,84 @@
+{
+  "case": "json",
+  "rep": 1,
+  "queue_wait_seconds": 0.0,
+  "generation_tps": 21.81,
+  "prefill_tps": 51.12,
+  "wall_seconds": 5.84725262500433,
+  "peak_memory_gb": 19.49,
+  "mean_acceptance": 3.276,
+  "usage": {
+    "prompt_tokens": 41,
+    "completion_tokens": 96,
+    "total_tokens": 137
+  },
+  "derived_ttft_s": 0.8020344287949922,
+  "completion_tokens": 96,
+  "json_gate": true,
+  "json_fence_stripped": false,
+  "response": {
+    "id": "chatcmpl-0e7c3235-57b2-45f7-a895-1b0b7100b2fc",
+    "system_fingerprint": "0.31.3-0.32.0-macOS-26.5-arm64-arm-64bit-Mach-O-applegpu_g16s",
+    "object": "chat.completion",
+    "model": "qwen3.8-27b",
+    "created": 1788160349,
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"name\": \"Reverse Python List\",\n  \"steps\": [\n    \"Use the built-in reverse() method to modify the list in place: my_list.reverse()\",\n    \"Alternatively, use slicing to create a new reversed list: reversed_list = my_list[::-1]\",\n    \"Alternatively, use the reversed() function with list() to create a new reversed list: reversed_list = list(reversed(my_list))\"\n  ]\n}"
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 41,
+      "completion_tokens": 96,
+      "total_tokens": 137
+    },
+    "dflash": {
+      "queue_wait_seconds": 0.0,
+      "block_size": 4,
+      "prompt_tokens": 41,
+      "completion_tokens": 96,
+      "acceptance_lengths": [
+        4,
+        3,
+        1,
+        4,
+        4,
+        4,
+        2,
+        2,
+        3,
+        4,
+        3,
+        3,
+        4,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        2,
+        1,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        3
+      ],
+      "mean_acceptance": 3.276,
+      "generation_tps": 21.81,
+      "prefill_tps": 51.12,
+      "peak_memory_gb": 19.49,
+      "wall_seconds": 5.837,
+      "finish_reason": "stop"
+    }
+  }
+}

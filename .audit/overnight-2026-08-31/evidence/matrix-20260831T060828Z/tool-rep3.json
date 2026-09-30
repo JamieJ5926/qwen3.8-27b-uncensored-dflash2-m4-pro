@@ -1,0 +1,69 @@
+{
+  "case": "tool",
+  "rep": 3,
+  "queue_wait_seconds": 0.001,
+  "generation_tps": 20.87,
+  "prefill_tps": 69.08,
+  "wall_seconds": 6.715151249998598,
+  "peak_memory_gb": 19.49,
+  "mean_acceptance": 4.167,
+  "usage": {
+    "prompt_tokens": 292,
+    "completion_tokens": 26,
+    "total_tokens": 318
+  },
+  "derived_ttft_s": 4.227983207874928,
+  "completion_tokens": 26,
+  "tool_gate": true,
+  "response": {
+    "id": "chatcmpl-a862bafe-a62e-4063-aecd-11aac318c310",
+    "system_fingerprint": "0.31.3-0.32.0-macOS-26.5-arm64-arm-64bit-Mach-O-applegpu_g16s",
+    "object": "chat.completion",
+    "model": "qwen3.8-27b",
+    "created": 1788156929,
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "tool_calls",
+        "message": {
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "name": "get_weather",
+                "arguments": "{\"city\": \"Paris\"}"
+              },
+              "type": "function",
+              "id": "67c5ebc1-fed8-44ba-a9de-d9a4eac5b867"
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 292,
+      "completion_tokens": 26,
+      "total_tokens": 318
+    },
+    "dflash": {
+      "queue_wait_seconds": 0.001,
+      "block_size": 5,
+      "prompt_tokens": 292,
+      "completion_tokens": 26,
+      "acceptance_lengths": [
+        4,
+        5,
+        5,
+        5,
+        1,
+        5
+      ],
+      "mean_acceptance": 4.167,
+      "generation_tps": 20.87,
+      "prefill_tps": 69.08,
+      "peak_memory_gb": 19.49,
+      "wall_seconds": 6.701,
+      "finish_reason": "stop"
+    }
+  }
+}

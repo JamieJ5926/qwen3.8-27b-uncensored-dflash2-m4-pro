@@ -1,0 +1,39 @@
+{
+  "verdict": "RESPONSIVE",
+  "utc": "2026-09-01T00:47:46.665076+00:00",
+  "ownership_changed": false,
+  "listener_pid": 23052,
+  "lane_pid": 23047,
+  "get": {
+    "http_status": 200,
+    "timed_out": false,
+    "total_s": 0.05594662499788683,
+    "timeout_s": 5
+  },
+  "chat": {
+    "http_status": 200,
+    "timed_out": false,
+    "total_s": 0.574865000002319,
+    "timeout_s": 15,
+    "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit"
+  },
+  "service_log_pointer": null,
+  "service_artifact_path": "/Volumes/BBALL_GM_DATA/models/ornith35-obliterated-hillclimb-20260901/artifacts/ornith-mlx-pi-service.json",
+  "service_artifact_note": "named artifact has no log_path; no log tail captured",
+  "resolved_model": "cli-proxy/dddai.grok-4.6.implementer",
+  "fallback_state": "none",
+  "agent_role": "mechanical",
+  "agent_canary": "MECHANICAL-7E3F",
+  "evidence_paths": [
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/liveness/ownership.json",
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/liveness/lsof.txt",
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/liveness/ps.txt",
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/liveness/ps-lane-mlx.txt",
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/liveness/req-get-models.txt",
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/liveness/resp-get-models.json",
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/liveness/resp-get-models-raw.txt",
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/liveness/req-chat-exact.json",
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/liveness/resp-chat-exact.json",
+    "/Users/jamie/Documents/Projects/active/local/qwen3.8-27b-uncensored-dflash2-m4-pro/.audit/ornith-jcode-2026-09-01/runs/20260901T002135Z/liveness/resp-chat-exact-raw.txt"
+  ]
+}

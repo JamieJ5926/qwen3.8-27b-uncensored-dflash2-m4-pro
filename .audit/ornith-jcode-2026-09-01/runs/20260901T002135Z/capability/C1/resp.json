@@ -1,0 +1,63 @@
+{
+  "http_status": 200,
+  "timed_out": false,
+  "total_s": 1.2623160840012133,
+  "error": null,
+  "raw_body": "{\"id\":\"chatcmpl-53714997-6152-4180-aada-40fc02e32961\",\"object\":\"chat.completion\",\"created\":1788224211,\"model\":\"/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit\",\"choices\":[{\"index\":0,\"finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"def slug(text):\\n    import re\\n    result = text.lower()\\n    result = re.sub(r'[ _\\\\-]+', '-', result)\\n    result = result.strip('-')\\n    return result\",\"reasoning_content\":null,\"reasoning\":null,\"tool_calls\":null,\"tool_call_id\":null,\"name\":null},\"logprobs\":null}],\"usage\":{\"prompt_tokens\":69,\"completion_tokens\":43,\"total_tokens\":112,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"timings\":{\"prompt_n\":69,\"cache_n\":0,\"predicted_n\":43,\"prompt_ms\":682.3132080025971,\"prompt_per_token_ms\":9.888597217428943,\"prompt_per_second\":101.12657822056607,\"predicted_ms\":534.4359510449326,\"predicted_per_token_ms\":12.428743047556573,\"predicted_per_second\":80.45865910765569,\"peak_memory\":22.651002068}}",
+  "parsed": {
+    "id": "chatcmpl-53714997-6152-4180-aada-40fc02e32961",
+    "object": "chat.completion",
+    "created": 1788224211,
+    "model": "/Volumes/BBALL_GM_DATA/models/Ornith-1.5-35B-A3B-Abliterated-MLX-4bit",
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "def slug(text):\n    import re\n    result = text.lower()\n    result = re.sub(r'[ _\\-]+', '-', result)\n    result = result.strip('-')\n    return result",
+          "reasoning_content": null,
+          "reasoning": null,
+          "tool_calls": null,
+          "tool_call_id": null,
+          "name": null
+        },
+        "logprobs": null
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 69,
+      "completion_tokens": 43,
+      "total_tokens": 112,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "prompt_n": 69,
+      "cache_n": 0,
+      "predicted_n": 43,
+      "prompt_ms": 682.3132080025971,
+      "prompt_per_token_ms": 9.888597217428943,
+      "prompt_per_second": 101.12657822056607,
+      "predicted_ms": 534.4359510449326,
+      "predicted_per_token_ms": 12.428743047556573,
+      "predicted_per_second": 80.45865910765569,
+      "peak_memory": 22.651002068
+    }
+  },
+  "prompt_tokens": 69,
+  "completion_tokens": 43,
+  "finish_reason": "stop",
+  "content": "def slug(text):\n    import re\n    result = text.lower()\n    result = re.sub(r'[ _\\-]+', '-', result)\n    result = result.strip('-')\n    return result",
+  "tool_calls": [],
+  "message": {
+    "role": "assistant",
+    "content": "def slug(text):\n    import re\n    result = text.lower()\n    result = re.sub(r'[ _\\-]+', '-', result)\n    result = result.strip('-')\n    return result",
+    "reasoning_content": null,
+    "reasoning": null,
+    "tool_calls": null,
+    "tool_call_id": null,
+    "name": null
+  }
+}

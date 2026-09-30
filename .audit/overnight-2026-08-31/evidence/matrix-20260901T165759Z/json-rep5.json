@@ -1,0 +1,75 @@
+{
+  "case": "json",
+  "rep": 5,
+  "queue_wait_seconds": 0.0,
+  "generation_tps": 20.57,
+  "prefill_tps": 57.37,
+  "wall_seconds": 4.970123291999698,
+  "peak_memory_gb": 19.49,
+  "mean_acceptance": 4.0,
+  "usage": {
+    "prompt_tokens": 41,
+    "completion_tokens": 81,
+    "total_tokens": 122
+  },
+  "derived_ttft_s": 0.7146592295624892,
+  "completion_tokens": 81,
+  "json_gate": true,
+  "json_fence_stripped": false,
+  "response": {
+    "id": "chatcmpl-53c87c67-1ec1-43ef-878a-e583add34228",
+    "system_fingerprint": "0.31.3-0.32.0-macOS-26.5-arm64-arm-64bit-Mach-O-applegpu_g16s",
+    "object": "chat.completion",
+    "model": "qwen3.8-27b",
+    "created": 1788282211,
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"name\": \"Reverse Python List\",\n  \"steps\": [\n    \"Use the built-in reverse() method to modify the list in place.\",\n    \"Alternatively, use the slice notation [::-1] to create a new reversed list.\",\n    \"Alternatively, use the reversed() function to get an iterator and convert it to a list.\"\n  ]\n}"
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 41,
+      "completion_tokens": 81,
+      "total_tokens": 122
+    },
+    "dflash": {
+      "queue_wait_seconds": 0.0,
+      "block_size": 6,
+      "prompt_tokens": 41,
+      "completion_tokens": 81,
+      "acceptance_lengths": [
+        6,
+        1,
+        1,
+        6,
+        6,
+        2,
+        2,
+        3,
+        6,
+        4,
+        5,
+        6,
+        6,
+        6,
+        4,
+        4,
+        1,
+        2,
+        3,
+        6
+      ],
+      "mean_acceptance": 4.0,
+      "generation_tps": 20.57,
+      "prefill_tps": 57.37,
+      "peak_memory_gb": 19.49,
+      "wall_seconds": 4.964,
+      "finish_reason": "stop"
+    }
+  }
+}
